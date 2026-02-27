@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('approval_types', function (Blueprint $table) {
+            $table->id();
+            $table->uuid('uuid')->index()->unique();
+            $table->string('name')->nullable();
+            $table->string('category')->nullable();
+            $table->string('event', 100)->nullable();
+            $table->foreignId('team_id')->nullable()->constrained('teams')->onDelete('cascade');
+            $table->foreignId('priority_id')->nullable()->constrained('options')->onDelete('set null');
+            $table->foreignId('department_id')->nullable()->constrained('departments')->onDelete('set null');
+            $table->text('description')->nullable();
+            $table->dateTime('published_at')->nullable();
+            $table->json('config')->nullable();
+            $table->json('meta')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('approval_types');
+    }
+};

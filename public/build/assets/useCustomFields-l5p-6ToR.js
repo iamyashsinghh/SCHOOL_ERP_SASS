@@ -1,0 +1,1 @@
+import{p as r}from"./app-uSfdlnQY.js";function p(){const l=r([]),n=(t,u=null)=>t.map(e=>{const o=u?u.find(i=>i.uuid===e.uuid):null;let s="";return(e.type.value=="multi_select_input"||e.type.value=="checkbox_input")&&(s=[]),{...e,value:o?.value||s}});return{customFields:l,setCustomFields:(t,u=null)=>{l.value=n(t,u)}}}export{p as u};

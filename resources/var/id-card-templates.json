@@ -1,0 +1,17 @@
+[
+    {
+        "name": "default-student",
+        "height": 9.9,
+        "width": 6.7
+    },
+    {
+        "name": "default-employee",
+        "height": 9.9,
+        "width": 6.7
+    },
+    {
+        "name": "default-guardian",
+        "height": 8.9,
+        "width": 6.7
+    }
+]

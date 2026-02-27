@@ -1,0 +1,184 @@
+[
+    {
+        "name": "Transfer Certificate",
+        "type": "transfer_certificate",
+        "for": "student",
+        "custom_fields": [
+            {
+                "name": "BOOK_NUMBER",
+                "type": "number_input",
+                "label": "Book Number",
+                "min_value": 0,
+                "max_value": 100
+            },
+            {
+                "name": "ADMISSION_CLASS",
+                "type": "text_input",
+                "label": "Class in which Admission taken",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "LAST_EXAMINATION",
+                "type": "text_input",
+                "label": "Last Examination taken",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "IS_FAILED",
+                "type": "text_input",
+                "label": "Is Failed",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "PROMOTION_CLASS",
+                "type": "text_input",
+                "label": "Promote to Class",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "FEE_PAID_UPTO",
+                "type": "text_input",
+                "label": "Fee Paid Upto Month",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "FEE_CONCESSION",
+                "type": "text_input",
+                "label": "Fee Concession",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "WORKING_DAYS",
+                "type": "number_input",
+                "label": "Working Days",
+                "min_value": 0,
+                "max_value": 365
+            },
+            {
+                "name": "PRESENT_DAYS",
+                "type": "number_input",
+                "label": "Present Days",
+                "min_value": 0,
+                "max_value": 365
+            },
+            {
+                "name": "NCC_SCOUT",
+                "type": "text_input",
+                "label": "NCC/Scout Participation",
+                "min_length": 0,
+                "max_length": 200
+            },
+            {
+                "name": "CO_CURICULLAR",
+                "type": "text_input",
+                "label": "Co-Curricular Activities",
+                "min_length": 0,
+                "max_length": 200
+            },
+            {
+                "name": "CONDUCT",
+                "type": "text_input",
+                "label": "General Conduct",
+                "min_length": 0,
+                "max_length": 200
+            },
+            {
+                "name": "APPLICATION_DATE",
+                "type": "date_picker",
+                "label": "Application Date"
+            },
+            {
+                "name": "REASON",
+                "type": "text_input",
+                "label": "Reason for Leaving",
+                "min_length": 0,
+                "max_length": 200
+            },
+            {
+                "name": "REMARKS",
+                "type": "text_input",
+                "label": "Remarks",
+                "min_length": 0,
+                "max_length": 200
+            }
+        ],
+        "config": {
+            "number_prefix": "TC-",
+            "template_file": "transfer-certificate",
+            "has_custom_template_file": false,
+            "has_custom_header": false
+        }
+    },
+    {
+        "name": "Character Certificate",
+        "type": "other",
+        "for": "student",
+        "custom_fields": [
+            {
+                "name": "CONDUCT",
+                "type": "text_input",
+                "label": "General Conduct",
+                "min_length": 1,
+                "max_length": 200
+            },
+            {
+                "name": "PURPOSE",
+                "type": "text_input",
+                "label": "Purpose of Certificate",
+                "min_length": 0,
+                "max_length": 100
+            },
+            {
+                "name": "LAST_DATE",
+                "type": "date_picker",
+                "label": "Date Last Attended"
+            }
+        ],
+        "config": {
+            "number_prefix": "CC-",
+            "template_file": "character-certificate",
+            "has_custom_template_file": false,
+            "has_custom_header": false
+        }
+    },
+    {
+        "name": "Experience Certificate",
+        "type": "other",
+        "for": "employee",
+        "custom_fields": [
+            {
+                "name": "PARAGRAPH_1",
+                "type": "markdown",
+                "label": "Paragraph 1",
+                "min_length": 1,
+                "max_length": 1000
+            },
+            {
+                "name": "PARAGRAPH_2",
+                "type": "markdown",
+                "label": "Paragraph 2",
+                "min_length": 0,
+                "max_length": 1000
+            },
+            {
+                "name": "PARAGRAPH_3",
+                "type": "markdown",
+                "label": "Paragraph 3",
+                "min_length": 0,
+                "max_length": 1000
+            }
+        ],
+        "config": {
+            "number_prefix": "EC-",
+            "template_file": "experience-certificate",
+            "has_custom_template_file": false,
+            "has_custom_header": false
+        }
+    }
+]

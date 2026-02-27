@@ -1,0 +1,1 @@
+import{ae as l}from"./app-uSfdlnQY.js";function r(e){const s=`${e}_columns`;return{applyVisibility:i=>{const t=l.get(s);if(t){const y=JSON.parse(t);return i.map(n=>({...n,visibility:y.includes(n.key)}))}return i},saveVisibility:i=>{l.set(s,JSON.stringify(i),{expires:1})}}}export{r as u};

@@ -1,0 +1,1259 @@
+{
+    "mail": [
+        {
+            "name": "Reset Password Verification",
+            "subject": "Reset Password Verification",
+            "code": "reset-password-verification",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>You are receiving this email because we received a password reset request for your account.</p><p>Your password reset code is ##CODE##. This code is valid for next ##TOKEN_LIFETIME## minutes.</p><p>If you did not request a password reset, no further action is required.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Email Change Verification",
+            "subject": "Email Change Verification",
+            "code": "email-change-verification",
+            "variables": [
+                "NAME",
+                "CODE",
+                "TOKEN_LIFETIME",
+                "OLD_EMAIL",
+                "NEW_EMAIL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>We have recevied email change request from you!</p><p>Your one time verification code is ##CODE##.</p><p>This code is valid for ##TOKEN_LIFETIME## minutes.</p><p>If you haven't requested for email change, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Reset Password Alert",
+            "subject": "Reset Password Alert",
+            "code": "reset-password-alert",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Your password has been reset successfully!</p><p>Click on the below link to continue login.</p>[Login Now](##URL##)<p>If you haven't changed your password, please contact administrator.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "OTP",
+            "subject": "OTP",
+            "code": "otp",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>Your one time password is: ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>Do not share this code with anyone else.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Two Factor Security",
+            "subject": "Two Factor Security",
+            "code": "two-factor-security",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "<p>Hi ##NAME##,</p><p>Your one time two factor security code is: ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>Do not share this code with anyone else.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Email Verification",
+            "subject": "Email Verification",
+            "code": "user-email-verification",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Thank you for registering an account with us.</p><p>Click on the below link to verify your account.</p>[Verify my Email](##URL##)<p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Username Change Verification",
+            "subject": "Username Change Verification",
+            "code": "username-change-verification",
+            "variables": [
+                "NAME",
+                "CODE",
+                "TOKEN_LIFETIME",
+                "OLD_USERNAME",
+                "NEW_USERNAME"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>We have recevied username change request from you!</p><p>Your one time verification code is ##CODE##</p><p>This code is valid for the next ##TOKEN_LIFETIME## minutes!</p><p>If you haven't requested for username change, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Account Registered",
+            "subject": "Account Registered",
+            "code": "account-registered",
+            "variables": ["NAME", "URL"],
+            "content": "<p>Hi ##NAME##,</p><p>Thank you for registering an account with us.</p><p>Click on the below link to login.</p>[Login Now](##URL##)<p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Upcoming Reminder",
+            "subject": "Upcoming Reminder",
+            "code": "upcoming-reminder",
+            "variables": ["NAME", "TITLE", "DATE", "NOTE", "DAYS_LEFT"],
+            "content": "<p>Hi ##NAME##,</p><p>This is a friendly reminder for ##TITLE## scheduled for ##DATE## which is just ##DAYS_LEFT## day(s) away.</p><p>Details:</p><p>Title: ##TITLE##</p><p>Scheduled Date: ##DATE##</p><p>Note: ##NOTE##</p><p>Please make the necessary arrangements.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Reminder Due Today",
+            "subject": "Reminder Due Today",
+            "code": "reminder-due-today",
+            "variables": ["NAME", "TITLE", "DATE", "NOTE"],
+            "content": "<p>Hi ##NAME##,</p><p>This is a reminder that ##TITLE## is scheduled for today, ##DATE##.</p><p>Details:</p><p>Title: ##TITLE##</p><p>Due Date: ##DATE##</p><p>Note: ##NOTE##</p><p>Please take the necessary actions.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Email Verification",
+            "subject": "Online Registration",
+            "code": "online-registration-email-verification",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "OTP",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration for ##PROGRAM## ##PERIOD## ##COURSE## has been received with application number ##APPLICATION_NUMBER##.</p><p>Please use ##OTP## to confirm your email.</p><p>If you haven't registered with us, please ignore this email.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Email Confirmed",
+            "subject": "Online Registration Application Number",
+            "code": "online-registration-email-confirmed",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration for ##PROGRAM## ##PERIOD## ##COURSE## has been received.</p><p>Your application number is ##APPLICATION_NUMBER##.</p><p>Use this application number to complete your application.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Submitted",
+            "subject": "Online Registration Update",
+            "code": "online-registration-submitted",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been received and under review.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Fee Payment Confirmed",
+            "subject": "Online Registration Fee Payment",
+            "code": "online-registration-fee-payment-confirmed",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "AMOUNT",
+                "PAYMENT_DATETIME",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your registration fee payment of ##AMOUNT## for application number ##APPLICATION_NUMBER## - ##PROGRAM## ##PERIOD## ##COURSE## is received at ##PAYMENT_DATETIME##. You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Fee Payment Failed",
+            "subject": "Online Registration Fee Payment",
+            "code": "online-registration-fee-payment-failed",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "AMOUNT",
+                "PAYMENT_DATETIME",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your registration fee payment of ##AMOUNT## for application number ##APPLICATION_NUMBER## - ##PROGRAM## ##PERIOD## ##COURSE## is failed at ##PAYMENT_DATETIME##. You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Approved",
+            "subject": "Registration Update",
+            "code": "registration-approved",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "REGISTRATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with registration number ##REGISTRATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Approved (With Account)",
+            "subject": "Registration Update",
+            "code": "registration-approved-with-account",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "PERIOD",
+                "SESSION",
+                "COURSE",
+                "REGISTRATION_NUMBER",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with registration number ##REGISTRATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Approved",
+            "subject": "Online Registration Update",
+            "code": "online-registration-approved",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Online Registration Approved (With Account)",
+            "subject": "Online Registration Update",
+            "code": "online-registration-approved-with-account",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been approved.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Registration Rejected",
+            "subject": "Registration Update",
+            "code": "registration-rejected",
+            "variables": [
+                "NAME",
+                "PROGRAM",
+                "SESSION",
+                "PERIOD",
+                "COURSE",
+                "APPLICATION_NUMBER",
+                "REASON"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your request for registration with application number ##APPLICATION_NUMBER## for ##PROGRAM## ##PERIOD## ##COURSE## has been rejected with following reason.</p><p><strong>##REASON##</strong></p><p>We wish you all the best for your future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Fee Due",
+            "subject": "Fee Due",
+            "code": "fee-due",
+            "variables": ["NAME", "COURSE", "BATCH", "AMOUNT", "DUE_DATE"],
+            "content": "<p>Hi ##NAME##,</p><p>This is a gentle reminder to pay your fee of ##AMOUNT## due on ##DUE_DATE## for ##COURSE## ##BATCH##.</p><p>Late fee is applicable for overdues payment.</p><p>You are requested to make the payment as soon as possible.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Employee Account Created",
+            "subject": "Employee Welcome",
+            "code": "employee-account-created",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "DEPARTMENT",
+                "USERNAME",
+                "PASSWORD",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>You have joined our institution as ##DESIGNATION## in the ##DEPARTMENT##.</p><p>Your employee account is created with employee code ##EMPLOYEE_CODE##.</p><p>You can use ##USERNAME## as username & ##PASSWORD## as password to login at ##URL##.</p>[Login Now](##URL##)<p>We welcome you to our institute and wish you all the best for the future.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Fee Payment Confirmed",
+            "subject": "Fee Payment Confirmed",
+            "code": "fee-payment-confirmed",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "VOUCHER_NUMBER",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "FEE_BALANCE"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>We have received your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## with voucher number ##VOUCHER_NUMBER## at ##DATETIME## using ##PAYMENT_METHOD##.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Fee Payment Failed",
+            "subject": "Fee Payment Failed",
+            "code": "fee-payment-failed",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## at ##DATETIME## using ##PAYMENT_METHOD## is failed.</p><p>You can use ##REFERENCE_NUMBER## for payment related query.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Student Daily Attendance",
+            "subject": "Student Daily Attendance",
+            "code": "student-daily-attendance",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##.</p><p>Thank you!</p>"
+        },
+        {
+            "name": "Employee Leave Request Raised",
+            "subject": "Leave Request Raised",
+            "code": "employee-leave-request-raised",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "LEAVE_TYPE",
+                "START_DATE",
+                "END_DATE",
+                "PERIOD",
+                "REASON",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Employee ##NAME## - ##EMPLOYEE_CODE## ##DESIGNATION## has requested a leave. Below are the details of the request:</p><ul><li><strong>Leave Type:</strong> ##LEAVE_TYPE##</li><li><strong>Start Date:</strong> ##START_DATE##</li><li><strong>End Date:</strong>##END_DATE##</li><li><strong>Reason:</strong> ##REASON##</li></ul><p>Please review the request and update the status.</p>"
+        },
+        {
+            "name": "Employee Leave Request Action",
+            "subject": "Leave Request Action",
+            "code": "employee-leave-request-action",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "LEAVE_TYPE",
+                "START_DATE",
+                "END_DATE",
+                "PERIOD",
+                "REASON",
+                "STATUS",
+                "COMMENT"
+            ],
+            "content": "<p>Hello ##NAME##,</p><p>Your leave request has been ##STATUS##. Below are the details of the request:</p><ul><li><strong>Leave Type:</strong> ##LEAVE_TYPE##</li><li><strong>Start Date:</strong> ##START_DATE##</li><li><strong>End Date:</strong>##END_DATE##</li><li><strong>Comment:</strong> ##COMMENT##</li></ul><p>For more details, please login to your account.</p>"
+        },
+        {
+            "name": "Job Application Received (Candidate)",
+            "subject": "Job Application Received (Candidate)",
+            "code": "job-application-received-candidate",
+            "variables": [
+                "NAME",
+                "VACANCY_CODE",
+                "VACANCY_TITLE",
+                "DESIGNATION",
+                "AVAILABILITY_DATE"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Thank you for applying to the ##DESIGNATION## position for ##VACANCY_TITLE##. Your have mentioned ##AVAILABILITY_DATE## as your availability date.</p><p>We have received your application and will review it shortly.</p><p>For more details, you can contact us at ##APP_EMAIL##.</p>"
+        },
+        {
+            "name": "Job Application Received",
+            "subject": "Job Application Received",
+            "code": "job-application-received",
+            "variables": [
+                "NAME",
+                "VACANCY_CODE",
+                "VACANCY_TITLE",
+                "DESIGNATION",
+                "AVAILABILITY_DATE",
+                "URL"
+            ],
+            "content": "<p>Hi,</p><p>A new job application has been received for the ##DESIGNATION## position for ##VACANCY_TITLE## with availability date of ##AVAILABILITY_DATE##.</p><p>Please review the application and proceed accordingly.</p><p>Click on the below link to review the application.</p>[Review Application](##URL##)"
+        },
+        {
+            "name": "Task Assigned",
+            "subject": "Task Assigned",
+            "code": "task-assigned",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "START_DATE",
+                "DUE_DATE",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>You have been assigned a new task: ##NUMBER## ##TITLE##.</p><p>Here are the details of the task:</p><ul><li><strong>Category:</strong> ##CATEGORY##</li><li><strong>Priority:</strong> ##PRIORITY##</li><li><strong>Start Date:</strong> ##START_DATE##</li><li><strong>Due Date:</strong> ##DUE_DATE##</li></ul><p>Click on the below link to view the task.</p>[View Task](##URL##)"
+        },
+        {
+            "name": "Task Completed",
+            "subject": "Task Completed",
+            "code": "task-completed",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "START_DATE",
+                "DUE_DATE",
+                "URL"
+            ],
+            "content": "<p>Hi ##NAME##,</p><p>Your task ##NUMBER## ##TITLE## has been marked as completed.</p><p>Here are the details of the task:</p><ul><li><strong>Category:</strong> ##CATEGORY##</li><li><strong>Priority:</strong> ##PRIORITY##</li><li><strong>Start Date:</strong> ##START_DATE##</li><li><strong>Due Date:</strong> ##DUE_DATE##</li></ul><p>Click on the below link to view the task.</p>[View Task](##URL##)"
+        },
+        {
+            "name": "Ticket Raised",
+            "subject": "Ticket Raised",
+            "code": "ticket-raised",
+            "variables": [
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "EMPLOYEE_NAME",
+                "EMPLOYEE_DESIGNATION",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>A new ticket - ##NUMBER## has been raised by ##EMPLOYEE_NAME## - ##EMPLOYEE_DESIGNATION##.</p><p>Here are the details of the ticket:</p><ul><li><strong>Title:</strong> ##TITLE##</li><li><strong>Category:</strong> ##CATEGORY##</li><li><strong>Priority:</strong> ##PRIORITY##</li><li><strong>Status:</strong> ##STATUS##</li></ul><p>Click on the below link to view the ticket.</p>[View Ticket](##URL##)"
+        },
+        {
+            "name": "Ticket Assigned",
+            "subject": "Ticket Assigned",
+            "code": "ticket-assigned",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "URL"
+            ],
+            "content": "<p>Hello ##NAME##,</p><p>A ticket - ##NUMBER## has been assigned to you.</p><p>Here are the details of the ticket:</p><ul><li><strong>Title:</strong> ##TITLE##</li><li><strong>Category:</strong> ##CATEGORY##</li><li><strong>Priority:</strong> ##PRIORITY##</li><li><strong>Status:</strong> ##STATUS##</li></ul><p>Click on the below link to view the ticket.</p>[View Ticket](##URL##)"
+        },
+        {
+            "name": "Ticket Replied",
+            "subject": "Ticket Replied",
+            "code": "ticket-replied",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "EMPLOYEE_NAME",
+                "EMPLOYEE_DESIGNATION",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "URL"
+            ],
+            "content": "<p>Hello ##NAME##,</p><p>Ticket - ##NUMBER## has been replied by ##EMPLOYEE_NAME## - ##EMPLOYEE_DESIGNATION##.</p><p>Here are the details of the ticket:</p><ul><li><strong>Title:</strong> ##TITLE##</li><li><strong>Category:</strong> ##CATEGORY##</li><li><strong>Priority:</strong> ##PRIORITY##</li><li><strong>Status:</strong> ##STATUS##</li></ul><p>Click on the below link to view the ticket.</p>[View Ticket](##URL##)"
+        },
+        {
+            "name": "Enquiry Created",
+            "subject": "Enquiry Created",
+            "code": "enquiry-created",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL",
+                "CREATED_BY"
+            ],
+            "content": "<p>Hello,</p><p>A new enquiry has been received from ##NAME##.</p><p>Here are the details of the enquiry:</p><ul><li><strong>Enquiry #:</strong> ##CODE_NUMBER##</li><li><strong>Nature:</strong> ##NATURE##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Source:</strong> ##SOURCE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li><li><strong>Created by:</strong> ##CREATED_BY##</li></ul><p>Click on the below link to view the enquiry.</p>[View Enquiry](##URL##)"
+        },
+        {
+            "name": "Enquiry Assigned",
+            "subject": "Enquiry Assigned",
+            "code": "enquiry-assigned",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Enquiry ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##.</p><p>Here are the details of the enquiry:</p><ul><li><strong>Enquiry #:</strong> ##CODE_NUMBER##</li><li><strong>Nature:</strong> ##NATURE##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Source:</strong> ##SOURCE##</li><li><strong>Date:</strong> ##DATE##</li></ul><p>Click on the below link to view the enquiry.</p>[View Enquiry](##URL##)"
+        },
+        {
+            "name": "Enquiry Stage Changed",
+            "subject": "Enquiry Stage Changed",
+            "code": "enquiry-stage-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Enquiry ##CODE_NUMBER## stage has been changed to ##STAGE##.</p><p>Here are the details of the enquiry:</p><ul><li><strong>Enquiry #:</strong> ##CODE_NUMBER##</li><li><strong>Nature:</strong> ##NATURE##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Source:</strong> ##SOURCE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the enquiry.</p>[View Enquiry](##URL##)"
+        },
+        {
+            "name": "Enquiry Status Changed",
+            "subject": "Enquiry Status Changed",
+            "code": "enquiry-status-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Enquiry ##CODE_NUMBER## status has been changed to ##STATUS##.</p><p>Here are the details of the enquiry:</p><ul><li><strong>Enquiry #:</strong> ##CODE_NUMBER##</li><li><strong>Nature:</strong> ##NATURE##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Source:</strong> ##SOURCE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the enquiry.</p>[View Enquiry](##URL##)"
+        },
+        {
+            "name": "Registration Created",
+            "subject": "Registration Created",
+            "code": "registration-created",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL",
+                "CREATED_BY"
+            ],
+            "content": "<p>Hello,</p><p>A new registration has been created by ##CREATED_BY##.</p><p>Here are the details of the registration:</p><ul><li><strong>Registration #:</strong> ##CODE_NUMBER##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Stage:</strong> ##STAGE##</li><li><strong>Course:</strong> ##COURSE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the registration.</p>[View Registration](##URL##)"
+        },
+        {
+            "name": "Registration Assigned",
+            "subject": "Registration Assigned",
+            "code": "registration-assigned",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Registration ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##.</p><p>Here are the details of the registration:</p><ul><li><strong>Registration #:</strong> ##CODE_NUMBER##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Stage:</strong> ##STAGE##</li><li><strong>Course:</strong> ##COURSE##</li><li><strong>Date:</strong> ##DATE##</li></ul><p>Click on the below link to view the registration.</p>[View Registration](##URL##)"
+        },
+        {
+            "name": "Registration Stage Changed",
+            "subject": "Registration Stage Changed",
+            "code": "registration-stage-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Registration ##CODE_NUMBER## stage has been changed to ##STAGE##.</p><p>Here are the details of the registration:</p><ul><li><strong>Registration #:</strong> ##CODE_NUMBER##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Stage:</strong> ##STAGE##</li><li><strong>Course:</strong> ##COURSE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the registration.</p>[View Registration](##URL##)"
+        },
+        {
+            "name": "Registration Status Changed",
+            "subject": "Registration Status Changed",
+            "code": "registration-status-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Registration ##CODE_NUMBER## status has been changed to ##STATUS##.</p><p>Here are the details of the registration:</p><ul><li><strong>Registration #:</strong> ##CODE_NUMBER##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Stage:</strong> ##STAGE##</li><li><strong>Course:</strong> ##COURSE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the registration.</p>[View Registration](##URL##)"
+        },
+        {
+            "name": "Complaint Raised",
+            "subject": "Complaint Raised",
+            "code": "complaint-raised",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "TYPE",
+                "SUBJECT",
+                "STATUS",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>A new complaint has been raised by ##COMPLAINANT_NAME##.</p><p>Here are the details of the complaint:</p><ul><li><strong>Complaint #:</strong> ##CODE_NUMBER##</li><li><strong>Subject:</strong> ##SUBJECT##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Date:</strong> ##DATE##</li></ul><p>Click on the below link to view the complaint.</p>[View Complaint](##URL##)"
+        },
+        {
+            "name": "Complaint Assigned",
+            "subject": "Complaint Assigned",
+            "code": "complaint-assigned",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "TYPE",
+                "STATUS",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Complaint ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##.</p><p>Here are the details of the complaint:</p><ul><li><strong>Complaint #:</strong> ##CODE_NUMBER##</li><li><strong>Complainant:</strong> ##COMPLAINANT_NAME##</li><li><strong>Subject:</strong> ##SUBJECT##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Status:</strong> ##STATUS##</li><li><strong>Date:</strong> ##DATE##</li></ul><p>Click on the below link to view the complaint.</p>[View Complaint](##URL##)"
+        },
+        {
+            "name": "Complaint Status Changed",
+            "subject": "Complaint Status Changed",
+            "code": "complaint-status-changed",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "TYPE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "<p>Hello,</p><p>Complaint ##CODE_NUMBER## status has been changed to ##STATUS##.</p><p>Here are the details of the complaint:</p><ul><li><strong>Complaint #:</strong> ##CODE_NUMBER##</li><li><strong>Complainant:</strong> ##COMPLAINANT_NAME##</li><li><strong>Type:</strong> ##TYPE##</li><li><strong>Date:</strong> ##DATE##</li><li><strong>Assigned to:</strong> ##ASSIGNED_TO##</li></ul><p>Click on the below link to view the complaint.</p>[View Complaint](##URL##)"
+        }
+    ],
+    "sms": [
+        {
+            "name": "Test SMS Notification",
+            "subject": "Test SMS Notification",
+            "code": "test-sms-notification",
+            "variables": ["NAME"],
+            "content": "Hi ##NAME##, This is a test SMS notification for you."
+        },
+        {
+            "name": "OTP",
+            "subject": "OTP",
+            "code": "otp",
+            "variables": ["NAME", "CODE", "TOKEN_LIFETIME"],
+            "content": "Your one time password is ##CODE## valid for ##TOKEN_LIFETIME## minutes. Do not share this code with anyone else."
+        },
+        {
+            "name": "Student Daily Attendance",
+            "subject": "Student Daily Attendance",
+            "code": "student-daily-attendance",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "Hi ##NAME##, Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##. ##APP_NAME##"
+        },
+        {
+            "name": "Fee Payment Confirmed",
+            "subject": "Fee Payment Confirmed",
+            "code": "fee-payment-confirmed",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "VOUCHER_NUMBER",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "FEE_BALANCE"
+            ],
+            "content": "Hi ##NAME##, We have received your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## with voucher number ##VOUCHER_NUMBER## at ##DATETIME## using ##PAYMENT_METHOD##. ##APP_NAME##"
+        },
+        {
+            "name": "Fee Payment Failed",
+            "subject": "Fee Payment Failed",
+            "code": "fee-payment-failed",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "FEE_TITLE",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "REFERENCE_NUMBER"
+            ],
+            "content": "Hi ##NAME##, Your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## at ##DATETIME## using ##PAYMENT_METHOD## is failed. You can use ##REFERENCE_NUMBER## for payment related query. ##APP_NAME##"
+        }
+    ],
+    "whatsapp": [
+        {
+            "name": "Test Whatsapp Notification",
+            "subject": "Test Whatsapp Notification",
+            "code": "test-whatsapp-notification",
+            "variables": ["NAME"],
+            "content": "Hi ##NAME##, This is a test whatsapp notification for you."
+        },
+        {
+            "name": "Fee Payment Confirmed",
+            "subject": "Fee Payment Confirmed",
+            "code": "fee-payment-confirmed",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "COURSE_BATCH_NAME",
+                "FEE_TITLE",
+                "VOUCHER_NUMBER",
+                "AMOUNT",
+                "DATETIME",
+                "PAYMENT_METHOD",
+                "FEE_BALANCE"
+            ],
+            "content": "Hi ##NAME##, Your fee payment of ##AMOUNT## for ##COURSE_NAME## ##BATCH_NAME## ##FEE_TITLE## with voucher number ##VOUCHER_NUMBER## at ##DATETIME## using ##PAYMENT_METHOD## is confirmed. ##APP_NAME##"
+        },
+        {
+            "name": "Student Daily Attendance",
+            "subject": "Student Daily Attendance",
+            "code": "student-daily-attendance",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "COURSE_BATCH_NAME",
+                "FATHER_NAME",
+                "MOTHER_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "Hi ##NAME##, Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##"
+        },
+        {
+            "name": "Fee Installment Payment Link",
+            "subject": "Fee Installment Payment Link",
+            "code": "fee-installment-payment-link",
+            "variables": [
+                "NAME",
+                "FATHER_NAME",
+                "MOTHER_NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "COURSE_BATCH_NAME",
+                "TITLE",
+                "DATE",
+                "URL"
+            ],
+            "content": "Hello ##FATHER_NAME##, Fee Installment ##TITLE## for your ward ##NAME## ##COURSE_NAME## ##BATCH_NAME## is due on ##DATE##. You can make the payment by clicking here: ##URL## ##APP_NAME##"
+        },
+        {
+            "name": "Fee Installment Overdue",
+            "subject": "Fee Installment Overdue",
+            "code": "fee-installment-overdue",
+            "variables": [
+                "NAME",
+                "FATHER_NAME",
+                "MOTHER_NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "COURSE_BATCH_NAME",
+                "TITLE",
+                "DAYS",
+                "DATE",
+                "LATE_FEE",
+                "URL"
+            ],
+            "content": "Hello ##FATHER_NAME##, Fee Installment ##TITLE## for your ward ##NAME## ##COURSE_NAME## ##BATCH_NAME## is overdue by ##DAYS## days since ##DATE##. Late fee ##LATE_FEE## applicable. You can make the payment by clicking here: ##URL## ##APP_NAME##"
+        },
+        {
+            "name": "Announcement Published",
+            "subject": "Announcement Published",
+            "code": "announcement-published",
+            "variables": [
+                "NAME",
+                "FATHER_NAME",
+                "MOTHER_NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "COURSE_BATCH_NAME",
+                "TITLE",
+                "TYPE",
+                "DATETIME",
+                "URL"
+            ],
+            "content": "Hello ##NAME##, a new Announcement published ##TITLE## (##TYPE##) published on ##DATETIME##. Click here to view: ##URL## ##APP_NAME##"
+        }
+    ],
+    "push": [
+        {
+            "name": "Test Push Notification",
+            "subject": "Test Push Notification",
+            "code": "test-push-notification",
+            "variables": ["NAME"],
+            "content": "This is a test push notification for ##NAME##"
+        },
+        {
+            "name": "Test App Notification",
+            "subject": "Test App Notification",
+            "code": "test-app-notification",
+            "variables": ["NAME"],
+            "content": "Hi ##NAME##, This is a test app notification for you."
+        },
+        {
+            "name": "Upcoming Reminder",
+            "subject": "Upcoming Reminder",
+            "code": "upcoming-reminder",
+            "variables": ["NAME", "TITLE", "DATE", "NOTE", "DAYS_LEFT"],
+            "content": "Upcoming Reminder: ##TITLE## in ##DAYS_LEFT## day(s)."
+        },
+        {
+            "name": "Reminder Due Today",
+            "subject": "Reminder Due Today",
+            "code": "reminder-due-today",
+            "variables": ["NAME", "TITLE", "DATE", "NOTE"],
+            "content": "Reminder Due Today: ##TITLE## is scheduled for today, ##DATE##."
+        },
+        {
+            "name": "Announcement Published",
+            "subject": "Announcement Published",
+            "code": "announcement-published",
+            "variables": ["TITLE", "TYPE"],
+            "content": "Announcement: ##TITLE## (##TYPE##) published"
+        },
+        {
+            "name": "Event Published",
+            "subject": "Event Published",
+            "code": "event-published",
+            "variables": ["TITLE", "TYPE", "VENUE", "DURATION"],
+            "content": "Event: ##TITLE## (##TYPE##) at ##VENUE## between ##DURATION##"
+        },
+        {
+            "name": "Student Diary Published",
+            "subject": "Student Diary Published",
+            "code": "student-diary-published",
+            "variables": ["DATE"],
+            "content": "Student Diary for ##DATE## published"
+        },
+        {
+            "name": "Assignment Published",
+            "subject": "Assignment Published",
+            "code": "assignment-published",
+            "variables": ["TITLE", "TYPE", "DATE", "DUE_DATE"],
+            "content": "Assignment: ##TITLE## (##TYPE##) on ##DATE##. Due Date ##DUE_DATE##"
+        },
+        {
+            "name": "Learning Material Published",
+            "subject": "Learning Material Published",
+            "code": "learning-material-published",
+            "variables": ["TITLE", "DATETIME"],
+            "content": "Learning Material: ##TITLE## published on ##DATETIME##"
+        },
+        {
+            "name": "Fee Payment Confirmed",
+            "subject": "Fee Payment Confirmed",
+            "code": "fee-payment-confirmed",
+            "variables": ["FEE_GROUP", "VOUCHER_NUMBER", "AMOUNT", "DATE"],
+            "content": "##AMOUNT## paid for ##FEE_GROUP## voucher number ##VOUCHER_NUMBER## on ##DATE##"
+        },
+        {
+            "name": "Fee Payment Failed",
+            "subject": "Fee Payment Failed",
+            "code": "fee-payment-failed",
+            "variables": ["FEE_GROUP", "VOUCHER_NUMBER", "AMOUNT", "DATETIME"],
+            "content": "##AMOUNT## paid for ##FEE_GROUP## voucher number ##VOUCHER_NUMBER## at ##DATETIME##"
+        },
+        {
+            "name": "Student Daily Attendance",
+            "subject": "Student Daily Attendance",
+            "code": "student-daily-attendance",
+            "variables": [
+                "NAME",
+                "COURSE_NAME",
+                "BATCH_NAME",
+                "ATTENDANCE",
+                "DATE"
+            ],
+            "content": "Hi ##NAME##, Your attendance is marked as ##ATTENDANCE## on ##DATE## for ##COURSE_NAME## ##BATCH_NAME##"
+        },
+        {
+            "name": "Employee Leave Request Raised",
+            "subject": "Leave Request Raised",
+            "code": "employee-leave-request-raised",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "LEAVE_TYPE",
+                "START_DATE",
+                "END_DATE",
+                "PERIOD",
+                "REASON",
+                "URL"
+            ],
+            "content": "Leave Request Raised: ##NAME## - ##EMPLOYEE_CODE## ##DESIGNATION## has requested a leave ##LEAVE_TYPE## Period ##PERIOD##."
+        },
+        {
+            "name": "Employee Leave Request Action",
+            "subject": "Leave Request Action",
+            "code": "employee-leave-request-action",
+            "variables": [
+                "NAME",
+                "EMPLOYEE_CODE",
+                "DESIGNATION",
+                "LEAVE_TYPE",
+                "START_DATE",
+                "END_DATE",
+                "PERIOD",
+                "REASON",
+                "STATUS",
+                "URL"
+            ],
+            "content": "Leave Request Update: Your leave request ##LEAVE_TYPE## Period ##PERIOD## has been ##STATUS##."
+        },
+        {
+            "name": "Job Application Received",
+            "subject": "Job Application Received",
+            "code": "job-application-received",
+            "variables": [
+                "NAME",
+                "VACANCY_CODE",
+                "VACANCY_TITLE",
+                "DESIGNATION",
+                "AVAILABILITY_DATE",
+                "URL"
+            ],
+            "content": "A new job application has been received for the ##DESIGNATION## position for ##VACANCY_CODE## with availability date of ##AVAILABILITY_DATE##. Please review the application and proceed accordingly."
+        },
+        {
+            "name": "Task Assigned",
+            "subject": "Task Assigned",
+            "code": "task-assigned",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "START_DATE",
+                "DUE_DATE",
+                "URL"
+            ],
+            "content": "Task Assigned: You have been assigned a new task ##NUMBER## ##TITLE## with due date of ##DUE_DATE##."
+        },
+        {
+            "name": "Task Completed",
+            "subject": "Task Completed",
+            "code": "task-completed",
+            "variables": [
+                "NAME",
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "START_DATE",
+                "DUE_DATE",
+                "URL"
+            ],
+            "content": "Task Completed: Your task ##NUMBER## ##TITLE## has been marked as completed."
+        },
+        {
+            "name": "Ticket Raised",
+            "subject": "Ticket Raised",
+            "code": "ticket-raised",
+            "variables": [
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "URL"
+            ],
+            "content": "Ticket Raised: A new ticket - ##NUMBER## has been raised by ##EMPLOYEE_NAME## - ##EMPLOYEE_DESIGNATION##."
+        },
+        {
+            "name": "Ticket Assigned",
+            "subject": "Ticket Assigned",
+            "code": "ticket-assigned",
+            "variables": [
+                "NUMBER",
+                "TITLE",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "URL"
+            ],
+            "content": "Ticket Assigned: Ticket - ##NUMBER## has been assigned to you."
+        },
+        {
+            "name": "Ticket Replied",
+            "subject": "Ticket Replied",
+            "code": "ticket-replied",
+            "variables": [
+                "NUMBER",
+                "TITLE",
+                "EMPLOYEE_NAME",
+                "EMPLOYEE_DESIGNATION",
+                "CATEGORY",
+                "PRIORITY",
+                "STATUS",
+                "URL"
+            ],
+            "content": "Ticket Replied: Ticket - ##NUMBER## has new reply by ##EMPLOYEE_NAME## - ##EMPLOYEE_DESIGNATION##."
+        },
+        {
+            "name": "Enquiry Created",
+            "subject": "Enquiry Created",
+            "code": "enquiry-created",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL",
+                "CREATED_BY"
+            ],
+            "content": "Enquiry Created: A new enquiry ##CODE_NUMBER## received from ##NAME## for ##NATURE## ##TYPE## from ##SOURCE## on ##DATE##."
+        },
+        {
+            "name": "Enquiry Assigned",
+            "subject": "Enquiry Assigned",
+            "code": "enquiry-assigned",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Enquiry Assigned: Enquiry ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##."
+        },
+        {
+            "name": "Enquiry Stage Changed",
+            "subject": "Enquiry Stage Changed",
+            "code": "enquiry-stage-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Enquiry Stage Changed: Enquiry ##CODE_NUMBER## stage has been changed to ##STAGE##."
+        },
+        {
+            "name": "Enquiry Status Changed",
+            "subject": "Enquiry Status Changed",
+            "code": "enquiry-status-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Enquiry Status Changed: Enquiry ##CODE_NUMBER## status has been changed to ##STATUS##."
+        },
+        {
+            "name": "Enquiry Converted to Registration",
+            "subject": "Enquiry Converted to Registration",
+            "code": "enquiry-converted-to-registration",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Enquiry Converted to Registration: Enquiry ##CODE_NUMBER## has been converted to registration."
+        },
+        {
+            "name": "Enquiry Follow Up",
+            "subject": "Enquiry Follow Up",
+            "code": "enquiry-follow-up",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "NATURE",
+                "STATUS",
+                "STAGE",
+                "TYPE",
+                "SOURCE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Enquiry Follow Up: Enquiry ##CODE_NUMBER## has been followed up with status ##STATUS##."
+        },
+        {
+            "name": "Enquiry Deleted",
+            "subject": "Enquiry Deleted",
+            "code": "enquiry-deleted",
+            "variables": ["CODE_NUMBER"],
+            "content": "Enquiry Deleted: Enquiry ##CODE_NUMBER## has been deleted."
+        },
+        {
+            "name": "Registration Created",
+            "subject": "Registration Created",
+            "code": "registration-created",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL",
+                "CREATED_BY"
+            ],
+            "content": "Registration Created: A new registration ##CODE_NUMBER## received from ##NAME## for ##COURSE## on ##DATE##."
+        },
+        {
+            "name": "Registration Assigned",
+            "subject": "Registration Assigned",
+            "code": "registration-assigned",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Registration Assigned: Registration ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##."
+        },
+        {
+            "name": "Registration Stage Changed",
+            "subject": "Registration Stage Changed",
+            "code": "registration-stage-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Registration Stage Changed: Registration ##CODE_NUMBER## stage has been changed to ##STAGE##."
+        },
+        {
+            "name": "Registration Status Changed",
+            "subject": "Registration Status Changed",
+            "code": "registration-status-changed",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Registration Status Changed: Registration ##CODE_NUMBER## status has been changed to ##STATUS##."
+        },
+        {
+            "name": "Registration Converted to Admission",
+            "subject": "Registration Converted to Admission",
+            "code": "registration-converted-to-admission",
+            "variables": [
+                "NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "STAGE",
+                "COURSE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Registration Converted to Admission: Registration ##CODE_NUMBER## has been converted to admission."
+        },
+        {
+            "name": "Registration Deleted",
+            "subject": "Registration Deleted",
+            "code": "registration-deleted",
+            "variables": ["CODE_NUMBER"],
+            "content": "Registration Deleted: Registration ##CODE_NUMBER## has been deleted."
+        },
+        {
+            "name": "Complaint Raised",
+            "subject": "Complaint Raised",
+            "code": "complaint-raised",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "TYPE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Complaint Raised: A new complaint ##CODE_NUMBER## received from ##COMPLAINANT_NAME## on ##DATE##."
+        },
+        {
+            "name": "Complaint Assigned",
+            "subject": "Complaint Assigned",
+            "code": "complaint-assigned",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "TYPE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Complaint Assigned: Complaint ##CODE_NUMBER## has been assigned to ##ASSIGNED_TO##."
+        },
+        {
+            "name": "Complaint Status Changed",
+            "subject": "Complaint Status Changed",
+            "code": "complaint-status-changed",
+            "variables": [
+                "COMPLAINANT_NAME",
+                "CODE_NUMBER",
+                "STATUS",
+                "TYPE",
+                "DATE",
+                "ASSIGNED_TO",
+                "URL"
+            ],
+            "content": "Complaint Status Changed: Complaint ##CODE_NUMBER## status has been changed to ##STATUS##."
+        }
+    ]
+}

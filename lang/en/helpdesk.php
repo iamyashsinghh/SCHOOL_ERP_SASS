@@ -1,0 +1,182 @@
+<?php
+
+return [
+    'helpdesk' => 'Helpdesk',
+    'helpdesks' => 'Helpdesks',
+    'module_title' => 'Manage Helpdesks',
+    'module_description' => 'Helpdesk is a great way to provide support to your employees.',
+    'props' => [
+
+    ],
+    'article' => [
+        'article' => 'Article',
+        'articles' => 'Articles',
+        'module_title' => 'Manage Articles',
+        'module_description' => 'You can write articles about your products and services and publish it for your employees.',
+        'related_articles' => 'Related Articles',
+        'empty_title' => 'Sorry, seems like there is no articles available.',
+        'empty_description' => 'We will be publishing new articles soon. Please check back later.',
+        'props' => [
+            'title' => 'Title',
+            'slug' => 'Slug',
+            'slug_placeholder' => 'slug',
+            'content' => 'Content',
+            'seo' => [
+                'seo' => 'SEO',
+                'meta_title' => 'Meta Title',
+                'meta_description' => 'Meta Description',
+                'meta_keywords' => 'Meta Keywords',
+                'robots' => 'Allow discovery by search engines',
+            ],
+            'published_at' => 'Published At',
+            'published' => 'Published',
+            'draft' => 'Draft',
+        ],
+        'folder' => [
+            'folder' => 'Folder',
+            'folders' => 'Folders',
+            'module_title' => 'Manage Folders',
+            'module_description' => 'Folders are used to organize articles in better way.',
+            'props' => [
+                'name' => 'Name',
+                'slug' => 'Slug',
+                'description' => 'Description',
+            ],
+        ],
+        'category' => [
+            'category' => 'Category',
+            'categories' => 'Categories',
+            'module_title' => 'Manage Categories',
+            'module_description' => 'Categories are used to categorize articles in better way.',
+            'props' => [
+                'name' => 'Name',
+                'slug' => 'Slug',
+                'description' => 'Description',
+            ],
+        ],
+        'config' => [
+            'config' => 'Config',
+            'general_config' => 'Article Config',
+            'general_info' => 'How do you want to configure the article module?',
+            'props' => [
+                'title' => 'Title',
+                'description' => 'Description',
+            ],
+        ],
+    ],
+    'faq' => [
+        'faq' => 'FAQ',
+        'faqs' => 'FAQs',
+        'module_title' => 'Manage FAQs',
+        'module_description' => 'FAQs are the questions and answers that are frequently asked by your employees.',
+        'empty_title' => 'Sorry, seems like there is no FAQs available.',
+        'empty_description' => 'We will be publishing new FAQs soon. Please check back later.',
+        'props' => [
+            'question' => 'Question',
+            'answer' => 'Answer',
+            'publish' => 'Publish',
+        ],
+        'visibilities' => [
+            'public' => 'Public',
+            'authenticated' => 'Logged In Users',
+        ],
+        'category' => [
+            'category' => 'FAQ Category',
+            'categories' => 'FAQ Categories',
+            'module_title' => 'Categories are used to categorize FAQs in better way.',
+            'module_description' => 'Manage Categories',
+            'props' => [
+                'name' => 'Name',
+                'slug' => 'Slug',
+                'description' => 'Description',
+            ],
+            'visibilities' => [
+                'public' => 'Public',
+                'authenticated' => 'Logged In Users',
+            ],
+        ],
+        'statuses' => [
+            'draft' => 'Draft',
+            'published' => 'Published',
+        ],
+        'config' => [
+            'config' => 'Config',
+            'general_config' => 'FAQ Config',
+            'general_info' => 'How do you want to configure the FAQ module?',
+            'props' => [
+                'title' => 'Title',
+                'description' => 'Description',
+            ],
+        ],
+    ],
+    'ticket' => [
+        'ticket' => 'Ticket',
+        'tickets' => 'Tickets',
+        'module_title' => 'Manage Tickets',
+        'module_description' => 'Tickets are used to track support requests from your employees.',
+        'could_not_modify_if_not_last_message' => 'You cannot modify message if it is not the last message.',
+        'could_not_update_if_not_open' => 'You cannot update as status is already updated.',
+        'assign' => 'Assign',
+        'props' => [
+            'code_number' => 'Ticket #',
+            'title' => 'Title',
+            'description' => 'Description',
+            'status' => 'Status',
+            'message' => 'Message',
+            'resolved_at' => 'Resolved At',
+            'cancelled_at' => 'Cancelled At',
+            'assigned_to' => 'Assigned To',
+            'archived_at' => 'Archived At',
+            'due_date' => 'Due Date',
+            'due_time' => 'Due Time',
+            'due_date_time' => 'Due Date Time',
+        ],
+        'statuses' => [
+            'open' => 'Open',
+            'in_progress' => 'In Progress',
+            'on_hold' => 'On Hold',
+            'resolved' => 'Resolved',
+            'closed' => 'Closed',
+        ],
+        'category' => [
+            'category' => 'Ticket Category',
+            'categories' => 'Ticket Categories',
+            'module_title' => 'Manage Ticket Categories',
+            'module_description' => 'Categories are used to categorize tickets in better way.',
+            'props' => [
+                'name' => 'Name',
+                'description' => 'Description',
+            ],
+        ],
+        'priority' => [
+            'priority' => 'Ticket Priority',
+            'priorities' => 'Ticket Priorities',
+            'module_title' => 'Manage Ticket Priorities',
+            'module_description' => 'Priorities are used to prioritize tickets in better way.',
+            'props' => [
+                'name' => 'Name',
+                'description' => 'Description',
+            ],
+        ],
+        'list' => [
+            'list' => 'Ticket List',
+            'lists' => 'Ticket Lists',
+            'module_title' => 'Manage Ticket Lists',
+            'module_description' => 'Lists are used to list tickets in better way.',
+            'props' => [
+                'name' => 'Name',
+                'description' => 'Description',
+            ],
+        ],
+        'config' => [
+            'config' => 'Config',
+            'general_config' => 'Ticket Config',
+            'general_info' => 'How do you want to configure the Ticket module?',
+            'props' => [
+                'number_prefix' => 'Ticket Number Prefix',
+                'number_suffix' => 'Ticket Number Suffix',
+                'number_digit' => 'Ticket Number Digit',
+            ],
+        ],
+    ],
+];
