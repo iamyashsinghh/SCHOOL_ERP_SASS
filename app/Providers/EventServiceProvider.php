@@ -15,8 +15,6 @@ use App\Observers\UserObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Mint\Service\Events\ProductUpdate;
-use Mint\Service\Listeners\ProductUpdateListener;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -28,9 +26,6 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         UserLogin::class => [
             UserLoginListener::class,
-        ],
-        ProductUpdate::class => [
-            ProductUpdateListener::class,
         ],
         Registered::class => [
             SendEmailVerificationNotification::class,

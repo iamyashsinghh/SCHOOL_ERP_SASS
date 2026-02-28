@@ -22,6 +22,16 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
+                $host = $request->getHost();
+                $centralDomain = env('CENTRAL_DOMAIN', 'governance.localhost');
+                $allowedCentralDomains = [$centralDomain, 'localhost', '127.0.0.1'];
+                
+                $isCentral = (app()->bound('tenant.central') && app('tenant.central')) 
+                            || in_array($host, $allowedCentralDomains);
+
+                if ($isCentral) {
+                    return redirect()->route('central.dashboard');
+                }
                 return redirect(RouteServiceProvider::HOME);
             }
         }

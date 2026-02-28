@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::connection('central')->create('ministries', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('code')->unique();
             $table->enum('status', ['active', 'suspended'])->default('active');
             $table->timestamps();
         });
@@ -22,6 +23,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('ministry_id')->constrained('ministries')->cascadeOnDelete();
             $table->string('name');
+            $table->string('code')->unique();
             $table->timestamps();
         });
 
@@ -29,6 +31,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('province_id')->constrained('provinces')->cascadeOnDelete();
             $table->string('name');
+            $table->string('code')->unique();
             $table->timestamps();
         });
 
@@ -36,6 +39,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('sub_division_id')->constrained('sub_divisions')->cascadeOnDelete();
             $table->string('name');
+            $table->string('code')->unique();
             $table->enum('status', ['active', 'suspended'])->default('active');
             $table->string('db_name', 100)->unique();
             $table->string('db_username', 100);
@@ -47,7 +51,7 @@ return new class extends Migration
         Schema::connection('central')->create('domains', function (Blueprint $table) {
             $table->id();
             $table->foreignId('school_id')->constrained('schools')->cascadeOnDelete();
-            $table->string('domain')->unique(); // e.g., school1.instikit.com
+            $table->string('domain')->unique(); // e.g., school1.example.com
             $table->timestamps();
         });
     }

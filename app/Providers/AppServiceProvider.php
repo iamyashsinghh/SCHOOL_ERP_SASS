@@ -82,9 +82,9 @@ class AppServiceProvider extends ServiceProvider
             Schema::defaultStringLength(191);
         }
 
-        if (app()->environment('local')) {
-            Mail::alwaysTo('hello@scriptmint.com');
-        }
+        // if (app()->environment('local')) {
+        //     Mail::alwaysTo('hello@Anohim.com');
+        // }
 
         JsonResource::withoutWrapping();
         Validator::includeUnvalidatedArrayKeys();

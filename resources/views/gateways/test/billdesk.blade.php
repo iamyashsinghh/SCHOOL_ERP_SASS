@@ -28,7 +28,7 @@
 
             var config = {
                 responseHandler: responseHandler,
-                merchantLogo: 'https://scriptmint.com/images/logo-light.png',
+                merchantLogo: 'https://Anohim.com/images/logo-light.png',
                 flowConfig: flowConfig,
                 flowType: "payments",
             };

@@ -28,7 +28,6 @@
         "maatwebsite/excel": "^3.1.48",
         "mews/purifier": "^3.4",
         "milon/barcode": "^12.0",
-        "mint/service": "dev-master",
         "monolog/monolog": "^3.0",
         "mpdf/mpdf": "^8.1.4",
         "opcodesio/log-viewer": "^3.6.0",
@@ -105,7 +104,12 @@
         "platform": {
             "php": "8.4.0"
         },
-        "platform-check": false
+        "platform-check": false,
+        "audit": {
+            "ignore": [
+                "PKSA-y2cr-5h3j-g3ys"
+            ]
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true

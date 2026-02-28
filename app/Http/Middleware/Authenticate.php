@@ -15,6 +15,17 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
+            $host = $request->getHost();
+            $centralDomain = env('CENTRAL_DOMAIN', 'governance.localhost');
+            $allowedCentralDomains = [$centralDomain, 'localhost', '127.0.0.1'];
+            
+            $isCentral = (app()->bound('tenant.central') && app('tenant.central')) 
+                        || in_array($host, $allowedCentralDomains);
+
+            if ($isCentral) {
+                return route('central.login');
+            }
+            
             return route('app');
         }
     }

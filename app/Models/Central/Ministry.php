@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Tenant\Central;
+namespace App\Models\Central;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -9,7 +9,7 @@ class Ministry extends Model
 {
     protected $connection = 'central';
 
-    protected $fillable = ['name', 'status'];
+    protected $fillable = ['name', 'code', 'status'];
 
     public function provinces(): HasMany
     {

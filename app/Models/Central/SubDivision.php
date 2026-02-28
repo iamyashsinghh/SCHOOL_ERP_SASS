@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Tenant\Central;
+namespace App\Models\Central;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -10,7 +10,7 @@ class SubDivision extends Model
 {
     protected $connection = 'central';
 
-    protected $fillable = ['province_id', 'name'];
+    protected $fillable = ['province_id', 'name', 'code'];
 
     public function province(): BelongsTo
     {

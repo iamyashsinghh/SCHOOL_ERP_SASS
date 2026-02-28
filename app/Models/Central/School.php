@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Tenant\Central;
+namespace App\Models\Central;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -12,12 +12,17 @@ class School extends Model
 
     protected $fillable = [
         'sub_division_id',
+        'ministry_id',
+        'province_id',
         'name',
+        'code',
         'status',
         'db_name',
         'db_username',
         'db_password',
-        'storage_prefix'
+        'storage_prefix',
+        'admin_username',
+        'admin_password_reference',
     ];
 
     /**

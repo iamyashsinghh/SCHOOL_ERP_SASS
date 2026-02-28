@@ -64,7 +64,7 @@ class Config extends Model
 
     public static function listAll(?int $teamId = null): array
     {
-        if (app()->runningInConsole() && empty(config('database.connections.tenant.database'))) {
+        if (empty(config('database.connections.tenant.database'))) {
             return [];
         }
         $teamId ??= auth()->user()?->current_team_id;

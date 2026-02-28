@@ -484,7 +484,6 @@ class Assert
      */
     public static function isInstanceOf(mixed $value, mixed $class, string $message = ''): object
     {
-        static::object($value);
         static::string($class, 'Expected class as a string. Got: %s');
 
         if (!($value instanceof $class)) {
@@ -510,10 +509,9 @@ class Assert
      */
     public static function notInstanceOf(mixed $value, mixed $class, string $message = ''): object
     {
-        static::object($value);
         static::string($class, 'Expected class as a string. Got: %s');
 
-        if ($value instanceof $class) {
+        if (!\is_object($value) || $value instanceof $class) {
             static::reportInvalidArgument(\sprintf(
                 $message ?: 'Expected an instance other than %2$s. Got: %s',
                 static::typeToString($value),
@@ -537,7 +535,6 @@ class Assert
      */
     public static function isInstanceOfAny(mixed $value, mixed $classes, string $message = ''): object
     {
-        static::object($value);
         static::isIterable($classes);
 
         foreach ($classes as $class) {
@@ -596,7 +593,7 @@ class Assert
      */
     public static function isNotA(mixed $value, mixed $class, string $message = ''): object|string
     {
-        static::objectish($value);
+        static::objectish($value, $message);
         static::string($class, 'Expected class as a string. Got: %s');
 
         if (\is_a($value, $class, \is_string($value))) {
@@ -621,7 +618,7 @@ class Assert
      */
     public static function isAnyOf(mixed $value, mixed $classes, string $message = ''): object|string
     {
-        static::objectish($value);
+        static::objectish($value, $message);
         static::isIterable($classes);
 
         foreach ($classes as $class) {
@@ -1989,11 +1986,9 @@ class Assert
     /**
      * @psalm-pure
      *
-     * @psalm-assert list<T> $array
+     * @psalm-assert list<mixed> $array
      *
-     * @psalm-return list<T>
-     *
-     * @template T
+     * @psalm-return list<mixed>
      *
      * @throws InvalidArgumentException
      */
@@ -2011,11 +2006,9 @@ class Assert
     /**
      * @psalm-pure
      *
-     * @psalm-assert non-empty-list<T> $array
+     * @psalm-assert non-empty-list<mixed> $array
      *
-     * @psalm-return non-empty-list<T>
-     *
-     * @template T
+     * @psalm-return non-empty-list<mixed>
      *
      * @throws InvalidArgumentException
      */

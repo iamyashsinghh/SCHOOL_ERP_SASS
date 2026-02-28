@@ -17,7 +17,7 @@ class SetConfig
 {
     public function set(array $config = [])
     {
-        if (! SysHelper::isInstalled()) {
+        if (! SysHelper::isInstalled() || (app()->bound('tenant.central') && app('tenant.central'))) {
             return;
         }
 

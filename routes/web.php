@@ -64,6 +64,8 @@ Route::get('/my-ip', function () {
     ];
 });
 
+Route::get('/app/sso', [\App\Http\Controllers\Central\SsoController::class, 'login'])->name('sso.login');
+
 // app route
 Route::redirect('/app', '/app/login');
 

@@ -25,7 +25,7 @@ class GetGeneralConfig
         $config['auth']['social_login_providers'] = $this->getActiveProviders();
         $config['system']['url'] = config('app.url');
         $config['system']['version'] = $currentVersion;
-        $config['system']['ac'] = SysHelper::getApp() ? true : false;
+        $config['system']['ac'] = true; // Hardcoded to bypass license check
         $config['system']['post_max_size'] = SysHelper::getPostMaxSize();
         $config['system']['mode'] = (config('app.mode') == 'test') ? 0 : 1;
         $config['system']['paginations'] = Arr::getList('per_page_lengths');

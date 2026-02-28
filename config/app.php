@@ -177,6 +177,7 @@ return [
          */
 
         App\Providers\InitServiceProvider::class,
+        App\Providers\TenantServiceProvider::class,
 
         /*
          * Application Service Providers...

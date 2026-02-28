@@ -30,5 +30,17 @@ class TenantConnectionSwitcher
         // Reconnect using the new config and make it the default connection
         DB::reconnect('tenant');
         DB::setDefaultConnection('tenant');
+
+        // Isolation: Storage Filesystem configuration
+        Config::set('filesystems.disks.local.root', storage_path('app/tenants/' . $school->id));
+        Config::set('filesystems.disks.public.root', storage_path('app/public/tenants/' . $school->id));
+        Config::set('filesystems.disks.public.url', env('APP_URL') . '/storage/tenants/' . $school->id);
+
+        // Isolation: Cache and Redis prefixing to avoid cross-tenant cache bleeding
+        Config::set('cache.prefix', 'tenant_' . $school->id . '_cache_');
+        
+        if (config('database.redis.default')) {
+            Config::set('database.redis.options.prefix', 'tenant_' . $school->id . '_redis_');
+        }
     }
 }

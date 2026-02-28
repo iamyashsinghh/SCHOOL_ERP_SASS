@@ -21,7 +21,7 @@ class GetAppConfig
         );
 
         $config['system']['ac'] = true;
-        $config['system']['show_setup_wizard'] = true;
+        $config['system']['show_setup_wizard'] = false;
 
         return $next($config);
     }

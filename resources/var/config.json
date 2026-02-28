@@ -51,7 +51,7 @@
         },
         {
             "name": "footer_credit",
-            "value": "Designed with ❤️ by ScriptMint",
+            "value": "Designed with ❤️ by Anohim",
             "is_public": true
         },
         {
@@ -257,22 +257,22 @@
     "general": [
         {
             "name": "app_name",
-            "value": "ScriptMint",
+            "value": "Anohim",
             "is_public": true
         },
         {
             "name": "meta_author",
-            "value": "ScriptMint",
+            "value": "Anohim",
             "is_public": true
         },
         {
             "name": "meta_description",
-            "value": "Application by ScriptMint",
+            "value": "Application by Anohim",
             "is_public": true
         },
         {
             "name": "meta_keywords",
-            "value": "scriptmint",
+            "value": "Anohim",
             "is_public": true
         }
     ],
@@ -438,11 +438,11 @@
         },
         {
             "name": "from_name",
-            "value": "ScriptMint"
+            "value": "Anohim"
         },
         {
             "name": "from_address",
-            "value": "hello@scriptmint.com"
+            "value": "hello@Anohim.com"
         },
         {
             "name": "smtp_username",

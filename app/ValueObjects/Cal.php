@@ -116,7 +116,7 @@ class Cal
         return $this->showDate();
     }
 
-    public function getTimezone()
+    public static function getTimezone()
     {
         $defaultTimezone = config('config.system.timezone', config('app.timezone'));
 
@@ -124,7 +124,7 @@ class Cal
             return $defaultTimezone;
         }
 
-        return auth()->user()->timezone;
+        return auth()->user()->timezone ?? $defaultTimezone;
     }
 
     public function toDate(): ?string
@@ -142,12 +142,12 @@ class Cal
         return Carbon::parse($this->value)->timezone(self::getTimezone())->toDateTimeString();
     }
 
-    public function getDateFormat()
+    public static function getDateFormat()
     {
         if (empty(auth()->check())) {
             $momentFormat = config('config.system.date_format');
         } else {
-            $momentFormat = Arr::get(auth()->user()->preference, 'system.date_format', config('config.system.date_format'));
+            $momentFormat = Arr::get(auth()->user()->preference ?? [], 'system.date_format', config('config.system.date_format'));
         }
 
         return match ($momentFormat) {
@@ -168,12 +168,12 @@ class Cal
         };
     }
 
-    public function getTimeFormat()
+    public static function getTimeFormat()
     {
         if (empty(auth()->check())) {
             $momentFormat = config('config.system.time_format');
         } else {
-            $momentFormat = Arr::get(auth()->user()->preference, 'system.time_format', config('config.system.time_format'));
+            $momentFormat = Arr::get(auth()->user()->preference ?? [], 'system.time_format', config('config.system.time_format'));
         }
 
         return match ($momentFormat) {
@@ -199,7 +199,7 @@ class Cal
         };
     }
 
-    public function getDateTimeFormat()
+    public static function getDateTimeFormat()
     {
         return self::getDateFormat().' '.self::getTimeFormat();
     }

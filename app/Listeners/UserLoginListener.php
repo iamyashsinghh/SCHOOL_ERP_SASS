@@ -3,7 +3,6 @@
 namespace App\Listeners;
 
 use App\Events\Auth\UserLogin;
-use Mint\Service\Actions\CheckForUpdate;
 
 class UserLoginListener
 {
@@ -24,6 +23,6 @@ class UserLoginListener
      */
     public function handle(UserLogin $event)
     {
-        (new CheckForUpdate)->execute();
+        //
     }
 }

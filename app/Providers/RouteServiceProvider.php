@@ -40,6 +40,18 @@ class RouteServiceProvider extends ServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
+            $host = request()->getHost();
+            $centralDomain = env('CENTRAL_DOMAIN', 'governance.localhost');
+            $allowedCentralDomains = [$centralDomain, 'localhost', '127.0.0.1'];
+            
+            // Use current host if it's one of the allowed central domains to keep session consistent
+            $resolvedCentralDomain = in_array($host, $allowedCentralDomains) ? $host : $centralDomain;
+
+            // Load Central Routes First
+            Route::middleware(['web'])
+                ->domain($resolvedCentralDomain)
+                ->group(base_path('routes/central.php'));
+
             Route::prefix('api'.self::VERSION_PATH)->group(function () {
                 Route::middleware(['api', 'user.config'])
                     // ->namespace($this->namespace)
@@ -119,9 +131,15 @@ class RouteServiceProvider extends ServiceProvider
                 // ->namespace($this->namespace)
                 ->group(base_path('routes/site/custom.php'));
 
-            Route::middleware(['web', 'user.config'])
-                // ->namespace($this->namespace)
+            Route::middleware(['web'])
                 ->group(base_path('routes/web.php'));
+
+            $host = request()->getHost();
+            $centralDomain = env('CENTRAL_DOMAIN', 'governance.localhost');
+            $allowedCentralDomains = [$centralDomain, 'localhost', '127.0.0.1'];
+            
+            // Use current host if it's one of the allowed central domains to keep session consistent
+            $resolvedCentralDomain = in_array($host, $allowedCentralDomains) ? $host : $centralDomain;
 
             Route::middleware('web')
                 // ->namespace($this->namespace)
@@ -142,7 +160,8 @@ class RouteServiceProvider extends ServiceProvider
     protected function configureRateLimiting()
     {
         RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+            $tenantId = app()->bound('tenant.active') ? app('tenant.active')->id : 'central';
+            return Limit::perMinute(60)->by($tenantId . '_' . (optional($request->user())->id ?: $request->ip()));
         });
 
         RateLimiter::for('auth', function (Request $request) {
