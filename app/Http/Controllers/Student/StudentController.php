@@ -9,7 +9,7 @@ use App\Http\Requests\ContactUpdateRequest;
 use App\Http\Resources\Student\StudentDetailResource;
 use App\Http\Resources\Student\StudentResource;
 use App\Http\Resources\Student\StudentSummaryResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\ContactService;
 use App\Services\Student\StudentListService;
 use App\Services\Student\StudentService;

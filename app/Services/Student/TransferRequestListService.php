@@ -4,7 +4,7 @@ namespace App\Services\Student;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Student\TransferRequestResource;
-use App\Models\Student\TransferRequest;
+use App\Models\Tenant\Student\TransferRequest;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

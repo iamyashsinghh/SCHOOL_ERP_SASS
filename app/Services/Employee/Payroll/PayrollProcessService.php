@@ -6,7 +6,7 @@ use App\Actions\Employee\FetchAllEmployee;
 use App\Enums\Employee\Payroll\PayrollStatus;
 use App\Jobs\Employee\Payroll\PayrollBatchProcess;
 use App\Jobs\Employee\Payroll\PayrollProcess;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

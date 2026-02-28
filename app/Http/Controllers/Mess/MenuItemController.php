@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Mess;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Mess\MenuItemRequest;
 use App\Http\Resources\Mess\MenuItemResource;
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\MenuItem;
 use App\Services\Mess\MenuItemListService;
 use App\Services\Mess\MenuItemService;
 use Illuminate\Http\Request;

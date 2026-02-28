@@ -4,8 +4,8 @@ namespace App\Services\Inventory;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Inventory\InchargeResource;
-use App\Models\Incharge;
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Inventory\Inventory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

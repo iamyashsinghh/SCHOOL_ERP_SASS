@@ -2,8 +2,8 @@
 
 namespace App\Policies\Reception;
 
-use App\Models\Reception\Query;
-use App\Models\User;
+use App\Models\Tenant\Reception\Query;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class QueryPolicy

@@ -3,8 +3,8 @@
 namespace App\Services\Inventory;
 
 use App\Http\Resources\Inventory\InventoryResource;
-use App\Models\Incharge;
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Inventory\Inventory;
 use Illuminate\Http\Request;
 
 class InchargeService

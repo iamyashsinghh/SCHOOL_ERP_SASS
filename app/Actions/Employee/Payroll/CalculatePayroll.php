@@ -2,7 +2,7 @@
 
 namespace App\Actions\Employee\Payroll;
 
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 

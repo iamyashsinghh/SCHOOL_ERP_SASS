@@ -11,12 +11,12 @@ use App\Enums\Approval\Status as ApprovalRequestStatus;
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
 use App\Http\Resources\TeamSummaryResource;
-use App\Models\Approval\Request as ApprovalRequest;
-use App\Models\Approval\Type;
-use App\Models\Option;
-use App\Models\Student\Admission;
-use App\Models\Student\Student;
-use App\Models\Team;
+use App\Models\Tenant\Approval\Request as ApprovalRequest;
+use App\Models\Tenant\Approval\Type;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Admission;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Team;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

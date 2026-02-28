@@ -3,8 +3,8 @@
 namespace App\Services\Mess;
 
 use App\Enums\Mess\MealType;
-use App\Models\Mess\Meal;
-use App\Models\Mess\MealLog;
+use App\Models\Tenant\Mess\Meal;
+use App\Models\Tenant\Mess\MealLog;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

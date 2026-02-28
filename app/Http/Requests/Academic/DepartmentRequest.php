@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Department;
+use App\Models\Tenant\Academic\Department;
 use Illuminate\Foundation\Http\FormRequest;
 
 class DepartmentRequest extends FormRequest

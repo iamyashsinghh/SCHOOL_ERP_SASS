@@ -5,7 +5,7 @@ namespace App\Actions\Employee\Payroll;
 use App\Enums\Employee\Payroll\PayHeadType;
 use App\Helpers\CalHelper;
 use App\Helpers\SysHelper;
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 
 class GetFlatRatePayHeadRecord
 {

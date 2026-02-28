@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Site;
 
 use App\Enums\Academic\BookListType;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
-use App\Models\Team;
+use App\Models\Tenant\Academic\BookList;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Team;
 
 class BookListController
 {

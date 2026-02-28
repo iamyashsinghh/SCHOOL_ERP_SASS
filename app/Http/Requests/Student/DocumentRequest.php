@@ -3,11 +3,11 @@
 namespace App\Http\Requests\Student;
 
 use App\Enums\OptionType;
-use App\Models\Contact;
-use App\Models\Document;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use App\Rules\SafeRegex;
 use Illuminate\Foundation\Http\FormRequest;
 

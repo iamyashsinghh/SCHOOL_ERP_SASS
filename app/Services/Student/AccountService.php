@@ -2,9 +2,9 @@
 
 namespace App\Services\Student;
 
-use App\Models\Account;
-use App\Models\Contact;
-use App\Models\Student\Student;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 class AccountService

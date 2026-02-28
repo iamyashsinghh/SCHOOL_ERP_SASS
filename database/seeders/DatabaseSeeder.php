@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         app(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
 
         // 1. Seed Team
-        $team = \App\Models\Team::forceCreate([
+        $team = App\Models\Tenant\Team::forceCreate([
             'name' => 'Default'
         ]);
         \App\Helpers\SysHelper::setTeam($team->id);
@@ -34,14 +34,14 @@ class DatabaseSeeder extends Seeder
         // 3. Seed Config
         $this->call(TemplateSeeder::class);
         
-        $config = \App\Models\Config\Config::firstOrCreate(['name' => 'system']);
+        $config = App\Models\Tenant\Config\Config::firstOrCreate(['name' => 'system']);
         $config->value = [
             'show_setup_wizard' => true,
         ];
         $config->save();
 
         // 4. Seed User
-        $user = \App\Models\User::forceCreate([
+        $user = App\Models\Tenant\User::forceCreate([
             'uuid'              => \Illuminate\Support\Str::uuid(),
             'name'              => 'Admin',
             'username'          => 'admin',

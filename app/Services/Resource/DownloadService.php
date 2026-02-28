@@ -5,8 +5,8 @@ namespace App\Services\Resource;
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
 use App\Helpers\CalHelper;
-use App\Models\Employee\Employee;
-use App\Models\Resource\Download;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\Download;
 use App\Support\HasAudience;
 use Illuminate\Http\Request;
 

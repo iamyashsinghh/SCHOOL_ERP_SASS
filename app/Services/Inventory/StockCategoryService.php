@@ -3,10 +3,10 @@
 namespace App\Services\Inventory;
 
 use App\Http\Resources\Inventory\InventoryResource;
-use App\Models\Inventory\Inventory;
-use App\Models\Inventory\StockCategory;
-use App\Models\Inventory\StockItem;
-use App\Models\Inventory\StockItemRecord;
+use App\Models\Tenant\Inventory\Inventory;
+use App\Models\Tenant\Inventory\StockCategory;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItemRecord;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

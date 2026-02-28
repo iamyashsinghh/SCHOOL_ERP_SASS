@@ -3,8 +3,8 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\Subject;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Incharge;
 use Illuminate\Http\Request;
 
 class SubjectInchargeService

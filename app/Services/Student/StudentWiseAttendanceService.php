@@ -3,11 +3,11 @@
 namespace App\Services\Student;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Period;
-use App\Models\Calendar\Holiday;
-use App\Models\Option;
-use App\Models\Student\Attendance;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Calendar\Holiday;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Attendance;
+use App\Models\Tenant\Student\Student;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

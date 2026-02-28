@@ -4,8 +4,8 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\CourseInchargeResource;
-use App\Models\Academic\Course;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

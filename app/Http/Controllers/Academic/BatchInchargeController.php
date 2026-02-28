@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\BatchInchargeRequest;
 use App\Http\Resources\Academic\BatchInchargeResource;
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use App\Services\Academic\BatchInchargeListService;
 use App\Services\Academic\BatchInchargeService;
 use Illuminate\Http\Request;

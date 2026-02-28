@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Employee;
 
-use App\Models\Employee\Designation;
+use App\Models\Tenant\Employee\Designation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class DesignationRequest extends FormRequest

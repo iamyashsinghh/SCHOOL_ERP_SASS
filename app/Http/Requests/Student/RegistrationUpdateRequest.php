@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RegistrationUpdateRequest extends FormRequest

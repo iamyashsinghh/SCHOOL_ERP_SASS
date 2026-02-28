@@ -3,10 +3,10 @@
 namespace App\Actions\Approval;
 
 use App\Enums\Approval\Status as ApprovalRequestStatus;
-use App\Models\Approval\Request as ApprovalRequest;
-use App\Models\Approval\Type;
-use App\Models\Employee\Employee;
-use App\Models\RequestRecord;
+use App\Models\Tenant\Approval\Request as ApprovalRequest;
+use App\Models\Tenant\Approval\Type;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\RequestRecord;
 use App\Support\FormatCodeNumber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

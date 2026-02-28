@@ -2,9 +2,9 @@
 
 namespace App\Actions\Academic;
 
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\EnrollmentSeat;
+use App\Models\Tenant\Student\Student;
 
 class UpdateEnrollmentSeat
 {

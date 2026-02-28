@@ -2,10 +2,10 @@
 
 namespace App\Services\Dashboard;
 
-use App\Models\Academic\Batch;
-use App\Models\Incharge;
-use App\Models\Student\Student;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Team;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Post;
 
 use App\Http\Controllers\Controller;
-use App\Models\Post\Post;
+use App\Models\Tenant\Post\Post;
 use App\Services\Post\PostActionService;
 use Illuminate\Http\Request;
 

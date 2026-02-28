@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Finance\BankTransfer;
-use App\Models\Media;
+use App\Models\Tenant\Finance\BankTransfer;
+use App\Models\Tenant\Media;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 

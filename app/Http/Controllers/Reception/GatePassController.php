@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\GatePassRequest;
 use App\Http\Resources\Reception\GatePassResource;
-use App\Models\Reception\GatePass;
+use App\Models\Tenant\Reception\GatePass;
 use App\Services\Reception\GatePassListService;
 use App\Services\Reception\GatePassService;
 use Illuminate\Http\Request;

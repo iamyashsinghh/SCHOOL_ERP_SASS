@@ -6,11 +6,11 @@ use App\Enums\Helpdesk\Ticket\Status as TicketStatus;
 use App\Enums\OptionType;
 use App\Jobs\Notifications\Helpdesk\Ticket\SendTicketAssignedNotification;
 use App\Jobs\Notifications\Helpdesk\Ticket\SendTicketRepliedNotification;
-use App\Models\Employee\Employee;
-use App\Models\Helpdesk\Ticket\Assignee;
-use App\Models\Helpdesk\Ticket\Message as TicketMessage;
-use App\Models\Helpdesk\Ticket\Ticket;
-use App\Models\Option;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Helpdesk\Ticket\Assignee;
+use App\Models\Tenant\Helpdesk\Ticket\Message as TicketMessage;
+use App\Models\Tenant\Helpdesk\Ticket\Ticket;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

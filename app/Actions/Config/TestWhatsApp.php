@@ -3,7 +3,7 @@
 namespace App\Actions\Config;
 
 use App\Actions\SendWhatsApp;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

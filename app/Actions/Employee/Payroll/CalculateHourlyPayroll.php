@@ -4,8 +4,8 @@ namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayHeadCategory;
 use App\Helpers\SysHelper;
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 use Carbon\Carbon;
 
 class CalculateHourlyPayroll

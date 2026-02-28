@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Recruitment;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Recruitment\VacancyRequest;
 use App\Http\Resources\Recruitment\VacancyResource;
-use App\Models\Recruitment\Vacancy;
+use App\Models\Tenant\Recruitment\Vacancy;
 use App\Services\Recruitment\VacancyListService;
 use App\Services\Recruitment\VacancyService;
 use Illuminate\Http\Request;

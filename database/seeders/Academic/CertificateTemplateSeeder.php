@@ -2,8 +2,8 @@
 
 namespace Database\Seeders\Academic;
 
-use App\Models\Academic\CertificateTemplate;
-use App\Models\Team;
+use App\Models\Tenant\Academic\CertificateTemplate;
+use App\Models\Tenant\Team;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

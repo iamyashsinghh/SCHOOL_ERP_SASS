@@ -4,7 +4,7 @@ namespace App\Http\Requests\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayHeadCategory;
 use App\Enums\Employee\Payroll\PayrollVariable;
-use App\Models\Employee\Payroll\PayHead;
+use App\Models\Tenant\Employee\Payroll\PayHead;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

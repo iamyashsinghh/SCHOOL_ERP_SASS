@@ -3,7 +3,7 @@
 namespace App\Scopes\Employee;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Employee\Record;
+use App\Models\Tenant\Employee\Record;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 

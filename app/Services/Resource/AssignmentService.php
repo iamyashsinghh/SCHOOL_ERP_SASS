@@ -6,11 +6,11 @@ use App\Enums\OptionType;
 use App\Http\Resources\Academic\SubjectResource;
 use App\Http\Resources\OptionResource;
 use App\Jobs\Notifications\Resource\SendBatchAssignmentNotification;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Resource\Assignment;
+use App\Models\Tenant\Academic\BatchSubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Resource\Assignment;
 use Illuminate\Http\Request;
 
 class AssignmentService

@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Resource;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Resource\Syllabus;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Resource\Syllabus;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SyllabusRequest extends FormRequest

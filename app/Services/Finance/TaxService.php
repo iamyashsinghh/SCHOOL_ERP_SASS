@@ -2,7 +2,7 @@
 
 namespace App\Services\Finance;
 
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\Tax;
 use Illuminate\Http\Request;
 
 class TaxService

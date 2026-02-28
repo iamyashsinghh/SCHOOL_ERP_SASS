@@ -2,8 +2,8 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Academic\Period;
-use App\Models\Student\Timesheet;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Student\Timesheet;
 use Carbon\Carbon;
 
 class CalculateTimesheetDuration

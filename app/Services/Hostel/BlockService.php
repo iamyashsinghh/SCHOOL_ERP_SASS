@@ -2,7 +2,7 @@
 
 namespace App\Services\Hostel;
 
-use App\Models\Hostel\Block;
+use App\Models\Tenant\Hostel\Block;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

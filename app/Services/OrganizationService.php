@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Organization;
+use App\Models\Tenant\Organization;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

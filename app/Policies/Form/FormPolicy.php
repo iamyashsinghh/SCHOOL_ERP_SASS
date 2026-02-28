@@ -2,8 +2,8 @@
 
 namespace App\Policies\Form;
 
-use App\Models\Form\Form;
-use App\Models\User;
+use App\Models\Tenant\Form\Form;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class FormPolicy

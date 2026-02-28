@@ -2,8 +2,8 @@
 
 namespace App\Concerns;
 
-use App\Models\Employee\Employee;
-use App\Models\Reminder;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Reminder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Http\Request;

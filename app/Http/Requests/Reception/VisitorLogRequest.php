@@ -4,11 +4,11 @@ namespace App\Http\Requests\Reception;
 
 use App\Enums\OptionType;
 use App\Enums\Reception\VisitorType;
-use App\Models\Employee\Employee;
-use App\Models\Guardian;
-use App\Models\Option;
-use App\Models\Reception\VisitorLog;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\VisitorLog;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Enum;

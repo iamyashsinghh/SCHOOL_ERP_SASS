@@ -2,11 +2,11 @@
 
 namespace App\Support;
 
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
-use App\Models\Student\Student;
-use App\Models\Student\SubjectWiseStudent;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Student\SubjectWiseStudent;
 
 trait HasFilterByAssignedSubject
 {

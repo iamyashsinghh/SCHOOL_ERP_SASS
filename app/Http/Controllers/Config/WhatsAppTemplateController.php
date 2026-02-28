@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Config\WhatsAppTemplateRequest;
 use App\Http\Resources\Config\WhatsAppTemplateResource;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Services\Config\WhatsAppTemplateListService;
 use App\Services\Config\WhatsAppTemplateService;
 use Illuminate\Http\Request;

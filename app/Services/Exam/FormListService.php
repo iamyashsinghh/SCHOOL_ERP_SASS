@@ -4,7 +4,7 @@ namespace App\Services\Exam;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Exam\FormResource;
-use App\Models\Exam\Form;
+use App\Models\Tenant\Exam\Form;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -3,9 +3,9 @@
 namespace App\Actions\Student;
 
 use App\Actions\Finance\CreateCustomFeeInstallment;
-use App\Models\Student\Fee;
-use App\Models\Student\FeeRecord;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Student\FeeRecord;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Validation\ValidationException;
 
 class CreateCustomFeeHead

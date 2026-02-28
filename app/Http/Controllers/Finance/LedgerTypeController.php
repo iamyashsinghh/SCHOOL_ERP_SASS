@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\LedgerTypeRequest;
 use App\Http\Resources\Finance\LedgerTypeResource;
-use App\Models\Finance\LedgerType;
+use App\Models\Tenant\Finance\LedgerType;
 use App\Services\Finance\LedgerTypeListService;
 use App\Services\Finance\LedgerTypeService;
 use Illuminate\Http\Request;

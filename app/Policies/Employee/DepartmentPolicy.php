@@ -2,8 +2,8 @@
 
 namespace App\Policies\Employee;
 
-use App\Models\Employee\Department;
-use App\Models\User;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class DepartmentPolicy

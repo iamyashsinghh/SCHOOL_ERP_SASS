@@ -2,8 +2,8 @@
 
 namespace App\Services\Mess;
 
-use App\Models\Mess\MealLogRecord;
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\MealLogRecord;
+use App\Models\Tenant\Mess\MenuItem;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Academic\Batch;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MigrateAttendanceRequest extends FormRequest

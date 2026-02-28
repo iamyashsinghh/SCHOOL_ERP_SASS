@@ -3,9 +3,9 @@
 namespace App\Services\Employee;
 
 use App\Enums\VerificationStatus;
-use App\Models\Account;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Recruitment;
 
-use App\Models\Recruitment\Vacancy;
-use App\Models\User;
+use App\Models\Tenant\Recruitment\Vacancy;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class VacancyPolicy

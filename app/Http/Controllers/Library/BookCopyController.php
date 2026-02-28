@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Library;
 
 use App\Http\Controllers\Controller;
-use App\Models\Library\Book;
+use App\Models\Tenant\Library\Book;
 use App\Services\Library\BookCopyListService;
 use App\Services\Library\BookCopyService;
 use Illuminate\Http\Request;

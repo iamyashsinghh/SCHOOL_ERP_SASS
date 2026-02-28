@@ -2,7 +2,7 @@
 
 namespace App\Actions;
 
-use App\Models\ViewLog;
+use App\Models\Tenant\ViewLog;
 use Illuminate\Database\Eloquent\Model;
 
 class UpdateViewLog

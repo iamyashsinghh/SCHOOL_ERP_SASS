@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use Illuminate\Validation\ValidationException;
 
 trait TeamAccessible

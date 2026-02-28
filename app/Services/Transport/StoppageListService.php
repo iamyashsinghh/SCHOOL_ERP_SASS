@@ -4,7 +4,7 @@ namespace App\Services\Transport;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\StoppageResource;
-use App\Models\Transport\Stoppage;
+use App\Models\Tenant\Transport\Stoppage;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

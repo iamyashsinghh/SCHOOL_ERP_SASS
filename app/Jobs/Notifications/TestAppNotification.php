@@ -4,8 +4,8 @@ namespace App\Jobs\Notifications;
 
 use App\Concerns\SetConfigForJob;
 use App\Events\TestAppNotificationEvent;
-use App\Models\Notification;
-use App\Models\User;
+use App\Models\Tenant\Notification;
+use App\Models\Tenant\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

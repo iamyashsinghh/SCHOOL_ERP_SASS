@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\FuelRecordRequest;
 use App\Http\Resources\Transport\Vehicle\FuelRecordResource;
-use App\Models\Transport\Vehicle\FuelRecord;
+use App\Models\Tenant\Transport\Vehicle\FuelRecord;
 use App\Services\Transport\Vehicle\FuelRecordListService;
 use App\Services\Transport\Vehicle\FuelRecordService;
 use Illuminate\Http\Request;

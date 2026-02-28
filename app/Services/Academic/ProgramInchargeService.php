@@ -3,8 +3,8 @@
 namespace App\Services\Academic;
 
 use App\Http\Resources\Academic\ProgramResource;
-use App\Models\Academic\Program;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Incharge;
 use Illuminate\Http\Request;
 
 class ProgramInchargeService

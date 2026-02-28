@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactUpdateRequest;
 use App\Http\Resources\GuardianResource;
-use App\Models\Guardian;
+use App\Models\Tenant\Guardian;
 use App\Services\GuardianListService;
 use App\Services\GuardianService;
 use Illuminate\Http\Request;

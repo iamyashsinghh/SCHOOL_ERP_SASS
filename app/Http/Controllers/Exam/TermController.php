@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Exam;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\TermRequest;
 use App\Http\Resources\Exam\TermResource;
-use App\Models\Exam\Term;
+use App\Models\Tenant\Exam\Term;
 use App\Services\Exam\TermListService;
 use App\Services\Exam\TermService;
 use Illuminate\Http\Request;

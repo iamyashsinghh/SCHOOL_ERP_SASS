@@ -6,7 +6,7 @@ use App\Actions\UpdateViewLog;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\AssignmentRequest;
 use App\Http\Resources\Resource\AssignmentResource;
-use App\Models\Resource\Assignment;
+use App\Models\Tenant\Resource\Assignment;
 use App\Services\Resource\AssignmentListService;
 use App\Services\Resource\AssignmentService;
 use Illuminate\Http\Request;

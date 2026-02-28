@@ -2,7 +2,7 @@
 
 namespace App\Services\Transport;
 
-use App\Models\Transport\Stoppage;
+use App\Models\Tenant\Transport\Stoppage;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

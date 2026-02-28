@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\TripRecordRequest;
 use App\Http\Resources\Transport\Vehicle\TripRecordResource;
-use App\Models\Transport\Vehicle\TripRecord;
+use App\Models\Tenant\Transport\Vehicle\TripRecord;
 use App\Services\Transport\Vehicle\TripRecordListService;
 use App\Services\Transport\Vehicle\TripRecordService;
 use Illuminate\Http\Request;

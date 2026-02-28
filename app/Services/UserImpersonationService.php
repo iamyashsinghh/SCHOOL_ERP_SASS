@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Validation\ValidationException;
 
 class UserImpersonationService

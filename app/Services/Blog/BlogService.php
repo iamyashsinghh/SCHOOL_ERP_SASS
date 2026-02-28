@@ -4,7 +4,7 @@ namespace App\Services\Blog;
 
 use App\Enums\Blog\Status;
 use App\Enums\Blog\Visibility;
-use App\Models\Blog\Blog;
+use App\Models\Tenant\Blog\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

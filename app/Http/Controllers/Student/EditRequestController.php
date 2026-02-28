@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Student\EditRequestResource;
-use App\Models\ContactEditRequest;
+use App\Models\Tenant\ContactEditRequest;
 use App\Services\Student\EditRequestListService;
 use App\Services\Student\EditRequestService;
 use Illuminate\Http\Request;

@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Enums\CustomFieldForm;
 use App\Enums\CustomFieldType;
-use App\Models\CustomField;
+use App\Models\Tenant\CustomField;
 use Illuminate\Http\Request;
 
 class CustomFieldService

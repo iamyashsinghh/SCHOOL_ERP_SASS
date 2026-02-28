@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\OrganizationResource;
-use App\Models\Organization;
+use App\Models\Tenant\Organization;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

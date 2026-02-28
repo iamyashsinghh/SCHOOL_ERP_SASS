@@ -4,10 +4,10 @@ namespace App\Http\Requests\Student;
 
 use App\Enums\OptionType;
 use App\Helpers\CalHelper;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Student\LeaveRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\LeaveRequest;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Communication;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Communication\PushMessageRequest;
 use App\Http\Resources\Communication\PushMessageResource;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Services\Communication\PushMessageListService;
 use App\Services\Communication\PushMessageService;
 use Illuminate\Http\Request;

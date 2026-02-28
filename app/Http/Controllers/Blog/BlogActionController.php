@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
-use App\Models\Blog\Blog;
+use App\Models\Tenant\Blog\Blog;
 use App\Services\Blog\BlogActionService;
 use Illuminate\Http\Request;
 

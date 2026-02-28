@@ -4,7 +4,7 @@ namespace App\Services\Reception;
 
 use App\Enums\Reception\CorrespondenceMode;
 use App\Enums\Reception\CorrespondenceType;
-use App\Models\Reception\Correspondence;
+use App\Models\Tenant\Reception\Correspondence;
 use Illuminate\Http\Request;
 
 class CorrespondenceService

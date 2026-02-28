@@ -4,7 +4,7 @@ namespace App\Services\Transport;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\FeeResource;
-use App\Models\Transport\Fee;
+use App\Models\Tenant\Transport\Fee;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

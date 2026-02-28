@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
-use App\Models\Site\Block;
+use App\Models\Tenant\Site\Block;
 use App\Services\Site\BlockActionService;
 use Illuminate\Http\Request;
 

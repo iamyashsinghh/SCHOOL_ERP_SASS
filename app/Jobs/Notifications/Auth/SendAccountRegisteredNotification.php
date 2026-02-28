@@ -4,8 +4,8 @@ namespace App\Jobs\Notifications\Auth;
 
 use App\Actions\SendMailTemplate;
 use App\Concerns\SetConfigForJob;
-use App\Models\Config\Template;
-use App\Models\User;
+use App\Models\Tenant\Config\Template;
+use App\Models\Tenant\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

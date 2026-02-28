@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\OrganizationRequest;
 use App\Http\Resources\OrganizationResource;
-use App\Models\Organization;
+use App\Models\Tenant\Organization;
 use App\Services\OrganizationListService;
 use App\Services\OrganizationService;
 use Illuminate\Http\Request;

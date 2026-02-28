@@ -4,9 +4,9 @@ namespace App\Services;
 
 use App\Concerns\HasStorage;
 use App\Enums\Site\BlockType;
-use App\Models\Site\Block;
-use App\Models\Site\Menu;
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Block;
+use App\Models\Tenant\Site\Menu;
+use App\Models\Tenant\Site\Page;
 use App\Support\MarkdownParser;
 use DOMDocument;
 use Illuminate\Support\Arr;

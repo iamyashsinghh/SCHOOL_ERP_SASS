@@ -3,8 +3,8 @@
 namespace App\Policies\Employee\Leave;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Employee\Leave\Allocation;
-use App\Models\User;
+use App\Models\Tenant\Employee\Leave\Allocation;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class AllocationPolicy

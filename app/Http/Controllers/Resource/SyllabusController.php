@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Resource;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\SyllabusRequest;
 use App\Http\Resources\Resource\SyllabusResource;
-use App\Models\Resource\Syllabus;
+use App\Models\Tenant\Resource\Syllabus;
 use App\Services\Resource\SyllabusListService;
 use App\Services\Resource\SyllabusService;
 use Illuminate\Http\Request;

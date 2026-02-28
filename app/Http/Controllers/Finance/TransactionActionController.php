@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Finance;
 
 use App\Http\Controllers\Controller;
-use App\Models\Finance\Transaction;
+use App\Models\Tenant\Finance\Transaction;
 use App\Services\Finance\TransactionActionService;
 use Illuminate\Http\Request;
 

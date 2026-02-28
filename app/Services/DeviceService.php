@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\Enums\DeviceType;
-use App\Models\Device;
+use App\Models\Tenant\Device;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

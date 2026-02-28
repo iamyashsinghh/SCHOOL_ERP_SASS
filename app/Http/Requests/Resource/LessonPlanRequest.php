@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Resource;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Resource\LessonPlan;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Resource\LessonPlan;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LessonPlanRequest extends FormRequest

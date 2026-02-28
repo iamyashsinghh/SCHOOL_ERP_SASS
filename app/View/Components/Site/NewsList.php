@@ -3,7 +3,7 @@
 namespace App\View\Components\Site;
 
 use App\Enums\News\Status;
-use App\Models\News\News;
+use App\Models\Tenant\News\News;
 use Illuminate\View\Component;
 
 class NewsList extends Component

@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Team\Role;
+use App\Models\Tenant\Team\Role;
 use App\Rules\StrongPassword;
 use App\Rules\Username;
 use Illuminate\Foundation\Http\FormRequest;

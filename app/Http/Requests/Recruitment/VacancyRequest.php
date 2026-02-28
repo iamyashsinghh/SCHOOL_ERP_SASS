@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Recruitment;
 
 use App\Enums\OptionType;
-use App\Models\Employee\Designation;
-use App\Models\Option;
-use App\Models\Recruitment\Vacancy;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Recruitment\Vacancy;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

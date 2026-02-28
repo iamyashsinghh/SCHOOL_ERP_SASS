@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Contact;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 use App\Services\Contact\PhotoService;
 use Illuminate\Http\Request;
 

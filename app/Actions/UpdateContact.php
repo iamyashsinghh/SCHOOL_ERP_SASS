@@ -3,7 +3,7 @@
 namespace App\Actions;
 
 use App\Helpers\CalHelper;
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;

@@ -3,7 +3,7 @@
 namespace App\Services\Student;
 
 use App\Enums\Student\RegistrationStatus;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Student\Registration;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

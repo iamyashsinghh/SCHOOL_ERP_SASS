@@ -7,8 +7,8 @@ use App\Enums\BloodGroup;
 use App\Enums\CustomFieldForm;
 use App\Enums\Gender;
 use App\Enums\MaritalStatus;
-use App\Models\CustomField;
-use App\Models\Student\Registration;
+use App\Models\Tenant\CustomField;
+use App\Models\Tenant\Student\Registration;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

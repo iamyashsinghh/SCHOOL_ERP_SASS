@@ -7,9 +7,9 @@ use App\Enums\Student\StudentStatus;
 use App\Http\Resources\Finance\FeeConcessionResource;
 use App\Http\Resources\Finance\FeeGroupResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Finance\FeeConcession;
-use App\Models\Finance\FeeGroup;
-use App\Models\Option;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\Option;
 
 class FeeConcessionService
 {

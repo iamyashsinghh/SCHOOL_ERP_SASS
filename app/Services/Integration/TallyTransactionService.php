@@ -3,8 +3,8 @@
 namespace App\Services\Integration;
 
 use App\Helpers\CalHelper;
-use App\Models\Config\Config;
-use App\Models\Device;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\Device;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -4,9 +4,9 @@ namespace App\Jobs\Notifications\Student;
 
 use App\Concerns\SetConfigForJob;
 use App\Enums\OptionType;
-use App\Models\Option;
-use App\Models\Student\Attendance;
-use App\Models\Student\Student;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Attendance;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Bus\Batch;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

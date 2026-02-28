@@ -4,7 +4,7 @@ namespace App\Services\Mess;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Mess\MealLogResource;
-use App\Models\Mess\MealLog;
+use App\Models\Tenant\Mess\MealLog;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

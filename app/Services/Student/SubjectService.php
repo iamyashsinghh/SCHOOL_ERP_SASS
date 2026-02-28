@@ -4,9 +4,9 @@ namespace App\Services\Student;
 
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Http\Resources\Student\StudentResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Student\SubjectWiseStudent;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Student\SubjectWiseStudent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

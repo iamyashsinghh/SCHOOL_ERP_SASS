@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Employee\Attendance;
 
 use App\Enums\Employee\Attendance\Category as AttendanceCategory;
-use App\Models\Employee\Attendance\Type;
+use App\Models\Tenant\Employee\Attendance\Type;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

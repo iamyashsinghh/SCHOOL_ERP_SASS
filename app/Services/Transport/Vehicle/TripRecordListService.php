@@ -4,7 +4,7 @@ namespace App\Services\Transport\Vehicle;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\Vehicle\TripRecordResource;
-use App\Models\Transport\Vehicle\TripRecord;
+use App\Models\Tenant\Transport\Vehicle\TripRecord;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

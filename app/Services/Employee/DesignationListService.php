@@ -4,7 +4,7 @@ namespace App\Services\Employee;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\DesignationResource;
-use App\Models\Employee\Designation;
+use App\Models\Tenant\Employee\Designation;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

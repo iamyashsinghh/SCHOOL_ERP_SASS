@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Form\FormRequest;
 use App\Http\Resources\Form\FormDetailResource;
 use App\Http\Resources\Form\FormResource;
-use App\Models\Form\Form;
+use App\Models\Tenant\Form\Form;
 use App\Services\Form\FormListService;
 use App\Services\Form\FormService;
 use Illuminate\Http\Request;

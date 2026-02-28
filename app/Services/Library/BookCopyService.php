@@ -5,7 +5,7 @@ namespace App\Services\Library;
 use App\Enums\Library\HoldStatus;
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 
 class BookCopyService
 {

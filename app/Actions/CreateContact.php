@@ -2,7 +2,7 @@
 
 namespace App\Actions;
 
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Reception;
 
-use App\Models\Reception\CallLog;
-use App\Models\User;
+use App\Models\Tenant\Reception\CallLog;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CallLogPolicy

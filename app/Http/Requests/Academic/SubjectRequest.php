@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Subject;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SubjectRequest extends FormRequest

@@ -4,7 +4,7 @@ namespace App\Services\Discipline;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Discipline\IncidentResource;
-use App\Models\Discipline\Incident;
+use App\Models\Tenant\Discipline\Incident;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

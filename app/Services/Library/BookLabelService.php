@@ -2,7 +2,7 @@
 
 namespace App\Services\Library;
 
-use App\Models\Library\BookCopy;
+use App\Models\Tenant\Library\BookCopy;
 use chillerlan\QRCode\QRCode;
 use Illuminate\Http\Request;
 

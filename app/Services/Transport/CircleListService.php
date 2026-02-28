@@ -4,7 +4,7 @@ namespace App\Services\Transport;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\CircleResource;
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Transport\Circle;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

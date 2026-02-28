@@ -4,7 +4,7 @@ namespace App\Services\Reception;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Reception\EnquiryResource;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Reception\Enquiry;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

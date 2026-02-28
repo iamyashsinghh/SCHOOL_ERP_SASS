@@ -2,8 +2,8 @@
 
 namespace App\Policies\Exam;
 
-use App\Models\Exam\Schedule;
-use App\Models\User;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class SchedulePolicy

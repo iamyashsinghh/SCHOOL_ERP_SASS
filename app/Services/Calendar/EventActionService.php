@@ -3,7 +3,7 @@
 namespace App\Services\Calendar;
 
 use App\Concerns\HasStorage;
-use App\Models\Calendar\Event;
+use App\Models\Tenant\Calendar\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

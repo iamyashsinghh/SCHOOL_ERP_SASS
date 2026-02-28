@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Asset\Building;
 
-use App\Models\Asset\Building\Floor;
-use App\Models\Asset\Building\Room;
+use App\Models\Tenant\Asset\Building\Floor;
+use App\Models\Tenant\Asset\Building\Room;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RoomRequest extends FormRequest

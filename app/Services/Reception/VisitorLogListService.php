@@ -4,7 +4,7 @@ namespace App\Services\Reception;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Reception\VisitorLogResource;
-use App\Models\Reception\VisitorLog;
+use App\Models\Tenant\Reception\VisitorLog;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Contact\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Contact\Config\DocumentTypeRequest;
 use App\Http\Resources\Contact\Config\DocumentTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\Contact\Config\DocumentTypeListService;
 use App\Services\Contact\Config\DocumentTypeService;
 use Illuminate\Http\Request;

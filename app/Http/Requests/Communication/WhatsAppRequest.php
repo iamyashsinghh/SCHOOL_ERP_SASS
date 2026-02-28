@@ -4,8 +4,8 @@ namespace App\Http\Requests\Communication;
 
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
-use App\Models\Communication\Announcement;
-use App\Models\Config\Template;
+use App\Models\Tenant\Communication\Announcement;
+use App\Models\Tenant\Config\Template;
 use App\Support\HasAudience;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

@@ -4,9 +4,9 @@ namespace App\Http\Requests\Employee\Leave;
 
 use App\Concerns\SubordinateAccess;
 use App\Helpers\CalHelper;
-use App\Models\Employee\Employee;
-use App\Models\Employee\Leave\Allocation as LeaveAllocation;
-use App\Models\Employee\Leave\Type as LeaveType;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\Leave\Allocation as LeaveAllocation;
+use App\Models\Tenant\Employee\Leave\Type as LeaveType;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

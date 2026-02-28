@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Finance;
 
-use App\Models\Finance\LedgerType;
+use App\Models\Tenant\Finance\LedgerType;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LedgerTypeRequest extends FormRequest

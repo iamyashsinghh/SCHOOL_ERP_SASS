@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Site;
 
-use App\Models\Academic\ProgramType;
+use App\Models\Tenant\Academic\ProgramType;
 use Illuminate\View\Component;
 
 class ProgramDetail extends Component

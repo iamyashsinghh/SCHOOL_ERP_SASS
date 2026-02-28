@@ -7,8 +7,8 @@ use App\Enums\Helpdesk\Faq\Status;
 use App\Enums\Helpdesk\Faq\Visibility;
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Helpdesk\Faq\Faq;
-use App\Models\Option;
+use App\Models\Tenant\Helpdesk\Faq\Faq;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

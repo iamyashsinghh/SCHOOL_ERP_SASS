@@ -3,10 +3,10 @@
 namespace App\Jobs\Notifications\Resource;
 
 use App\Concerns\SetConfigForJob;
-use App\Models\Config\Template;
-use App\Models\Notification;
-use App\Models\Resource\Assignment;
-use App\Models\Student\Student;
+use App\Models\Tenant\Config\Template;
+use App\Models\Tenant\Notification;
+use App\Models\Tenant\Resource\Assignment;
+use App\Models\Tenant\Student\Student;
 use App\Support\HasAudience;
 use App\Support\MergeGuardianContact;
 use Illuminate\Bus\Batch;

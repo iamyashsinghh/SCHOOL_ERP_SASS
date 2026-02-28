@@ -4,10 +4,10 @@ namespace App\Services\Student\Report;
 
 use App\Contracts\ListGenerator;
 use App\Enums\Student\AttendanceSession;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
-use App\Models\Calendar\Holiday;
-use App\Models\Student\Attendance;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Calendar\Holiday;
+use App\Models\Tenant\Student\Attendance;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

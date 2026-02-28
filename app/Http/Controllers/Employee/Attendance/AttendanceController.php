@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Attendance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Attendance\AttendanceRequest;
 use App\Http\Requests\Employee\Attendance\ProductionRequest;
-use App\Models\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Attendance\Attendance;
 use App\Services\Employee\Attendance\AttendanceListService;
 use App\Services\Employee\Attendance\AttendanceService;
 use Illuminate\Http\Request;

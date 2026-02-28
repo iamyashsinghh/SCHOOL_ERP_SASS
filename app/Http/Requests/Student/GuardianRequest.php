@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Student;
 
 use App\Enums\FamilyRelation;
-use App\Models\Guardian;
+use App\Models\Tenant\Guardian;
 use App\Rules\AlphaSpace;
 use App\Rules\StrongPassword;
 use App\Rules\Username;

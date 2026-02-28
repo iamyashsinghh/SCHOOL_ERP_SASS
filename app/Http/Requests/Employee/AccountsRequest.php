@@ -2,10 +2,10 @@
 
 namespace App\Http\Requests\Employee;
 
-use App\Models\Account;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Media;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Media;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AccountsRequest extends FormRequest

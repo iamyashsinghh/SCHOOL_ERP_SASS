@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Media;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Student\Registration;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Chat;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Chat\ChatResource;
-use App\Models\Chat\Chat;
-use App\Models\Chat\Participant;
-use App\Models\Employee\Employee;
-use App\Models\Student\Student;
-use App\Models\User;
+use App\Models\Tenant\Chat\Chat;
+use App\Models\Tenant\Chat\Participant;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

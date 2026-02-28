@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Jobs\Notifications\SendReminderNotification;
-use App\Models\Reminder;
+use App\Models\Tenant\Reminder;
 use Illuminate\Console\Command;
 
 class SendReminder extends Command

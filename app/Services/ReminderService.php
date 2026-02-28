@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Reminder;
+use App\Models\Tenant\Reminder;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

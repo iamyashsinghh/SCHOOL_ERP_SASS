@@ -1,0 +1,228 @@
+<?php
+
+namespace App\Models\Tenant\Exam;
+
+use App\Concerns\HasConfig;
+use App\Concerns\HasFilter;
+use App\Concerns\HasMeta;
+use App\Concerns\HasUuid;
+use App\Enums\Exam\AssessmentAttempt;
+use App\Models\Tenant\Academic\Batch;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Arr;
+use Spatie\Activitylog\LogOptions;
+use Spatie\Activitylog\Traits\LogsActivity;
+
+class Schedule extends Model
+{
+    protected $connection = 'tenant';
+
+    use HasConfig, HasFactory, HasFilter, HasMeta, HasUuid, LogsActivity;
+
+    protected $guarded = [];
+
+    protected $primaryKey = 'id';
+
+    protected $table = 'exam_schedules';
+
+    protected $casts = [
+        'is_reassessment' => 'boolean',
+        'attempt' => AssessmentAttempt::class,
+        'details' => 'array',
+        'config' => 'array',
+        'meta' => 'array',
+    ];
+
+    public function exam(): BelongsTo
+    {
+        return $this->belongsTo(Exam::class);
+    }
+
+    public function batch(): BelongsTo
+    {
+        return $this->belongsTo(Batch::class);
+    }
+
+    public function grade(): BelongsTo
+    {
+        return $this->belongsTo(Grade::class, 'grade_id');
+    }
+
+    public function assessment(): BelongsTo
+    {
+        return $this->belongsTo(Assessment::class, 'assessment_id');
+    }
+
+    public function observation(): BelongsTo
+    {
+        return $this->belongsTo(Observation::class, 'observation_id');
+    }
+
+    public function competency(): BelongsTo
+    {
+        return $this->belongsTo(Competency::class, 'competency_id');
+    }
+
+    public function records(): HasMany
+    {
+        return $this->hasMany(Record::class)->orderBy('date', 'asc');
+    }
+
+    public function getIsEditableAttribute(): bool
+    {
+        $publishMarksheet = (bool) Arr::get($this->exam->config, $this->attempt->value.'_attempt.publish_marksheet');
+
+        if ($publishMarksheet) {
+            return false;
+        }
+
+        $status = Arr::get($this->config, 'marksheet_status');
+
+        if ($status == 'processed') {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function getHasFormAttribute(): bool
+    {
+        return (bool) $this->getMeta('has_form');
+    }
+
+    public function getGroupedExamsAttribute(): array
+    {
+        if (! $this->relationLoaded('exam')) {
+            return [];
+        }
+
+        $examConfig = $this->exam->config_detail;
+        $groupedExams = explode(',', Arr::get($examConfig, 'group_exams', ''));
+
+        return array_filter($groupedExams);
+    }
+
+    public function getLastExamDateAttribute(): string
+    {
+        if ($this->getConfig('last_exam_date')) {
+            return $this->getConfig('last_exam_date');
+        }
+
+        if ($this->relationLoaded('records')) {
+            $lastRecordDate = $this->records->sortByDesc('date')->first()?->date?->value;
+
+            if ($lastRecordDate) {
+                return $lastRecordDate;
+            }
+        }
+
+        return today()->toDateString();
+    }
+
+    public function getStatusAttribute(): array
+    {
+        return Arr::get($this->config, 'marksheet_status');
+    }
+
+    public function getMarksheetStatusAttribute(): array
+    {
+        $status = Arr::get($this->config, 'marksheet_status');
+
+        if ($status == 'processed') {
+            return [
+                'label' => trans('exam.schedule.marksheet_statuses.processed'),
+                'value' => 'processed',
+                'color' => 'bg-success',
+            ];
+        }
+
+        return [
+            'label' => trans('exam.schedule.marksheet_statuses.pending'),
+            'value' => 'pending',
+            'color' => 'bg-warning',
+        ];
+    }
+
+    public function getMarksheetAvailableAttribute(): bool
+    {
+        if (! auth()->user()->hasAnyRole(['student', 'guardian'])) {
+            return false;
+        }
+
+        if (Arr::get($this->marksheet_status, 'value') != 'processed') {
+            return false;
+        }
+
+        if (empty($this->getConfig('result_date'))) {
+            return false;
+        }
+
+        if (Carbon::parse($this->getConfig('result_date'))->isFuture()) {
+            return false;
+        }
+
+        if (! $this->relationLoaded('exam')) {
+            return false;
+        }
+
+        if (! Arr::get($this->exam->config, 'first_attempt.publish_marksheet')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function getConfigDetailAttribute(): array
+    {
+        $config = $this->config;
+        $lastExamDate = $this->last_exam_date;
+
+        return [
+            'last_exam_date' => \Cal::date($lastExamDate),
+        ];
+    }
+
+    public function scopeFilterAccessible(Builder $query)
+    {
+        $batchIds = Batch::query()
+            ->byPeriod()
+            ->filterAccessible()
+            ->get()
+            ->pluck('id')
+            ->all();
+
+        $query->whereIn('exam_schedules.batch_id', $batchIds);
+    }
+
+    public function scopeFindByUuidOrFail(Builder $query, ?string $uuid = null)
+    {
+        return $query
+            ->byPeriod()
+            ->filterAccessible()
+            ->where('uuid', $uuid)
+            ->getOrFail(trans('exam.schedule.schedule'));
+    }
+
+    public function scopeByPeriod(Builder $query, $periodId = null)
+    {
+        $periodId = $periodId ?? auth()->user()->current_period_id;
+
+        $query->whereHas('exam', function ($q) use ($periodId) {
+            $q->byPeriod($periodId);
+        });
+    }
+
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+            ->useLogName('exam_schedule')
+            ->logAll()
+            ->logExcept(['updated_at'])
+            ->logOnlyDirty();
+    }
+}

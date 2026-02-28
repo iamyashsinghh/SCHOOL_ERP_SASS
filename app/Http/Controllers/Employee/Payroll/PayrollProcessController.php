@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Employee\Payroll;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Payroll\PayrollProcessRequest;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use App\Services\Employee\Payroll\PayrollProcessService;
 use Illuminate\Http\Request;
 

@@ -2,8 +2,8 @@
 
 namespace App\Services\Team;
 
-use App\Models\Team;
-use App\Models\Team\Role;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\Team\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

@@ -8,7 +8,7 @@ use App\Enums\FamilyRelation;
 use App\Enums\Gender;
 use App\Enums\MaritalStatus;
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Rules\AlphaSpace;
 use App\Rules\ContactNumber;
 use Illuminate\Foundation\Http\FormRequest;

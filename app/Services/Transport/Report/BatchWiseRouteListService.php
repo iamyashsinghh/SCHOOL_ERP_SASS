@@ -4,8 +4,8 @@ namespace App\Services\Transport\Report;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\Report\BatchWiseRouteListResource;
-use App\Models\Student\Student;
-use App\Models\Transport\RoutePassenger;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Transport\RoutePassenger;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

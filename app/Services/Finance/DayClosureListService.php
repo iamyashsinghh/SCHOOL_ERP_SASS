@@ -4,8 +4,8 @@ namespace App\Services\Finance;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Finance\DayClosureResource;
-use App\Models\Employee\Employee;
-use App\Models\Finance\DayClosure;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Finance\DayClosure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

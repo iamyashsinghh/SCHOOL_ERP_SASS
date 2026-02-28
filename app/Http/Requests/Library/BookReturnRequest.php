@@ -4,7 +4,7 @@ namespace App\Http\Requests\Library;
 
 use App\Enums\Library\ReturnStatus;
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

@@ -2,7 +2,7 @@
 
 namespace App\Services\Communication;
 
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

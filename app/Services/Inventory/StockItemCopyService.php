@@ -6,8 +6,8 @@ use App\Enums\Inventory\HoldStatus;
 use App\Enums\OptionType;
 use App\Http\Resources\Asset\Building\RoomResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Asset\Building\Room;
-use App\Models\Option;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Option;
 
 class StockItemCopyService
 {

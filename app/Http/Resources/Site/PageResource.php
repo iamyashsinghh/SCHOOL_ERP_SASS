@@ -4,7 +4,7 @@ namespace App\Http\Resources\Site;
 
 use App\Enums\Site\BlockType;
 use App\Http\Resources\MediaResource;
-use App\Models\Site\Block;
+use App\Models\Tenant\Site\Block;
 use App\Support\MarkdownParser;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;

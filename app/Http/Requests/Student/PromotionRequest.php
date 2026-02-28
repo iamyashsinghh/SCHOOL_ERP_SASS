@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Period;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PromotionRequest extends FormRequest

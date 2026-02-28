@@ -4,9 +4,9 @@ namespace App\Services\Library;
 
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Library\Book;
-use App\Models\Library\BookCopy;
-use App\Models\Option;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Library\BookCopy;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

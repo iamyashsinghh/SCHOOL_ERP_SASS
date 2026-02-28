@@ -3,10 +3,10 @@
 namespace App\Services\Team;
 
 use App\Http\Resources\Team\RoleResource;
-use App\Models\Team;
-use App\Models\Team\Permission;
-use App\Models\Team\Role;
-use App\Models\User;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\Team\Permission;
+use App\Models\Tenant\Team\Role;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Arr;

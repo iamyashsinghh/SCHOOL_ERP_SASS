@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Custom;
 
 use App\Http\Controllers\Controller;
-use App\Models\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeConcession;
 use Illuminate\Http\Request;
 
 class SiblingConcessionCheckController extends Controller

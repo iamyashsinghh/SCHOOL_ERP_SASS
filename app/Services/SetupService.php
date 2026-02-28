@@ -2,13 +2,13 @@
 
 namespace App\Services;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\Division;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
-use App\Models\Academic\Subject;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Division;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Student\Student;
 
 class SetupService
 {

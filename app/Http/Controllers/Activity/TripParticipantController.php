@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Activity;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Activity\TripParticipantRequest;
 use App\Http\Resources\Activity\TripParticipantResource;
-use App\Models\Activity\Trip;
+use App\Models\Tenant\Activity\Trip;
 use App\Services\Activity\TripParticipantListService;
 use App\Services\Activity\TripParticipantService;
 use Illuminate\Http\Request;

@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Library;
 
 use App\Http\Controllers\Controller;
-use App\Models\Library\Book;
-use App\Models\Library\BookCopy;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Library\BookCopy;
 use App\Services\Library\BookCopyActionService;
 use Illuminate\Http\Request;
 

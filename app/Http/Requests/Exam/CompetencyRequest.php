@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Exam;
 
-use App\Models\Exam\Competency;
-use App\Models\Exam\Grade;
+use App\Models\Tenant\Exam\Competency;
+use App\Models\Tenant\Exam\Grade;
 use Illuminate\Foundation\Http\FormRequest;
 
 class CompetencyRequest extends FormRequest

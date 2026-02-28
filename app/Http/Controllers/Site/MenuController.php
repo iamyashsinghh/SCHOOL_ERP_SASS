@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Site\MenuRequest;
 use App\Http\Resources\Site\MenuResource;
-use App\Models\Site\Menu;
+use App\Models\Tenant\Site\Menu;
 use App\Services\Site\MenuListService;
 use App\Services\Site\MenuService;
 use Illuminate\Http\Request;

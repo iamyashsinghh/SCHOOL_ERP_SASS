@@ -2,8 +2,8 @@
 
 namespace App\Policies\Student;
 
-use App\Models\Student\Registration;
-use App\Models\User;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class RegistrationPolicy

@@ -3,11 +3,11 @@
 namespace App\Services\Form;
 
 use App\Enums\CustomFieldType;
-use App\Models\Employee\Employee;
-use App\Models\Form\Form;
-use App\Models\Form\Submission;
-use App\Models\Form\SubmissionRecord;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Form\Form;
+use App\Models\Tenant\Form\Submission;
+use App\Models\Tenant\Form\SubmissionRecord;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

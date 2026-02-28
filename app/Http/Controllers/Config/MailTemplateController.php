@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Config\MailTemplateRequest;
 use App\Http\Resources\Config\MailTemplateResource;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Services\Config\MailTemplateListService;
 use App\Services\Config\MailTemplateService;
 use App\Support\TemplateParser;

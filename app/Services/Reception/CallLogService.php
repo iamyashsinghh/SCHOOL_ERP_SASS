@@ -6,8 +6,8 @@ use App\Enums\OptionType;
 use App\Enums\Reception\CallType;
 use App\Helpers\CalHelper;
 use App\Http\Resources\OptionResource;
-use App\Models\Option;
-use App\Models\Reception\CallLog;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\CallLog;
 use Illuminate\Http\Request;
 
 class CallLogService

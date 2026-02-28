@@ -4,8 +4,8 @@ namespace App\Services;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\TeamListResource;
-use App\Models\Team;
-use App\Models\User;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

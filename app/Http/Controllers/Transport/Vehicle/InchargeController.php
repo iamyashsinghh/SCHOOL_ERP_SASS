@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\InchargeRequest;
 use App\Http\Resources\Transport\Vehicle\InchargeResource;
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use App\Services\Transport\Vehicle\InchargeListService;
 use App\Services\Transport\Vehicle\InchargeService;
 use Illuminate\Http\Request;

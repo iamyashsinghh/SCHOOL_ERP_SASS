@@ -3,10 +3,10 @@
 namespace App\Http\Requests\Resource;
 
 use App\Enums\Resource\AudienceType;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Resource\Diary;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Resource\Diary;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 use Illuminate\Validation\ValidationException;

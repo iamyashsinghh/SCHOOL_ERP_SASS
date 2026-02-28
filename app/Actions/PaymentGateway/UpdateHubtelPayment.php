@@ -3,8 +3,8 @@
 namespace App\Actions\PaymentGateway;
 
 use App\Actions\Student\PayOnlineFee;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Student;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;

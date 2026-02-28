@@ -4,7 +4,7 @@ namespace App\Services\Reception;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Reception\GatePassResource;
-use App\Models\Reception\GatePass;
+use App\Models\Tenant\Reception\GatePass;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

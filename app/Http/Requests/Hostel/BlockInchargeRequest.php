@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Hostel;
 
 use App\Concerns\HasIncharge;
-use App\Models\Employee\Employee;
-use App\Models\Hostel\Block;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Hostel\Block;
 use Illuminate\Foundation\Http\FormRequest;
 
 class BlockInchargeRequest extends FormRequest

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Media;
+use App\Models\Tenant\Media;
 use Illuminate\Http\Request;
 
 class SignedMediaController extends Controller

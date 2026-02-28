@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\News\NewsRequest;
 use App\Http\Resources\News\NewsResource;
 use App\Http\Resources\News\NewsSummaryResource;
-use App\Models\News\News;
+use App\Models\Tenant\News\News;
 use App\Services\News\NewsListService;
 use App\Services\News\NewsService;
 use Illuminate\Http\Request;

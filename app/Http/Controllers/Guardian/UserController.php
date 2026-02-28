@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Guardian;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Contact\UserRequest;
 use App\Http\Requests\Contact\UserUpdateRequest;
-use App\Models\Guardian;
+use App\Models\Tenant\Guardian;
 use App\Services\Contact\UserService;
 use Illuminate\Http\Request;
 

@@ -5,8 +5,8 @@ namespace App\Http\Requests\Employee\Payroll;
 use App\Actions\Employee\Payroll\ValidatePayrollInput;
 use App\Enums\Employee\Payroll\PayHeadCategory;
 use App\Helpers\SysHelper;
-use App\Models\Employee\Attendance\Type as AttendanceType;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

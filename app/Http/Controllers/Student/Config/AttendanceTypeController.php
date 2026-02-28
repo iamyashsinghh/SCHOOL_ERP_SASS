@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\Config\AttendanceTypeRequest;
 use App\Http\Resources\Student\Config\AttendanceTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\Student\Config\AttendanceTypeListService;
 use App\Services\Student\Config\AttendanceTypeService;
 use Illuminate\Http\Request;

@@ -6,8 +6,8 @@ use App\Enums\Discipline\IncidentNature;
 use App\Enums\Discipline\IncidentSeverity;
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Discipline\Incident;
-use App\Models\Option;
+use App\Models\Tenant\Discipline\Incident;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 
 class IncidentService

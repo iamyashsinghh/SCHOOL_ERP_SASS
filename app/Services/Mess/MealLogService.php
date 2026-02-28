@@ -4,10 +4,10 @@ namespace App\Services\Mess;
 
 use App\Http\Resources\Mess\MealResource;
 use App\Http\Resources\Mess\MenuItemResource;
-use App\Models\Mess\Meal;
-use App\Models\Mess\MealLog;
-use App\Models\Mess\MealLogRecord;
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\Meal;
+use App\Models\Tenant\Mess\MealLog;
+use App\Models\Tenant\Mess\MealLogRecord;
+use App\Models\Tenant\Mess\MenuItem;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -2,8 +2,8 @@
 
 namespace App\Services\Student;
 
-use App\Models\Guardian;
-use App\Models\Student\Student;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 class GuardianActionService

@@ -6,7 +6,7 @@ use App\Concerns\SimpleValidation;
 use App\Enums\BloodGroup;
 use App\Enums\FamilyRelation;
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Rules\ContactNumber;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;

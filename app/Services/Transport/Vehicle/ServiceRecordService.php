@@ -3,8 +3,8 @@
 namespace App\Services\Transport\Vehicle;
 
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Transport\Vehicle\ServiceRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Transport\Vehicle\ServiceRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Http\Request;
 
 class ServiceRecordService

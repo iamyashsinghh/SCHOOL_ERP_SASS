@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Transport\Vehicle\Config;
 
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Rules\SafeRegex;
 use Illuminate\Foundation\Http\FormRequest;
 

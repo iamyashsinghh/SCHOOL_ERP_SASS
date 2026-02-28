@@ -5,8 +5,8 @@ namespace App\Services\Employee\Attendance;
 use App\Actions\Employee\Attendance\FetchEmployeeForWorkShift;
 use App\Http\Resources\Employee\Attendance\EmployeeWorkShiftResource;
 use App\Http\Resources\Employee\Attendance\WorkShiftResource;
-use App\Models\Employee\Attendance\WorkShift;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -3,10 +3,10 @@
 namespace App\Http\Requests\Reception;
 
 use App\Enums\OptionType;
-use App\Models\Contact;
-use App\Models\Document;
-use App\Models\Option;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Enquiry;
 use App\Rules\SafeRegex;
 use Illuminate\Foundation\Http\FormRequest;
 

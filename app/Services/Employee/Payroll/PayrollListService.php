@@ -7,7 +7,7 @@ use App\Contracts\ListGenerator;
 use App\Enums\Employee\Payroll\PayrollStatus;
 use App\Helpers\CalHelper;
 use App\Http\Resources\Employee\Payroll\PayrollResource;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

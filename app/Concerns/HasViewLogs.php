@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 
 trait HasViewLogs
 {

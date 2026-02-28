@@ -6,7 +6,7 @@ use App\Actions\UpdateViewLog;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Communication\AnnouncementRequest;
 use App\Http\Resources\Communication\AnnouncementResource;
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use App\Services\Communication\AnnouncementListService;
 use App\Services\Communication\AnnouncementService;
 use Illuminate\Http\Request;

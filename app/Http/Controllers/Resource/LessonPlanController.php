@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Resource;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\LessonPlanRequest;
 use App\Http\Resources\Resource\LessonPlanResource;
-use App\Models\Resource\LessonPlan;
+use App\Models\Tenant\Resource\LessonPlan;
 use App\Services\Resource\LessonPlanListService;
 use App\Services\Resource\LessonPlanService;
 use Illuminate\Http\Request;

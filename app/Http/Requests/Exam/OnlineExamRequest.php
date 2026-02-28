@@ -4,9 +4,9 @@ namespace App\Http\Requests\Exam;
 
 use App\Enums\Exam\OnlineExamType;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Exam\OnlineExam;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Exam\OnlineExam;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;

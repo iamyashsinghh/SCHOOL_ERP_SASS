@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\EmployeeRequest;
 use App\Http\Requests\Employee\EmployeeUpdateRequest;
 use App\Http\Resources\Employee\EmployeeResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\EmployeeListService;
 use App\Services\Employee\EmployeeService;
 use Illuminate\Http\Request;

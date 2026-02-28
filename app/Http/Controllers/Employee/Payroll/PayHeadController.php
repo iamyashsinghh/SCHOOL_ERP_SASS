@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Payroll;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Payroll\PayHeadRequest;
 use App\Http\Resources\Employee\Payroll\PayHeadResource;
-use App\Models\Employee\Payroll\PayHead;
+use App\Models\Tenant\Employee\Payroll\PayHead;
 use App\Services\Employee\Payroll\PayHeadListService;
 use App\Services\Employee\Payroll\PayHeadService;
 use Illuminate\Http\Request;

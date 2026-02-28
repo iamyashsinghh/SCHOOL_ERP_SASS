@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Finance;
 
 use App\Concerns\SimpleValidation;
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\Tax;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TaxRequest extends FormRequest

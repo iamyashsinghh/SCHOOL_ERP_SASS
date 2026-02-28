@@ -4,8 +4,8 @@ namespace App\Http\Requests\Task;
 
 use App\Concerns\CustomFormFieldValidation;
 use App\Enums\CustomFieldForm;
-use App\Models\CustomField;
-use App\Models\Option;
+use App\Models\Tenant\CustomField;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TaskRequest extends FormRequest

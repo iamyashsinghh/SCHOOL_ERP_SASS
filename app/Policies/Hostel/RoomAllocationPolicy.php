@@ -2,8 +2,8 @@
 
 namespace App\Policies\Hostel;
 
-use App\Models\Hostel\RoomAllocation;
-use App\Models\User;
+use App\Models\Tenant\Hostel\RoomAllocation;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class RoomAllocationPolicy

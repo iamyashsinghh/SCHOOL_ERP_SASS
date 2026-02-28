@@ -4,8 +4,8 @@ namespace App\Services\Transport\Vehicle;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Transport\Vehicle\DocumentResource;
-use App\Models\Document;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

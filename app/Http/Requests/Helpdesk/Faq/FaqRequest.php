@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Helpdesk\Faq;
 
 use App\Enums\OptionType;
-use App\Models\Helpdesk\Faq\Faq;
-use App\Models\Option;
+use App\Models\Tenant\Helpdesk\Faq\Faq;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FaqRequest extends FormRequest

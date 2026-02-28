@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Resource;
 
 use App\Http\Controllers\Controller;
-use App\Models\Resource\Diary;
+use App\Models\Tenant\Resource\Diary;
 use App\Services\Resource\DiaryPreviewService;
 use Illuminate\Http\Request;
 

@@ -4,7 +4,7 @@ namespace App\Services\Communication;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Communication\AnnouncementResource;
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

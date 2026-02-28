@@ -2,7 +2,7 @@
 
 namespace App\Scopes\Task;
 
-use App\Models\Task\Member;
+use App\Models\Tenant\Task\Member;
 use Illuminate\Database\Eloquent\Builder;
 
 trait TaskScope

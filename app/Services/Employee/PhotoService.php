@@ -3,7 +3,7 @@
 namespace App\Services\Employee;
 
 use App\Concerns\HasStorage;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Request;
 
 class PhotoService

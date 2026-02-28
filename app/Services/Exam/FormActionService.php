@@ -4,9 +4,9 @@ namespace App\Services\Exam;
 
 use App\Actions\Exam\GetAvailableSubjectForStudent;
 use App\Actions\Exam\GetReassessmentSubjectForStudent;
-use App\Models\Exam\Form;
-use App\Models\Exam\Schedule;
-use App\Models\Student\Student;
+use App\Models\Tenant\Exam\Form;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

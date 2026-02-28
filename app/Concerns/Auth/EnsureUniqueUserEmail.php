@@ -2,8 +2,8 @@
 
 namespace App\Concerns\Auth;
 
-use App\Models\Contact;
-use App\Models\User;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\User;
 use Illuminate\Validation\ValidationException;
 
 trait EnsureUniqueUserEmail

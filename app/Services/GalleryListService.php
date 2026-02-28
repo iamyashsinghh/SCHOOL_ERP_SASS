@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\GalleryResource;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

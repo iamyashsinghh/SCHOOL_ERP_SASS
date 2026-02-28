@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Employee\Payroll;
 
 use App\Http\Controllers\Controller;
-use App\Models\Employee\Payroll\SalaryTemplate;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplate;
 use App\Services\Employee\Payroll\SalaryTemplateActionService;
 use Illuminate\Http\Request;
 

@@ -3,8 +3,8 @@
 namespace App\Http\Middleware;
 
 use App\Helpers\SysHelper;
-use App\Models\Academic\Period;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Team;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

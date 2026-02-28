@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Mess;
 
 use App\Enums\Mess\MealType;
-use App\Models\Mess\Meal;
+use App\Models\Tenant\Mess\Meal;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

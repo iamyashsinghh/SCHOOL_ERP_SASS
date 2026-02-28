@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Payroll;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Payroll\SalaryTemplateRequest;
 use App\Http\Resources\Employee\Payroll\SalaryTemplateResource;
-use App\Models\Employee\Payroll\SalaryTemplate;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplate;
 use App\Services\Employee\Payroll\SalaryTemplateListService;
 use App\Services\Employee\Payroll\SalaryTemplateService;
 use Illuminate\Http\Request;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Discipline;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Discipline\IncidentRequest;
 use App\Http\Resources\Discipline\IncidentResource;
-use App\Models\Discipline\Incident;
+use App\Models\Tenant\Discipline\Incident;
 use App\Services\Discipline\IncidentListService;
 use App\Services\Discipline\IncidentService;
 use Illuminate\Http\Request;

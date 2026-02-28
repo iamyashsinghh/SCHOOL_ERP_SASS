@@ -2,8 +2,8 @@
 
 namespace App\Policies\Inventory;
 
-use App\Models\Inventory\StockRequisition;
-use App\Models\User;
+use App\Models\Tenant\Inventory\StockRequisition;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class StockRequisitionPolicy

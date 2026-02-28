@@ -6,9 +6,9 @@ use App\Concerns\SubordinateAccess;
 use App\Enums\OptionType;
 use App\Enums\VerificationStatus;
 use App\Http\Resources\OptionResource;
-use App\Models\Employee\Employee;
-use App\Models\Experience;
-use App\Models\Option;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Experience;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

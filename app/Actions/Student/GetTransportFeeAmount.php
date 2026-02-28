@@ -2,8 +2,8 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Finance\FeeInstallment;
-use App\Models\Student\Fee;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Student\Fee;
 
 class GetTransportFeeAmount
 {

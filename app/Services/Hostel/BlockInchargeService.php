@@ -3,8 +3,8 @@
 namespace App\Services\Hostel;
 
 use App\Http\Resources\Hostel\BlockResource;
-use App\Models\Hostel\Block;
-use App\Models\Incharge;
+use App\Models\Tenant\Hostel\Block;
+use App\Models\Tenant\Incharge;
 use Illuminate\Http\Request;
 
 class BlockInchargeService

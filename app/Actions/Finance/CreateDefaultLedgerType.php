@@ -3,7 +3,7 @@
 namespace App\Actions\Finance;
 
 use App\Enums\Finance\LedgerGroup;
-use App\Models\Finance\LedgerType;
+use App\Models\Tenant\Finance\LedgerType;
 
 class CreateDefaultLedgerType
 {

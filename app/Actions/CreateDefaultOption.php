@@ -3,7 +3,7 @@
 namespace App\Actions;
 
 use App\Helpers\ListHelper;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

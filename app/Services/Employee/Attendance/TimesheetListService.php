@@ -5,7 +5,7 @@ namespace App\Services\Employee\Attendance;
 use App\Concerns\SubordinateAccess;
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\Attendance\TimesheetResource;
-use App\Models\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

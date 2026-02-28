@@ -4,7 +4,7 @@ namespace App\Services\Calendar;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Calendar\CelebrationResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

@@ -2,8 +2,8 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Exam\OnlineExam;
-use App\Models\Exam\OnlineExamQuestion;
+use App\Models\Tenant\Exam\OnlineExam;
+use App\Models\Tenant\Exam\OnlineExamQuestion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

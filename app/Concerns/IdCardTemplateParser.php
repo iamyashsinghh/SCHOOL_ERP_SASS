@@ -4,11 +4,11 @@ namespace App\Concerns;
 
 use App\Enums\BloodGroup;
 use App\Enums\Gender;
-use App\Models\Academic\Period;
-use App\Models\Employee\Employee;
-use App\Models\Employee\Record;
-use App\Models\Guardian;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\Record;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\Student\Student;
 use App\Support\NumberToWordConverter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;

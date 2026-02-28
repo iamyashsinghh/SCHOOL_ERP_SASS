@@ -7,11 +7,11 @@ use App\Enums\Transport\Direction;
 use App\Http\Resources\Finance\FeeConcessionResource;
 use App\Http\Resources\Finance\FeeStructureResource;
 use App\Http\Resources\Transport\CircleResource;
-use App\Models\Finance\FeeConcession;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\FeeStructure;
-use App\Models\Student\Registration;
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeStructure;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Transport\Circle;
 use Illuminate\Http\Request;
 
 class RegistrationAssignFeeService

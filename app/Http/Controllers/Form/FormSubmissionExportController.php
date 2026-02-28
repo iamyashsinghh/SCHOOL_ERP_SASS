@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Form;
 
 use App\Http\Controllers\Controller;
-use App\Models\Form\Form;
+use App\Models\Tenant\Form\Form;
 use App\Services\Form\FormSubmissionListService;
 use Illuminate\Http\Request;
 

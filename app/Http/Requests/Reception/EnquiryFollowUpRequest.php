@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Reception;
 
 use App\Enums\Reception\EnquiryStatus;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

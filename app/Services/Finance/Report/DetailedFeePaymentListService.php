@@ -4,11 +4,11 @@ namespace App\Services\Finance\Report;
 
 use App\Contracts\ListGenerator;
 use App\Exports\Finance\Report\DetailedFeePaymentExport;
-use App\Models\Academic\Period;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\PaymentMethod;
-use App\Models\Finance\Transaction;
-use App\Models\Student\FeePayment;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\FeePayment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

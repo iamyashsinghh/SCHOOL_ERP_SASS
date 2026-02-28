@@ -3,8 +3,8 @@
 namespace App\Actions\Student;
 
 use App\Enums\ServiceRequestType;
-use App\Models\Student\ServiceAllocation;
-use App\Models\Student\ServiceRequest;
+use App\Models\Tenant\Student\ServiceAllocation;
+use App\Models\Tenant\Student\ServiceRequest;
 
 class UpdateServiceRequest
 {

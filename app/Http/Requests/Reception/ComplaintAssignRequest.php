@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Reception;
 
-use App\Models\Employee\Employee;
-use App\Models\Reception\Complaint;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Reception\Complaint;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ComplaintAssignRequest extends FormRequest

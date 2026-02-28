@@ -3,7 +3,7 @@
 namespace App\Actions\Config;
 
 use App\Helpers\SysHelper;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Pipeline\Pipeline;
 
 class GetConfig

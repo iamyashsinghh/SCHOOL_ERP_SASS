@@ -5,7 +5,7 @@ namespace App\Services\Employee\Leave;
 use App\Concerns\SubordinateAccess;
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\Leave\AllocationResource as LeaveAllocationResource;
-use App\Models\Employee\Leave\Allocation as LeaveAllocation;
+use App\Models\Tenant\Employee\Leave\Allocation as LeaveAllocation;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -4,9 +4,9 @@ namespace App\Services\Employee\Attendance;
 
 use App\Enums\Employee\Attendance\Category as AttendanceCategory;
 use App\Enums\Employee\Attendance\ProductionUnit as AttendanceProductionUnit;
-use App\Models\Employee\Attendance\Attendance;
-use App\Models\Employee\Attendance\Record as AttendanceRecord;
-use App\Models\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Attendance\Record as AttendanceRecord;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

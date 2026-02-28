@@ -4,8 +4,8 @@ namespace App\Services\Transport\Vehicle;
 
 use App\Enums\Transport\Vehicle\InchargeType;
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Incharge;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Http\Request;
 
 class InchargeService

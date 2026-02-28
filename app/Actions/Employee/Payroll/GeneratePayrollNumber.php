@@ -3,8 +3,8 @@
 namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayrollStatus;
-use App\Models\Config\Config;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use App\Support\FormatCodeNumber;
 use App\Support\SetConfig;
 use Illuminate\Support\Arr;

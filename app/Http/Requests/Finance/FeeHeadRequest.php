@@ -4,9 +4,9 @@ namespace App\Http\Requests\Finance;
 
 use App\Actions\Finance\CreateCustomFeeHead;
 use App\Enums\Finance\DefaultCustomFeeType;
-use App\Models\Finance\FeeGroup;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\Tax;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rules\Enum;

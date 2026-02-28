@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Asset\Building;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Asset\Building\RoomRequest;
 use App\Http\Resources\Asset\Building\RoomResource;
-use App\Models\Asset\Building\Room;
+use App\Models\Tenant\Asset\Building\Room;
 use App\Services\Asset\Building\RoomListService;
 use App\Services\Asset\Building\RoomService;
 use Illuminate\Http\Request;

@@ -6,9 +6,9 @@ use App\Enums\OptionType;
 use App\Enums\Student\LeaveRequestStatus;
 use App\Http\Resources\OptionResource;
 use App\Http\Resources\Student\StudentSummaryResource;
-use App\Models\Option;
-use App\Models\Student\LeaveRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\LeaveRequest;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

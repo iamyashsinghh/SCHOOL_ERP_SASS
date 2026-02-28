@@ -3,7 +3,7 @@
 namespace App\Services\Reception;
 
 use App\Enums\Reception\QueryStatus;
-use App\Models\Reception\Query;
+use App\Models\Tenant\Reception\Query;
 use Illuminate\Http\Request;
 
 class QueryService

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Config\PushNotificationTemplateRequest;
 use App\Http\Resources\Config\PushNotificationTemplateResource;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Services\Config\PushNotificationTemplateListService;
 use App\Services\Config\PushNotificationTemplateService;
 use Illuminate\Http\Request;

@@ -2,15 +2,15 @@
 
 namespace App\Support;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\Division;
-use App\Models\Audience;
-use App\Models\Contact;
-use App\Models\Employee\Department;
-use App\Models\Employee\Designation;
-use App\Models\Employee\Employee;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Division;
+use App\Models\Tenant\Audience;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

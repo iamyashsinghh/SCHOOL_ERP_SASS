@@ -3,7 +3,7 @@
 namespace App\Console\Commands\Student;
 
 use App\Actions\Student\UpdateServiceRequest;
-use App\Models\Student\ServiceRequest;
+use App\Models\Tenant\Student\ServiceRequest;
 use Illuminate\Console\Command;
 
 class UpdateServiceAllocation extends Command

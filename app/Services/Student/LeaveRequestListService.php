@@ -4,8 +4,8 @@ namespace App\Services\Student;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Student\LeaveRequestResource;
-use App\Models\Student\LeaveRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\LeaveRequest;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

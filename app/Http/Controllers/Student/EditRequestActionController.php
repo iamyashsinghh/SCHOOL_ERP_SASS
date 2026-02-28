@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
-use App\Models\ContactEditRequest;
+use App\Models\Tenant\ContactEditRequest;
 use App\Services\Student\EditRequestActionService;
 use Illuminate\Http\Request;
 

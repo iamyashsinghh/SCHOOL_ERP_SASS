@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\GalleryImageResource;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use App\Services\GalleryActionService;
 use Illuminate\Http\Request;
 

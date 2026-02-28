@@ -3,8 +3,8 @@
 namespace App\Imports\Student;
 
 use App\Concerns\ItemImport;
-use App\Models\Account;
-use App\Models\Student\Student;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

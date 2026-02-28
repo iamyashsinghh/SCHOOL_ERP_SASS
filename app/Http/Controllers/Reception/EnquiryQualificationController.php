@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\EnquiryQualificationRequest;
 use App\Http\Resources\Reception\EnquiryQualificationResource;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Reception\Enquiry;
 use App\Services\Reception\EnquiryQualificationService;
 use Illuminate\Http\Request;
 

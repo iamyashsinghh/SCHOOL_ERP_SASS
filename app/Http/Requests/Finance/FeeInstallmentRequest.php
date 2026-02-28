@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Finance;
 
 use App\Enums\Finance\LateFeeFrequency;
-use App\Models\Finance\FeeGroup;
-use App\Models\Finance\FeeInstallment;
-use App\Models\Transport\Fee as TransportFee;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Transport\Fee as TransportFee;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rules\Enum;

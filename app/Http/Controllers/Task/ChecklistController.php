@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Task;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\ChecklistRequest;
 use App\Http\Resources\Task\ChecklistResource;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use App\Services\Task\ChecklistListService;
 use App\Services\Task\ChecklistService;
 use Illuminate\Http\Request;

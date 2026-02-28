@@ -5,7 +5,7 @@ namespace App\Services\Communication;
 use App\Contracts\ListGenerator;
 use App\Enums\Communication\Type;
 use App\Http\Resources\Communication\WhatsAppResource;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

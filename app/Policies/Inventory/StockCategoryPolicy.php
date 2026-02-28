@@ -2,8 +2,8 @@
 
 namespace App\Policies\Inventory;
 
-use App\Models\Inventory\StockCategory;
-use App\Models\User;
+use App\Models\Tenant\Inventory\StockCategory;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class StockCategoryPolicy

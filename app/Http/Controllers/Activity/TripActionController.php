@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Activity;
 
 use App\Http\Controllers\Controller;
-use App\Models\Activity\Trip;
+use App\Models\Tenant\Activity\Trip;
 use App\Services\Activity\TripActionService;
 use Illuminate\Http\Request;
 

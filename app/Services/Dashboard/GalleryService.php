@@ -3,7 +3,7 @@
 namespace App\Services\Dashboard;
 
 use App\Http\Resources\GalleryResource;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use Illuminate\Http\Request;
 
 class GalleryService

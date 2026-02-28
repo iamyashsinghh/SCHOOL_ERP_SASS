@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\ContactUpdateRequest;
 use App\Http\Resources\ContactResource;
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 use App\Services\ContactListService;
 use App\Services\ContactService;
 use Illuminate\Http\Request;

@@ -5,8 +5,8 @@ namespace App\Http\Requests\Transport\Vehicle;
 use App\Enums\OptionType;
 use App\Enums\Transport\Vehicle\FuelType;
 use App\Enums\Transport\Vehicle\Ownership;
-use App\Models\Option;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

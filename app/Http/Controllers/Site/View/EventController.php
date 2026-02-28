@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site\View;
 
 use App\Http\Controllers\Controller;
-use App\Models\Calendar\Event;
+use App\Models\Tenant\Calendar\Event;
 use App\Support\MarkdownParser;
 use Illuminate\Http\Request;
 

@@ -2,12 +2,12 @@
 
 namespace App\Support;
 
-use App\Models\Approval\Request as ApprovalRequest;
-use App\Models\Contact;
-use App\Models\Dialogue;
-use App\Models\Employee\Employee;
-use App\Models\Post\Post;
-use App\Models\Student\Student;
+use App\Models\Tenant\Approval\Request as ApprovalRequest;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Dialogue;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Post\Post;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 trait ValidateComment

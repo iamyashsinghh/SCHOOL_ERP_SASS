@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Custom;
 
 use App\Http\Controllers\Controller;
-use App\Models\Finance\Transaction;
+use App\Models\Tenant\Finance\Transaction;
 use Illuminate\Http\Request;
 
 class FeeMismatchController extends Controller

@@ -2,8 +2,8 @@
 
 namespace App\Actions\Finance;
 
-use App\Models\Finance\FeeGroup;
-use App\Models\Finance\FeeInstallment;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeInstallment;
 use Illuminate\Validation\ValidationException;
 
 class CreateCustomFeeInstallment

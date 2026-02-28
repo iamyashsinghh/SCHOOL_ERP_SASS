@@ -2,8 +2,8 @@
 
 namespace App\Policies\Calendar;
 
-use App\Models\Calendar\Holiday;
-use App\Models\User;
+use App\Models\Tenant\Calendar\Holiday;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class HolidayPolicy

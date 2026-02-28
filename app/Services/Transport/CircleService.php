@@ -2,7 +2,7 @@
 
 namespace App\Services\Transport;
 
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Transport\Circle;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -3,8 +3,8 @@
 namespace App\Policies\Employee;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Employee\Designation;
-use App\Models\User;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class DesignationPolicy

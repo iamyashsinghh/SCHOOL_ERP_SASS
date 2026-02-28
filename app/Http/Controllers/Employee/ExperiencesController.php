@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\ExperiencesRequest;
 use App\Http\Resources\Employee\ExperiencesResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\ExperiencesListService;
 use App\Services\Employee\ExperiencesService;
 use Illuminate\Http\Request;

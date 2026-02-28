@@ -3,7 +3,7 @@
 namespace App\Jobs\Notifications\Communication;
 
 use App\Concerns\SetConfigForJob;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Support\HasAudience;
 use Illuminate\Bus\Batch;
 use Illuminate\Bus\Queueable;

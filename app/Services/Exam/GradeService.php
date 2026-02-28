@@ -2,7 +2,7 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Exam\Grade;
+use App\Models\Tenant\Exam\Grade;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

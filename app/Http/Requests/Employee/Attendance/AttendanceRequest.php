@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Employee\Attendance;
 
-use App\Models\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

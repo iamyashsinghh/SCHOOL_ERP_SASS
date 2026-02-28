@@ -3,7 +3,7 @@
 namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Attendance\Category as AttendanceCategory;
-use App\Models\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Attendance\Attendance;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 

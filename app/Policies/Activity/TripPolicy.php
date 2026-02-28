@@ -2,8 +2,8 @@
 
 namespace App\Policies\Activity;
 
-use App\Models\Activity\Trip;
-use App\Models\User;
+use App\Models\Tenant\Activity\Trip;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TripPolicy

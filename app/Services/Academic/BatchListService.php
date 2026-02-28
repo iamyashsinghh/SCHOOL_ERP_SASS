@@ -4,9 +4,9 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\BatchResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Subject;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

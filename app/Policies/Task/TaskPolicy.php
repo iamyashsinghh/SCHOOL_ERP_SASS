@@ -3,8 +3,8 @@
 namespace App\Policies\Task;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Task\Task;
-use App\Models\User;
+use App\Models\Tenant\Task\Task;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TaskPolicy

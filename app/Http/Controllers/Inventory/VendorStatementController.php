@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Inventory;
 
 use App\Http\Controllers\Controller;
-use App\Models\Inventory\Vendor;
+use App\Models\Tenant\Inventory\Vendor;
 use App\Services\Inventory\VendorStatementService;
 use Illuminate\Http\Request;
 

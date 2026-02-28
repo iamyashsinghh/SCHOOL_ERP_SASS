@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Site\BlockRequest;
 use App\Http\Resources\Site\BlockResource;
-use App\Models\Site\Block;
+use App\Models\Tenant\Site\Block;
 use App\Services\Site\BlockListService;
 use App\Services\Site\BlockService;
 use Illuminate\Http\Request;

@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\Concerns\HasStorage;
-use App\Models\Media;
+use App\Models\Tenant\Media;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

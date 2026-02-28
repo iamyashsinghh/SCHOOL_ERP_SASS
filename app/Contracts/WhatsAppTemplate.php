@@ -2,7 +2,7 @@
 
 namespace App\Contracts;
 
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

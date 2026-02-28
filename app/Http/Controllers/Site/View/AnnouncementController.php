@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site\View;
 
 use App\Http\Controllers\Controller;
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use App\Support\MarkdownParser;
 use Illuminate\Http\Request;
 

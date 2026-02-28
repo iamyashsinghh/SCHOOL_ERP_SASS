@@ -3,11 +3,11 @@
 namespace App\Services\Resource;
 
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
-use App\Models\Resource\Syllabus;
-use App\Models\Resource\SyllabusUnit;
+use App\Models\Tenant\Academic\BatchSubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\Syllabus;
+use App\Models\Tenant\Resource\SyllabusUnit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

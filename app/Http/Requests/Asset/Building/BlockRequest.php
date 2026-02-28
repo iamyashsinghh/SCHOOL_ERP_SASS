@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Asset\Building;
 
-use App\Models\Asset\Building\Block;
+use App\Models\Tenant\Asset\Building\Block;
 use Illuminate\Foundation\Http\FormRequest;
 
 class BlockRequest extends FormRequest

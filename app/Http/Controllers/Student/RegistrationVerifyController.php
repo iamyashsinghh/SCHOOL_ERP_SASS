@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Student\Registration;
 use App\Services\Student\RegistrationVerifyService;
 use Illuminate\Http\Request;
 

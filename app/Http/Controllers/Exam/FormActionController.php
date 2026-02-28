@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
-use App\Models\Exam\Form;
+use App\Models\Tenant\Exam\Form;
 use App\Services\Exam\FormActionService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

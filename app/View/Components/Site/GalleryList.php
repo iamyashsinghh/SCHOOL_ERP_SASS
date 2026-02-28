@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Site;
 
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use Illuminate\View\Component;
 
 class GalleryList extends Component

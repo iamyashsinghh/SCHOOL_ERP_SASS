@@ -4,8 +4,8 @@ namespace App\Policies\Helpdesk\Ticket;
 
 use App\Concerns\SubordinateAccess;
 use App\Enums\Helpdesk\Ticket\Status as TicketStatus;
-use App\Models\Helpdesk\Ticket\Ticket;
-use App\Models\User;
+use App\Models\Tenant\Helpdesk\Ticket\Ticket;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TicketPolicy

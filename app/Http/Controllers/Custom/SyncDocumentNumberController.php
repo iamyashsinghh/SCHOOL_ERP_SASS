@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Custom;
 
 use App\Enums\OptionType;
 use App\Http\Controllers\Controller;
-use App\Models\Document;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 

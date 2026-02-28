@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Leave;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Leave\TypeRequest as LeaveTypeRequest;
 use App\Http\Resources\Employee\Leave\TypeResource as LeaveTypeResource;
-use App\Models\Employee\Leave\Type as LeaveType;
+use App\Models\Tenant\Employee\Leave\Type as LeaveType;
 use App\Services\Employee\Leave\TypeListService as LeaveTypeListService;
 use App\Services\Employee\Leave\TypeService as LeaveTypeService;
 use Illuminate\Http\Request;

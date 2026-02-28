@@ -2,10 +2,10 @@
 
 namespace App\Actions\Exam;
 
-use App\Models\Academic\SubjectRecord;
-use App\Models\Exam\Schedule;
-use App\Models\Student\Student;
-use App\Models\Student\SubjectWiseStudent;
+use App\Models\Tenant\Academic\SubjectRecord;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Student\SubjectWiseStudent;
 
 class GetAvailableSubjectForStudent
 {

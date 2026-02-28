@@ -3,11 +3,11 @@
 namespace App\Services\Student;
 
 use App\Actions\Finance\GetPaymentGateway;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Fee;
-use App\Models\Student\Registration;
-use App\Models\Student\Student;
-use App\Models\TempStorage;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\TempStorage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

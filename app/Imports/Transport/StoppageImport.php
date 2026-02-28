@@ -3,8 +3,8 @@
 namespace App\Imports\Transport;
 
 use App\Concerns\ItemImport;
-use App\Models\Academic\Period;
-use App\Models\Transport\Stoppage;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Transport\Stoppage;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

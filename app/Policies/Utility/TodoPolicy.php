@@ -2,8 +2,8 @@
 
 namespace App\Policies\Utility;
 
-use App\Models\User;
-use App\Models\Utility\Todo;
+use App\Models\Tenant\User;
+use App\Models\Tenant\Utility\Todo;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TodoPolicy

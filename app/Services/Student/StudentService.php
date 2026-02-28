@@ -16,10 +16,10 @@ use App\Enums\Student\StudentStatus;
 use App\Enums\Student\StudentType;
 use App\Http\Resources\CustomFieldResource;
 use App\Http\Resources\OptionResource;
-use App\Models\CustomField;
-use App\Models\GroupMember;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\CustomField;
+use App\Models\Tenant\GroupMember;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

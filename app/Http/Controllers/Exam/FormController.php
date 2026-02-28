@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Exam\FormResource;
-use App\Models\Exam\Form;
+use App\Models\Tenant\Exam\Form;
 use App\Services\Exam\FormListService;
 use App\Services\Exam\FormService;
 use Illuminate\Http\Request;

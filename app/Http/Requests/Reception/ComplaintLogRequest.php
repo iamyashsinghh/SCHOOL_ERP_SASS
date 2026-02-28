@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Reception;
 
 use App\Enums\Reception\ComplaintStatus;
-use App\Models\Reception\Complaint;
+use App\Models\Tenant\Reception\Complaint;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

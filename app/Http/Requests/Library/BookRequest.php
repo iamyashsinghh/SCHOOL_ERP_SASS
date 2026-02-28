@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Library;
 
 use App\Enums\OptionType;
-use App\Models\Library\Book;
-use App\Models\Option;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class BookRequest extends FormRequest

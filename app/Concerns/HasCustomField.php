@@ -3,7 +3,7 @@
 namespace App\Concerns;
 
 use App\Enums\CustomFieldType;
-use App\Models\CustomField;
+use App\Models\Tenant\CustomField;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

@@ -101,7 +101,11 @@
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
-        }
+        },
+        "platform": {
+            "php": "8.4.0"
+        },
+        "platform-check": false
     },
     "minimum-stability": "stable",
     "prefer-stable": true

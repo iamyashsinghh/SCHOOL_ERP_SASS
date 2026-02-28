@@ -2,11 +2,11 @@
 
 namespace App\Http\Requests\Reception;
 
-use App\Models\Contact;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Reception\Complaint;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Complaint;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

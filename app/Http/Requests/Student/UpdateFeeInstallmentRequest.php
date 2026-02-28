@@ -4,7 +4,7 @@ namespace App\Http\Requests\Student;
 
 use App\Enums\Finance\LateFeeFrequency;
 use App\Enums\Transport\Direction;
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Transport\Circle;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\ComplaintAssignRequest;
 use App\Http\Requests\Reception\ComplaintLogRequest;
-use App\Models\Reception\Complaint;
+use App\Models\Tenant\Reception\Complaint;
 use App\Services\Reception\ComplaintActionService;
 
 class ComplaintActionController extends Controller

@@ -2,12 +2,12 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
-use App\Models\Exam\Exam;
-use App\Models\Exam\Schedule;
-use App\Models\Student\SubjectWiseStudent;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Exam\Exam;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\SubjectWiseStudent;
 use App\Support\HasGrade;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

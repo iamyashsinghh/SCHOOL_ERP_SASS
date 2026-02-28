@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\RegistrationActionRequest;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Student\Registration;
 use App\Services\Contact\PhotoService;
 use App\Services\Student\RegistrationActionService;
 use Illuminate\Http\Request;

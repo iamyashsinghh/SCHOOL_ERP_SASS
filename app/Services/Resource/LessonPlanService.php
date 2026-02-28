@@ -4,10 +4,10 @@ namespace App\Services\Resource;
 
 use App\Enums\Resource\LessonPlanStatus;
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
-use App\Models\Resource\LessonPlan;
+use App\Models\Tenant\Academic\BatchSubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\LessonPlan;
 use Illuminate\Http\Request;
 
 class LessonPlanService

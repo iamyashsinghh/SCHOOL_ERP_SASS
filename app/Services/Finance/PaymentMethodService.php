@@ -2,7 +2,7 @@
 
 namespace App\Services\Finance;
 
-use App\Models\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\PaymentMethod;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

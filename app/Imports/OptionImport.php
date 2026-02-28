@@ -4,7 +4,7 @@ namespace App\Imports;
 
 use App\Concerns\ItemImport;
 use App\Helpers\ListHelper;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

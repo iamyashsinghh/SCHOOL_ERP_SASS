@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\GalleryType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use App\Support\HasAudience;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

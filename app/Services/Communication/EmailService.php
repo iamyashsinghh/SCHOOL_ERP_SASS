@@ -5,7 +5,7 @@ namespace App\Services\Communication;
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
 use App\Jobs\Notifications\Communication\SendEmail;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Support\HasAudience;
 use App\Support\MergeGuardianContact;
 use Illuminate\Http\Request;

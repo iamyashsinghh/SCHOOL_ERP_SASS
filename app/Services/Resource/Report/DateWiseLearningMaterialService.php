@@ -2,12 +2,12 @@
 
 namespace App\Services\Resource\Report;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Academic\SubjectRecord;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
-use App\Models\Resource\LearningMaterial;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Academic\SubjectRecord;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Resource\LearningMaterial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

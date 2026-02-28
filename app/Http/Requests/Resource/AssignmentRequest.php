@@ -3,10 +3,10 @@
 namespace App\Http\Requests\Resource;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Option;
-use App\Models\Resource\Assignment;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Resource\Assignment;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AssignmentRequest extends FormRequest

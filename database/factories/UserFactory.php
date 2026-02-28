@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Enums\UserStatus;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

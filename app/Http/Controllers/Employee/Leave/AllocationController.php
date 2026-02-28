@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Leave;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Leave\AllocationRequest as LeaveAllocationRequest;
 use App\Http\Resources\Employee\Leave\AllocationResource as LeaveAllocationResource;
-use App\Models\Employee\Leave\Allocation as LeaveAllocation;
+use App\Models\Tenant\Employee\Leave\Allocation as LeaveAllocation;
 use App\Services\Employee\Leave\AllocationListService as LeaveAllocationListService;
 use App\Services\Employee\Leave\AllocationService as LeaveAllocationService;
 use Illuminate\Http\Request;

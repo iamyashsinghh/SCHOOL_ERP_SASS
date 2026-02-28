@@ -4,11 +4,11 @@ namespace App\Http\Requests\Finance;
 
 use App\Concerns\SimpleValidation;
 use App\Enums\OptionType;
-use App\Models\Employee\Employee;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\PaymentMethod;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\PaymentMethod;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ReceiptRequest extends FormRequest

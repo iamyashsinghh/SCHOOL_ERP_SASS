@@ -4,7 +4,7 @@ namespace App\Services\Finance;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Finance\FeeComponentResource;
-use App\Models\Finance\FeeComponent;
+use App\Models\Tenant\Finance\FeeComponent;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

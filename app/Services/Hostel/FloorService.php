@@ -3,8 +3,8 @@
 namespace App\Services\Hostel;
 
 use App\Http\Resources\Hostel\BlockResource;
-use App\Models\Hostel\Block;
-use App\Models\Hostel\Floor;
+use App\Models\Tenant\Hostel\Block;
+use App\Models\Tenant\Hostel\Floor;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

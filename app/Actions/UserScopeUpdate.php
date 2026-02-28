@@ -3,8 +3,8 @@
 namespace App\Actions;
 
 use App\Enums\UserScope;
-use App\Models\Organization;
-use App\Models\Team;
+use App\Models\Tenant\Organization;
+use App\Models\Tenant\Team;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules\Enum;
 

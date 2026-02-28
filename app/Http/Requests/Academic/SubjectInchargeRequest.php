@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Academic;
 
 use App\Concerns\HasIncharge;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 

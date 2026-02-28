@@ -2,7 +2,7 @@
 
 namespace App\Actions;
 
-use App\Models\Tag;
+use App\Models\Tenant\Tag;
 use Illuminate\Support\Str;
 
 class CreateTag

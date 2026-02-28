@@ -2,8 +2,8 @@
 
 namespace App\Concerns;
 
-use App\Models\Employee\Designation;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Employee\Employee;
 use App\Support\HasTree;
 use Illuminate\Validation\ValidationException;
 

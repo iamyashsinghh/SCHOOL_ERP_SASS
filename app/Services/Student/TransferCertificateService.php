@@ -3,7 +3,7 @@
 namespace App\Services\Student;
 
 use App\Http\Resources\MediaResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

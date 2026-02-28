@@ -2,8 +2,8 @@
 
 namespace App\Services\Activity;
 
-use App\Models\Activity\Trip;
-use App\Models\Activity\TripParticipant;
+use App\Models\Tenant\Activity\Trip;
+use App\Models\Tenant\Activity\TripParticipant;
 use Illuminate\Http\Request;
 
 class TripParticipantService

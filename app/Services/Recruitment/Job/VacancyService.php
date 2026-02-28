@@ -3,7 +3,7 @@
 namespace App\Services\Recruitment\Job;
 
 use App\Enums\Gender;
-use App\Models\Recruitment\Vacancy;
+use App\Models\Tenant\Recruitment\Vacancy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Period;
-use App\Models\User;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PeriodPolicy

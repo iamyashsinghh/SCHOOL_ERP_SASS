@@ -5,8 +5,8 @@ namespace App\Observers;
 use App\Actions\CreateDefaultOption;
 use App\Actions\Finance\CreateDefaultLedgerType;
 use App\Helpers\SysHelper;
-use App\Models\Team;
-use App\Models\User;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\User;
 
 class TeamObserver
 {

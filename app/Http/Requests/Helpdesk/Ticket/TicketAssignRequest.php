@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Helpdesk\Ticket;
 
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TicketAssignRequest extends FormRequest

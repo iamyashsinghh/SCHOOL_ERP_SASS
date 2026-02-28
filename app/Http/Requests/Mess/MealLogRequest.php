@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Mess;
 
-use App\Models\Mess\Meal;
-use App\Models\Mess\MealLog;
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\Meal;
+use App\Models\Tenant\Mess\MealLog;
+use App\Models\Tenant\Mess\MenuItem;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MealLogRequest extends FormRequest

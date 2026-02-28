@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\UserRequest;
 use App\Http\Requests\Employee\UserUpdateRequest;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\UserService;
 use Illuminate\Http\Request;
 

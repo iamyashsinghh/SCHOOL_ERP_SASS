@@ -2,7 +2,7 @@
 
 namespace App\Actions\Finance;
 
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Support\Arr;
 
 class GetPaymentGateway

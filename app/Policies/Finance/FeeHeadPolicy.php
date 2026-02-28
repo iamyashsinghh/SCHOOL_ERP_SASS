@@ -2,8 +2,8 @@
 
 namespace App\Policies\Finance;
 
-use App\Models\Finance\FeeHead;
-use App\Models\User;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class FeeHeadPolicy

@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Transport;
 
-use App\Models\Transport\Circle;
-use App\Models\Transport\Fee;
+use App\Models\Tenant\Transport\Circle;
+use App\Models\Tenant\Transport\Fee;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

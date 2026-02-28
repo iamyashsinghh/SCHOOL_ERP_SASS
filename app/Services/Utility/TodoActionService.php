@@ -3,8 +3,8 @@
 namespace App\Services\Utility;
 
 use App\Enums\OptionType;
-use App\Models\Option;
-use App\Models\Utility\Todo;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Utility\Todo;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

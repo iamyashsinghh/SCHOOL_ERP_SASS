@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Guardian;
 
 use App\Http\Controllers\Controller;
-use App\Models\Guardian;
+use App\Models\Tenant\Guardian;
 use App\Services\Contact\PhotoService;
 use Illuminate\Http\Request;
 

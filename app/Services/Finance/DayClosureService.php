@@ -2,8 +2,8 @@
 
 namespace App\Services\Finance;
 
-use App\Models\Finance\DayClosure;
-use App\Models\Finance\TransactionPayment;
+use App\Models\Tenant\Finance\DayClosure;
+use App\Models\Tenant\Finance\TransactionPayment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

@@ -2,7 +2,7 @@
 
 namespace App\Services\Site;
 
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

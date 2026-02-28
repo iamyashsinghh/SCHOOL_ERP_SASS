@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Helpdesk\Ticket;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Helpdesk\Ticket\TicketAssignRequest;
 use App\Http\Requests\Helpdesk\Ticket\TicketMessageRequest;
-use App\Models\Helpdesk\Ticket\Ticket;
+use App\Models\Tenant\Helpdesk\Ticket\Ticket;
 use App\Services\Helpdesk\Ticket\TicketActionService;
 use Illuminate\Http\Request;
 

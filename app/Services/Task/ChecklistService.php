@@ -3,9 +3,9 @@
 namespace App\Services\Task;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Employee;
-use App\Models\Task\Checklist;
-use App\Models\Task\Task;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Task\Checklist;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

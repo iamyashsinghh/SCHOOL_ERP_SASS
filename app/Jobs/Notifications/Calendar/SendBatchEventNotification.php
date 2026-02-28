@@ -3,9 +3,9 @@
 namespace App\Jobs\Notifications\Calendar;
 
 use App\Concerns\SetConfigForJob;
-use App\Models\Calendar\Event;
-use App\Models\Config\Template;
-use App\Models\Notification;
+use App\Models\Tenant\Calendar\Event;
+use App\Models\Tenant\Config\Template;
+use App\Models\Tenant\Notification;
 use App\Support\HasAudience;
 use App\Support\MergeGuardianContact;
 use Illuminate\Bus\Batch;

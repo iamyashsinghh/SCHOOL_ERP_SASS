@@ -4,8 +4,8 @@ namespace App\Services\Task;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Task\MemberResource;
-use App\Models\Task\Member;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Member;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

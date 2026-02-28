@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\AttendanceRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\AttendanceListService;
 use App\Services\Student\AttendanceService;
 use Illuminate\Http\Request;

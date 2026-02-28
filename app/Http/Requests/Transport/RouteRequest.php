@@ -4,9 +4,9 @@ namespace App\Http\Requests\Transport;
 
 use App\Enums\Transport\Direction;
 use App\Helpers\CalHelper;
-use App\Models\Transport\Route;
-use App\Models\Transport\Stoppage;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Transport\Route;
+use App\Models\Tenant\Transport\Stoppage;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rules\Enum;

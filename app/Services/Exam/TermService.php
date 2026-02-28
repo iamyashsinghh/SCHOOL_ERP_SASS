@@ -3,8 +3,8 @@
 namespace App\Services\Exam;
 
 use App\Http\Resources\Academic\DivisionResource;
-use App\Models\Academic\Division;
-use App\Models\Exam\Term;
+use App\Models\Tenant\Academic\Division;
+use App\Models\Tenant\Exam\Term;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

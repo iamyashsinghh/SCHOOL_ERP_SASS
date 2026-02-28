@@ -2,7 +2,7 @@
 
 namespace App\Services\Config;
 
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use Illuminate\Http\Request;
 
 class TemplateActionService

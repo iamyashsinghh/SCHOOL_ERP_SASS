@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Blog\BlogRequest;
 use App\Http\Resources\Blog\BlogResource;
 use App\Http\Resources\Blog\BlogSummaryResource;
-use App\Models\Blog\Blog;
+use App\Models\Tenant\Blog\Blog;
 use App\Services\Blog\BlogListService;
 use App\Services\Blog\BlogService;
 use Illuminate\Http\Request;

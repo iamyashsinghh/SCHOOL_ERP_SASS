@@ -3,11 +3,11 @@
 namespace App\Services\Transport;
 
 use App\Http\Resources\Transport\CircleResource;
-use App\Models\Finance\FeeInstallment;
-use App\Models\Student\Fee as StudentFee;
-use App\Models\Transport\Circle;
-use App\Models\Transport\Fee;
-use App\Models\Transport\FeeRecord;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Student\Fee as StudentFee;
+use App\Models\Tenant\Transport\Circle;
+use App\Models\Tenant\Transport\Fee;
+use App\Models\Tenant\Transport\FeeRecord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

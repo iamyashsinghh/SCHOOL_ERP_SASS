@@ -5,9 +5,9 @@ namespace App\Services\Transport\Vehicle;
 use App\Enums\Finance\TransactionType;
 use App\Http\Resources\Finance\LedgerResource;
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Finance\Ledger;
-use App\Models\Transport\Vehicle\FuelRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Transport\Vehicle\FuelRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

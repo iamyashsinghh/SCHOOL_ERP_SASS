@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Incharge;
-use App\Models\User;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class InchargePolicy

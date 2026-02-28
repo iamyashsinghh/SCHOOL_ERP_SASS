@@ -3,7 +3,7 @@
 namespace App\Actions\Auth;
 
 use App\Enums\UserStatus;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Laravel\Socialite\Facades\Socialite;
 
 class OAuthLogin

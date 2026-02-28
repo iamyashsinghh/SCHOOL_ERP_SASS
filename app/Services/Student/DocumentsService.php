@@ -5,9 +5,9 @@ namespace App\Services\Student;
 use App\Enums\OptionType;
 use App\Enums\VerificationStatus;
 use App\Http\Resources\Student\Config\DocumentTypeResource;
-use App\Models\Document;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

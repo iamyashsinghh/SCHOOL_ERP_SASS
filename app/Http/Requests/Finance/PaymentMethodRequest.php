@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Finance;
 
-use App\Models\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\PaymentMethod;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PaymentMethodRequest extends FormRequest

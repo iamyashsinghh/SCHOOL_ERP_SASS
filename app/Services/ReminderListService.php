@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\ReminderResource;
-use App\Models\Reminder;
+use App\Models\Tenant\Reminder;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

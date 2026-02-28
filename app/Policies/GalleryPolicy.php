@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Gallery;
-use App\Models\User;
+use App\Models\Tenant\Gallery;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class GalleryPolicy

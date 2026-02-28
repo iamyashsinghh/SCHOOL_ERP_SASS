@@ -7,8 +7,8 @@ use App\Enums\OptionType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
 use App\Helpers\CalHelper;
 use App\Http\Resources\OptionResource;
-use App\Models\Activity\Trip;
-use App\Models\Option;
+use App\Models\Tenant\Activity\Trip;
+use App\Models\Tenant\Option;
 use App\Support\HasAudience;
 use Illuminate\Http\Request;
 

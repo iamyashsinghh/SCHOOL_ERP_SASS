@@ -3,8 +3,8 @@
 namespace App\Imports\Employee;
 
 use App\Concerns\ItemImport;
-use App\Models\Account;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

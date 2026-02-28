@@ -5,9 +5,9 @@ namespace App\Services\Student;
 use App\Actions\Student\FetchBatchWiseStudent;
 use App\Enums\FamilyRelation;
 use App\Http\Resources\Student\StudentResource;
-use App\Models\Academic\Batch;
-use App\Models\Contact;
-use App\Models\Guardian;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Guardian;
 use Illuminate\Http\Request;
 
 class PhotoService

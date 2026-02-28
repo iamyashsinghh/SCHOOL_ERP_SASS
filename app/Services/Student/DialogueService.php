@@ -4,10 +4,10 @@ namespace App\Services\Student;
 
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Contact;
-use App\Models\Dialogue;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Dialogue;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Department;
-use App\Models\Academic\Program;
-use App\Models\Academic\ProgramType;
+use App\Models\Tenant\Academic\Department;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Academic\ProgramType;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProgramRequest extends FormRequest

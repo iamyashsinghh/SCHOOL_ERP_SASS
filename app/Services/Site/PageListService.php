@@ -4,7 +4,7 @@ namespace App\Services\Site;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Site\PageSummaryResource;
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Page;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

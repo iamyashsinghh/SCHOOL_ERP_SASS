@@ -4,10 +4,10 @@ namespace App\Services\Finance;
 
 use App\Actions\Student\UpdateStudentFeeConcession;
 use App\Http\Resources\Finance\FeeHeadResource;
-use App\Models\Finance\FeeConcession;
-use App\Models\Finance\FeeConcessionRecord;
-use App\Models\Finance\FeeHead;
-use App\Models\Student\Fee;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeConcessionRecord;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Student\Fee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

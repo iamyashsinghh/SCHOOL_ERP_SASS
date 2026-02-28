@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site\View;
 
 use App\Http\Controllers\Controller;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller

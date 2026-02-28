@@ -3,7 +3,7 @@
 namespace App\Actions;
 
 use App\Enums\UserStatus;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules\Enum;
 use Illuminate\Validation\ValidationException;

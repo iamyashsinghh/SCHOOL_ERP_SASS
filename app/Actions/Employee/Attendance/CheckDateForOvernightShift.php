@@ -3,7 +3,7 @@
 namespace App\Actions\Employee\Attendance;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 

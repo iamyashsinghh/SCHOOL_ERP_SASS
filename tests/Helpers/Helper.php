@@ -3,7 +3,7 @@
 namespace Tests\Helpers;
 
 use App\Helpers\SysHelper;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

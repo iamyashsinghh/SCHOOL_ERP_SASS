@@ -2,8 +2,8 @@
 
 namespace App\Policies\Mess;
 
-use App\Models\Mess\MealLog;
-use App\Models\User;
+use App\Models\Tenant\Mess\MealLog;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class MealLogPolicy

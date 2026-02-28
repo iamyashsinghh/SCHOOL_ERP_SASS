@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Library;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Library\BookReturnRequest;
-use App\Models\Library\Transaction;
+use App\Models\Tenant\Library\Transaction;
 use App\Services\Library\TransactionActionService;
 
 class TransactionActionController extends Controller

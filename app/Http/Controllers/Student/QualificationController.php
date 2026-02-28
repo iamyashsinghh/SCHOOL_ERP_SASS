@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\QualificationRequest;
 use App\Http\Resources\Student\QualificationResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\QualificationListService;
 use App\Services\Student\QualificationService;
 use Illuminate\Http\Request;

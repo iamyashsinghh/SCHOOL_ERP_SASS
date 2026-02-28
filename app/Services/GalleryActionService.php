@@ -3,8 +3,8 @@
 namespace App\Services;
 
 use App\Concerns\HasStorage;
-use App\Models\Gallery;
-use App\Models\GalleryImage;
+use App\Models\Tenant\Gallery;
+use App\Models\Tenant\GalleryImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

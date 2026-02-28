@@ -7,9 +7,9 @@ use App\Actions\Task\ReplicateMedia;
 use App\Actions\Task\ReplicateMember;
 use App\Actions\Task\ReplicateTask;
 use App\Actions\UpdateNextRepeatDate;
-use App\Models\Config\Config;
-use App\Models\Task\Task;
-use App\Models\Team;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\Task\Task;
+use App\Models\Tenant\Team;
 use App\Support\SetConfig;
 use Illuminate\Console\Command;
 

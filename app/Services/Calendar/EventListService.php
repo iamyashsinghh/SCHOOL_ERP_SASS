@@ -4,7 +4,7 @@ namespace App\Services\Calendar;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Calendar\EventResource;
-use App\Models\Calendar\Event;
+use App\Models\Tenant\Calendar\Event;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

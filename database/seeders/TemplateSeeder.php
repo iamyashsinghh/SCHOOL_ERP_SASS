@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Arr;
 

@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\Day;
-use App\Models\Academic\Subject;
-use App\Models\Asset\Building\Room;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Asset\Building\Room;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

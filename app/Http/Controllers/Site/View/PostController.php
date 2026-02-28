@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Site\View;
 use App\Enums\Post\Visibility;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Post\PostResource;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Post\Post;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Post\Post;
+use App\Models\Tenant\Student\Student;
 use App\Services\Post\PostService;
 use Illuminate\Http\Request;
 

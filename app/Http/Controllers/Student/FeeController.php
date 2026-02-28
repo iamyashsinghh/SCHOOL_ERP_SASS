@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\SetFeeRequest;
 use App\Http\Requests\Student\UpdateFeeInstallmentRequest;
 use App\Http\Requests\Student\UpdateFeeRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\FeeListService;
 use App\Services\Student\FeeService;
 use Illuminate\Http\Request;

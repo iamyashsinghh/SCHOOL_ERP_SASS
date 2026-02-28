@@ -4,7 +4,7 @@ namespace App\Services\Student\Config;
 
 use App\Enums\OptionType;
 use App\Helpers\ListHelper;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

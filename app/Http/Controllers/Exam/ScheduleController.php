@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\ScheduleRequest;
 use App\Http\Resources\Exam\ScheduleFormSubmissionResource;
 use App\Http\Resources\Exam\ScheduleResource;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Exam\Schedule;
 use App\Services\Exam\ScheduleListService;
 use App\Services\Exam\ScheduleService;
 use Illuminate\Http\Request;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Chat;
 use App\Events\Chat\MessageSent;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Chat\MessageResource;
-use App\Models\Chat\Chat;
+use App\Models\Tenant\Chat\Chat;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller

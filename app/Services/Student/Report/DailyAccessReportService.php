@@ -3,10 +3,10 @@
 namespace App\Services\Student\Report;
 
 use App\Helpers\CalHelper;
-use App\Models\Academic\Batch;
-use App\Models\Guardian;
-use App\Models\Student\Student;
-use App\Models\UserAccessLog;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\UserAccessLog;
 use Carbon\Carbon;
 use Illuminate\Validation\ValidationException;
 

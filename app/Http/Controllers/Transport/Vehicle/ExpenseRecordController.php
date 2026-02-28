@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\ExpenseRecordRequest;
 use App\Http\Resources\Transport\Vehicle\ExpenseRecordResource;
-use App\Models\Transport\Vehicle\ExpenseRecord;
+use App\Models\Tenant\Transport\Vehicle\ExpenseRecord;
 use App\Services\Transport\Vehicle\ExpenseRecordListService;
 use App\Services\Transport\Vehicle\ExpenseRecordService;
 use Illuminate\Http\Request;

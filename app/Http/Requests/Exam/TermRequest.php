@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Exam;
 
-use App\Models\Academic\Division;
-use App\Models\Exam\Term;
+use App\Models\Tenant\Academic\Division;
+use App\Models\Tenant\Exam\Term;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TermRequest extends FormRequest

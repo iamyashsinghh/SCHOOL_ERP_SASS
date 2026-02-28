@@ -2,7 +2,7 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeConcession;
 use Illuminate\Support\Arr;
 
 class GetTransportConcessionFeeAmount

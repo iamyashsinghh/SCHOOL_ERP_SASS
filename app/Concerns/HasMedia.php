@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Media;
+use App\Models\Tenant\Media;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Http\Request;

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Inventory;
 
-use App\Models\Inventory\Vendor;
-use App\Models\User;
+use App\Models\Tenant\Inventory\Vendor;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class VendorPolicy

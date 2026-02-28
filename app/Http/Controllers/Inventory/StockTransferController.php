@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\StockTransferRequest;
 use App\Http\Resources\Inventory\StockTransferResource;
-use App\Models\Inventory\StockTransfer;
+use App\Models\Tenant\Inventory\StockTransfer;
 use App\Services\Inventory\StockTransferListService;
 use App\Services\Inventory\StockTransferService;
 use Illuminate\Http\Request;

@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Employee;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\WorkShift as AttendanceWorkShift;
-use App\Models\Employee\WorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift as AttendanceWorkShift;
+use App\Models\Tenant\Employee\WorkShift;
 use Illuminate\Foundation\Http\FormRequest;
 
 class WorkShiftRequest extends FormRequest

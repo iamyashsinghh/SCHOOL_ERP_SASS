@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Activity;
 
-use App\Models\Activity\TripParticipant;
-use App\Models\Employee\Employee;
-use App\Models\Student\Student;
+use App\Models\Tenant\Activity\TripParticipant;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TripParticipantRequest extends FormRequest

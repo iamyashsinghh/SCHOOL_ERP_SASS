@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Resource;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\AssignmentSubmissionRequest;
-use App\Models\Resource\Assignment;
-use App\Models\Resource\AssignmentSubmission;
+use App\Models\Tenant\Resource\Assignment;
+use App\Models\Tenant\Resource\AssignmentSubmission;
 use App\Services\Resource\AssignmentSubmissionService;
 use Illuminate\Http\Request;
 

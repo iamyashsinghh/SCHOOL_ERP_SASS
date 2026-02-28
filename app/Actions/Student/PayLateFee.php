@@ -3,10 +3,10 @@
 namespace App\Actions\Student;
 
 use App\Enums\Finance\DefaultFeeHead;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Fee;
-use App\Models\Student\FeePayment;
-use App\Models\Student\FeeRecord;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Student\FeePayment;
+use App\Models\Tenant\Student\FeeRecord;
 
 class PayLateFee
 {

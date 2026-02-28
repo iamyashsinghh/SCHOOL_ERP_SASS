@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Approval;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Approval\TypeRequest;
 use App\Http\Resources\Approval\TypeResource;
-use App\Models\Approval\Type;
+use App\Models\Tenant\Approval\Type;
 use App\Services\Approval\TypeListService;
 use App\Services\Approval\TypeService;
 use Illuminate\Http\Request;

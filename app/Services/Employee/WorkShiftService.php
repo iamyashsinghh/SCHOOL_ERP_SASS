@@ -3,9 +3,9 @@
 namespace App\Services\Employee;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\Employee\Employee;
-use App\Models\Employee\WorkShift;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\WorkShift;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

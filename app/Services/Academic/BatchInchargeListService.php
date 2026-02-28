@@ -4,8 +4,8 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\BatchInchargeResource;
-use App\Models\Academic\Batch;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

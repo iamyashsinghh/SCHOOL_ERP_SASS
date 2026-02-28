@@ -3,8 +3,8 @@
 namespace App\Services\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayHeadCategory;
-use App\Models\Employee\Payroll\PayHead;
-use App\Models\Employee\Payroll\SalaryTemplateRecord;
+use App\Models\Tenant\Employee\Payroll\PayHead;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplateRecord;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

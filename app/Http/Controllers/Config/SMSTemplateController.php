@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Config\SMSTemplateRequest;
 use App\Http\Resources\Config\SMSTemplateResource;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Services\Config\SMSTemplateListService;
 use App\Services\Config\SMSTemplateService;
 use Illuminate\Http\Request;

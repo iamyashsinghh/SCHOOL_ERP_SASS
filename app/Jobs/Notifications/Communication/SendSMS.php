@@ -4,7 +4,7 @@ namespace App\Jobs\Notifications\Communication;
 
 use App\Actions\SendSMS as SendSMSAction;
 use App\Concerns\SetConfigForJob;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

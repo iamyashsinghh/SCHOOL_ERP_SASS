@@ -4,9 +4,9 @@ namespace App\Imports\Inventory;
 
 use App\Concerns\ItemImport;
 use App\Enums\Finance\LedgerGroup;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\LedgerType;
-use App\Models\Team;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\LedgerType;
+use App\Models\Tenant\Team;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

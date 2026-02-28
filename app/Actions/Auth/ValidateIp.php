@@ -2,7 +2,7 @@
 
 namespace App\Actions\Auth;
 
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

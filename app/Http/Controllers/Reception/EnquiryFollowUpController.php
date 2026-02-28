@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\EnquiryFollowUpRequest;
 use App\Http\Resources\Reception\EnquiryFollowUpResource;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Reception\Enquiry;
 use App\Services\Reception\EnquiryFollowUpService;
 use App\Services\Reception\EnquiryListService;
 use Illuminate\Http\Request;

@@ -3,13 +3,13 @@
 namespace App\Actions\Student;
 
 use App\Enums\Finance\DefaultFeeHead;
-use App\Models\Finance\FeeConcession;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\FeeInstallment;
-use App\Models\Student\Fee as StudentFee;
-use App\Models\Student\FeeRecord;
-use App\Models\Student\Student;
-use App\Models\Transport\Circle as TransportCircle;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Student\Fee as StudentFee;
+use App\Models\Tenant\Student\FeeRecord;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Transport\Circle as TransportCircle;
 use Illuminate\Support\Arr;
 
 class AssignFeeInstallment

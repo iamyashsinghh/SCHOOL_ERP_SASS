@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Hostel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Hostel\RoomRequest;
 use App\Http\Resources\Hostel\RoomResource;
-use App\Models\Hostel\Room;
+use App\Models\Tenant\Hostel\Room;
 use App\Services\Hostel\RoomListService;
 use App\Services\Hostel\RoomService;
 use Illuminate\Http\Request;

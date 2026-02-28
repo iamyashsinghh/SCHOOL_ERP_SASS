@@ -2,8 +2,8 @@
 
 namespace App\Concerns;
 
-use App\Models\Config\Config;
-use App\Models\Team;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\Team;
 use App\Support\SetConfig;
 
 trait SetConfigForJob

@@ -4,9 +4,9 @@ namespace App\Services\Asset\Building;
 
 use App\Http\Resources\Asset\Building\BlockResource;
 use App\Http\Resources\Asset\Building\FloorResource;
-use App\Models\Asset\Building\Block;
-use App\Models\Asset\Building\Floor;
-use App\Models\Asset\Building\Room;
+use App\Models\Tenant\Asset\Building\Block;
+use App\Models\Tenant\Asset\Building\Floor;
+use App\Models\Tenant\Asset\Building\Room;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

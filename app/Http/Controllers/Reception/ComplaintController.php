@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\ComplaintRequest;
 use App\Http\Resources\Reception\ComplaintResource;
-use App\Models\Reception\Complaint;
+use App\Models\Tenant\Reception\Complaint;
 use App\Services\Reception\ComplaintListService;
 use App\Services\Reception\ComplaintService;
 use Illuminate\Http\Request;

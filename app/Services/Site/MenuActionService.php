@@ -2,7 +2,7 @@
 
 namespace App\Services\Site;
 
-use App\Models\Site\Menu;
+use App\Models\Tenant\Site\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

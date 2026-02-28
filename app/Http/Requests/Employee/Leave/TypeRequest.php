@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Employee\Leave;
 
-use App\Models\Employee\Leave\Type;
+use App\Models\Tenant\Employee\Leave\Type;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TypeRequest extends FormRequest

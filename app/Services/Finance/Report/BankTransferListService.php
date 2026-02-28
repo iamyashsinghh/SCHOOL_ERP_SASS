@@ -4,9 +4,9 @@ namespace App\Services\Finance\Report;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Finance\Report\BankTransferListResource;
-use App\Models\Finance\BankTransfer;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Student;
+use App\Models\Tenant\Finance\BankTransfer;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

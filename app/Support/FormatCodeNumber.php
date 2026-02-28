@@ -2,8 +2,8 @@
 
 namespace App\Support;
 
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Course;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

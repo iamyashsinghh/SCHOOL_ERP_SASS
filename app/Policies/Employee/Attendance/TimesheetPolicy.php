@@ -2,8 +2,8 @@
 
 namespace App\Policies\Employee\Attendance;
 
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\User;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TimesheetPolicy

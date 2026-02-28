@@ -6,11 +6,11 @@ use App\Actions\Finance\GetPaymentGateway;
 use App\Http\Resources\Academic\CourseForGuestResource;
 use App\Http\Resources\Academic\PeriodForGuestResource;
 use App\Http\Resources\TeamForGuestResource;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Finance\FeeHead;
-use App\Models\Student\Student;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Team;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

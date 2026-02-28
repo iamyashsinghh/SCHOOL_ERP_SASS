@@ -4,10 +4,10 @@ namespace App\Actions\Exam;
 
 use App\Enums\Exam\AssessmentAttempt;
 use App\Enums\Exam\Result;
-use App\Models\Academic\SubjectRecord;
-use App\Models\Exam\Result as ExamResult;
-use App\Models\Exam\Schedule;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\SubjectRecord;
+use App\Models\Tenant\Exam\Result as ExamResult;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

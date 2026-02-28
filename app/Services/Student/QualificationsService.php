@@ -6,9 +6,9 @@ use App\Enums\OptionType;
 use App\Enums\QualificationResult;
 use App\Enums\VerificationStatus;
 use App\Http\Resources\OptionResource;
-use App\Models\Option;
-use App\Models\Qualification;
-use App\Models\Student\Student;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Qualification;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

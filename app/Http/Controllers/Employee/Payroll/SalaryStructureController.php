@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Payroll;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Payroll\SalaryStructureRequest;
 use App\Http\Resources\Employee\Payroll\SalaryStructureResource;
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 use App\Services\Employee\Payroll\SalaryStructureListService;
 use App\Services\Employee\Payroll\SalaryStructureService;
 use Illuminate\Http\Request;

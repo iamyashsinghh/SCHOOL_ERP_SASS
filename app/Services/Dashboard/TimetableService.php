@@ -4,17 +4,17 @@ namespace App\Services\Dashboard;
 
 use App\Helpers\CalHelper;
 use App\Http\Resources\Employee\EmployeeSummaryResource;
-use App\Models\Academic\Batch;
-use App\Models\Academic\ClassTiming;
-use App\Models\Academic\ClassTimingSession;
-use App\Models\Academic\Subject;
-use App\Models\Academic\Timetable;
-use App\Models\Academic\TimetableAllocation;
-use App\Models\Asset\Building\Room;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
-use App\Models\Student\Student;
-use App\Models\Student\SubjectWiseStudent;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\ClassTiming;
+use App\Models\Tenant\Academic\ClassTimingSession;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Academic\Timetable;
+use App\Models\Tenant\Academic\TimetableAllocation;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Student\SubjectWiseStudent;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 

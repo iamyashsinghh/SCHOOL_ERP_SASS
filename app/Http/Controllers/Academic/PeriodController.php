@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\PeriodRequest;
 use App\Http\Resources\Academic\PeriodResource;
-use App\Models\Academic\Period;
+use App\Models\Tenant\Academic\Period;
 use App\Services\Academic\PeriodListService;
 use App\Services\Academic\PeriodService;
 use Illuminate\Http\Request;

@@ -3,12 +3,12 @@
 namespace App\Services;
 
 use App\Enums\UserStatus;
-use App\Models\Contact;
-use App\Models\Employee\Leave\Request as LeaveRequest;
-use App\Models\Employee\Leave\RequestRecord as LeaveRequestRecord;
-use App\Models\Finance\Transaction;
-use App\Models\Team\Role;
-use App\Models\User;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Leave\Request as LeaveRequest;
+use App\Models\Tenant\Employee\Leave\RequestRecord as LeaveRequestRecord;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Team\Role;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Spatie\Permission\Models\Role as SpatieRole;

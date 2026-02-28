@@ -4,7 +4,7 @@ namespace App\Services\Approval;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Approval\TypeResource as ApprovalTypeResource;
-use App\Models\Approval\Type as ApprovalType;
+use App\Models\Tenant\Approval\Type as ApprovalType;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

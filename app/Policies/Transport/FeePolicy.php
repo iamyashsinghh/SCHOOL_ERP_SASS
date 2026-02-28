@@ -2,8 +2,8 @@
 
 namespace App\Policies\Transport;
 
-use App\Models\Transport\Fee;
-use App\Models\User;
+use App\Models\Tenant\Transport\Fee;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class FeePolicy

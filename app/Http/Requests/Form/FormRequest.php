@@ -5,7 +5,7 @@ namespace App\Http\Requests\Form;
 use App\Enums\CustomFieldType;
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
-use App\Models\Form\Form;
+use App\Models\Tenant\Form\Form;
 use App\Support\HasAudience;
 use Illuminate\Foundation\Http\FormRequest as HttpFormRequest;
 use Illuminate\Support\Arr;

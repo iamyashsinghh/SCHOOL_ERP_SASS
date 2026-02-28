@@ -4,9 +4,9 @@ namespace App\Services\Employee;
 
 use App\Actions\CreateTag;
 use App\Enums\OptionType;
-use App\Models\Employee\Employee;
-use App\Models\GroupMember;
-use App\Models\Option;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\GroupMember;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

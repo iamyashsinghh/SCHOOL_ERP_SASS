@@ -3,8 +3,8 @@
 namespace App\Services\Employee\Attendance;
 
 use App\Enums\Day;
-use App\Models\Employee\Attendance\WorkShift;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

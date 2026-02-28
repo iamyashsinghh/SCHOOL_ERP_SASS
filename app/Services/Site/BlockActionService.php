@@ -3,7 +3,7 @@
 namespace App\Services\Site;
 
 use App\Concerns\HasStorage;
-use App\Models\Site\Block;
+use App\Models\Tenant\Site\Block;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

@@ -2,9 +2,9 @@
 
 namespace App\Policies\Resource;
 
-use App\Models\Employee\Employee;
-use App\Models\Resource\LearningMaterial;
-use App\Models\User;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\LearningMaterial;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class LearningMaterialPolicy

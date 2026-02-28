@@ -3,9 +3,9 @@
 namespace App\Services\Dashboard;
 
 use App\Enums\Transport\Direction;
-use App\Models\Student\Student;
-use App\Models\Transport\Route;
-use App\Models\Transport\RoutePassenger;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Transport\Route;
+use App\Models\Tenant\Transport\RoutePassenger;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

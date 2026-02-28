@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\StockReturnRequest;
 use App\Http\Resources\Inventory\StockReturnResource;
-use App\Models\Inventory\StockReturn;
+use App\Models\Tenant\Inventory\StockReturn;
 use App\Services\Inventory\StockReturnListService;
 use App\Services\Inventory\StockReturnService;
 use Illuminate\Http\Request;

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Employee;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Employee\EditRequestResource;
-use App\Models\ContactEditRequest;
+use App\Models\Tenant\ContactEditRequest;
 use App\Services\Employee\EditRequestListService;
 use App\Services\Employee\EditRequestService;
 use Illuminate\Http\Request;

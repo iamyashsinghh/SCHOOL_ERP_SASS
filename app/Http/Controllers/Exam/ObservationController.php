@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Exam;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\ObservationRequest;
 use App\Http\Resources\Exam\ObservationResource;
-use App\Models\Exam\Observation;
+use App\Models\Tenant\Exam\Observation;
 use App\Services\Exam\ObservationListService;
 use App\Services\Exam\ObservationService;
 use Illuminate\Http\Request;

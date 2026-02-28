@@ -10,12 +10,12 @@ use App\Enums\MaritalStatus;
 use App\Enums\OptionType;
 use App\Enums\Reception\EnquiryNature;
 use App\Enums\Reception\EnquiryStatus;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\CustomField;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\CustomField;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Enquiry;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

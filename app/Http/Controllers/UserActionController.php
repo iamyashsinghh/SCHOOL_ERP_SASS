@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Actions\UserScopeUpdate;
 use App\Actions\UserStatusUpdate;
 use App\Http\Resources\AuthUserResource;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 
 class UserActionController extends Controller

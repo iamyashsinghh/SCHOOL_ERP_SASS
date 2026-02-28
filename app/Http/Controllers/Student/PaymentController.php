@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\BankTransferActionRequest;
 use App\Http\Requests\Student\BankTransferRequest;
 use App\Http\Requests\Student\PaymentRequest;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\BankTransferService;
 use App\Services\Student\PaymentService;
 use App\Support\GeneratePDF;

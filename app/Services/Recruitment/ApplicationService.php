@@ -10,9 +10,9 @@ use App\Enums\MaritalStatus;
 use App\Enums\OptionType;
 use App\Http\Resources\Employee\DesignationResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Employee\Designation;
-use App\Models\Option;
-use App\Models\Recruitment\Application;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Recruitment\Application;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

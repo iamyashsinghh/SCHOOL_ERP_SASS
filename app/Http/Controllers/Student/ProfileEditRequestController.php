@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\ProfileEditRequestRequest;
 use App\Http\Resources\Student\ProfileEditRequestResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\ProfileEditRequestListService;
 use App\Services\Student\ProfileEditRequestService;
 use Illuminate\Http\Request;

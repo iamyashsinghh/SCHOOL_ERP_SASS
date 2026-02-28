@@ -4,10 +4,10 @@ namespace App\Http\Requests\Reception;
 
 use App\Enums\OptionType;
 use App\Enums\Reception\GatePassTo;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Reception\GatePass;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\GatePass;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

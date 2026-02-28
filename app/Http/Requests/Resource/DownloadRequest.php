@@ -4,8 +4,8 @@ namespace App\Http\Requests\Resource;
 
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
-use App\Models\Media;
-use App\Models\Resource\Download;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Resource\Download;
 use App\Support\HasAudience;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

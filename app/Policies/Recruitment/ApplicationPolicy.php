@@ -2,8 +2,8 @@
 
 namespace App\Policies\Recruitment;
 
-use App\Models\Recruitment\Application;
-use App\Models\User;
+use App\Models\Tenant\Recruitment\Application;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ApplicationPolicy

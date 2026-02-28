@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Utility;
 
 use App\Http\Controllers\Controller;
-use App\Models\Utility\Todo;
+use App\Models\Tenant\Utility\Todo;
 use App\Services\Utility\TodoActionService;
 use Illuminate\Http\Request;
 

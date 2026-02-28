@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\VisitorLogRequest;
 use App\Http\Resources\Reception\VisitorLogResource;
-use App\Models\Reception\VisitorLog;
+use App\Models\Tenant\Reception\VisitorLog;
 use App\Services\Reception\VisitorLogListService;
 use App\Services\Reception\VisitorLogService;
 use Illuminate\Http\Request;

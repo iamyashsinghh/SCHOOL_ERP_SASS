@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Team;
 
 use App\Http\Controllers\Controller;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\Team\RoleListService;
 use Illuminate\Http\Request;
 

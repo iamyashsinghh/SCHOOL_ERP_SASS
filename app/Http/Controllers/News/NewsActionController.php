@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\News;
 
 use App\Http\Controllers\Controller;
-use App\Models\News\News;
+use App\Models\Tenant\News\News;
 use App\Services\News\NewsActionService;
 use Illuminate\Http\Request;
 

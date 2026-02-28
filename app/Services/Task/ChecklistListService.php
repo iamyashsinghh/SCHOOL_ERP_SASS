@@ -4,8 +4,8 @@ namespace App\Services\Task;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Task\ChecklistResource;
-use App\Models\Task\Checklist;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Checklist;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

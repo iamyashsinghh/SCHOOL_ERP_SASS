@@ -2,8 +2,8 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Certificate;
-use App\Models\User;
+use App\Models\Tenant\Academic\Certificate;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CertificatePolicy

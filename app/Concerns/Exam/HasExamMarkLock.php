@@ -2,8 +2,8 @@
 
 namespace App\Concerns\Exam;
 
-use App\Models\Exam\Record;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Exam\Record;
+use App\Models\Tenant\Exam\Schedule;
 use Carbon\Carbon;
 use Illuminate\Validation\ValidationException;
 

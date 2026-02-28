@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Finance;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeAllocationRequest;
-use App\Models\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeStructure;
 use App\Services\Finance\FeeStructureActionService;
 use Illuminate\Http\Request;
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Exam\OnlineExamSubmissionQuestionResource;
-use App\Models\Exam\OnlineExam;
+use App\Models\Tenant\Exam\OnlineExam;
 use App\Services\Exam\OnlineExamSubmissionListService;
 use App\Services\Exam\OnlineExamSubmissionService;
 use Illuminate\Http\Request;

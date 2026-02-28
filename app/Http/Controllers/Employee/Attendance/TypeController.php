@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Attendance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Attendance\TypeRequest as AttendanceTypeRequest;
 use App\Http\Resources\Employee\Attendance\TypeResource as AttendanceTypeResource;
-use App\Models\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
 use App\Services\Employee\Attendance\TypeListService as AttendanceTypeListService;
 use App\Services\Employee\Attendance\TypeService as AttendanceTypeService;
 use Illuminate\Http\Request;

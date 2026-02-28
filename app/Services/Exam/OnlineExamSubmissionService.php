@@ -2,8 +2,8 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Exam\OnlineExam;
-use App\Models\Exam\OnlineExamSubmission;
+use App\Models\Tenant\Exam\OnlineExam;
+use App\Models\Tenant\Exam\OnlineExamSubmission;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

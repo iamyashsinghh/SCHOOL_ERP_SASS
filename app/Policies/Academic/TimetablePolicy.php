@@ -2,8 +2,8 @@
 
 namespace App\Policies\Academic;
 
-use App\Models\Academic\Timetable;
-use App\Models\User;
+use App\Models\Tenant\Academic\Timetable;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TimetablePolicy

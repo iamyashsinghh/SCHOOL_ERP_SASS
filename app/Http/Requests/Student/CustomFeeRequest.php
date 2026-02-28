@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeHead;
 use Illuminate\Foundation\Http\FormRequest;
 
 class CustomFeeRequest extends FormRequest

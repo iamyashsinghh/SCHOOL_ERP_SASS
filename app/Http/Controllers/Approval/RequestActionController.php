@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Approval;
 
 use App\Http\Controllers\Controller;
-use App\Models\Approval\Request as ApprovalRequest;
+use App\Models\Tenant\Approval\Request as ApprovalRequest;
 use App\Services\Approval\RequestActionService;
 use Illuminate\Http\Request;
 

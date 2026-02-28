@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Finance;
 
-use App\Models\Finance\FeeInstallmentRecord;
-use App\Models\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeInstallmentRecord;
+use App\Models\Tenant\Finance\FeeStructure;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

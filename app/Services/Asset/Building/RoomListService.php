@@ -4,7 +4,7 @@ namespace App\Services\Asset\Building;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Asset\Building\RoomResource;
-use App\Models\Asset\Building\Room;
+use App\Models\Tenant\Asset\Building\Room;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Exam;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\OnlineExamQuestionRequest;
 use App\Http\Resources\Exam\OnlineExamQuestionResource;
-use App\Models\Exam\OnlineExam;
+use App\Models\Tenant\Exam\OnlineExam;
 use App\Services\Exam\OnlineExamQuestionListService;
 use App\Services\Exam\OnlineExamQuestionService;
 use Illuminate\Http\Request;

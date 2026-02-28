@@ -4,10 +4,10 @@ namespace App\Services\Employee;
 
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Contact;
-use App\Models\Dialogue;
-use App\Models\Employee\Employee;
-use App\Models\Option;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Dialogue;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

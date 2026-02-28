@@ -4,8 +4,8 @@ namespace App\Services\Employee;
 
 use App\Concerns\SubordinateAccess;
 use App\Enums\VerificationStatus;
-use App\Models\Account;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Account;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

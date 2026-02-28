@@ -3,9 +3,9 @@
 namespace App\Actions\Student;
 
 use App\Enums\Finance\DefaultFeeHead;
-use App\Models\Finance\Transaction;
-use App\Models\Finance\TransactionRecord;
-use App\Models\Student\Fee;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Finance\TransactionRecord;
+use App\Models\Tenant\Student\Fee;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

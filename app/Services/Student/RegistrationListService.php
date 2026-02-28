@@ -6,7 +6,7 @@ use App\Contracts\ListGenerator;
 use App\Enums\Student\AdmissionType;
 use App\Enums\Student\RegistrationStatus;
 use App\Http\Resources\Student\RegistrationResource;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Student\Registration;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

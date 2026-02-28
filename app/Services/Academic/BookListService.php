@@ -5,9 +5,9 @@ namespace App\Services\Academic;
 use App\Enums\Academic\BookListType;
 use App\Http\Resources\Academic\CourseResource;
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
-use App\Models\Academic\Subject;
+use App\Models\Tenant\Academic\BookList;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Subject;
 use Illuminate\Http\Request;
 
 class BookListService

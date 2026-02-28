@@ -4,8 +4,8 @@ namespace App\Services\Student;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Student\FeeRecordResource;
-use App\Models\Student\FeeRecord;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\FeeRecord;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

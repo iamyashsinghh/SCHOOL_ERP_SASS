@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Exam;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\GradeRequest;
 use App\Http\Resources\Exam\GradeResource;
-use App\Models\Exam\Grade;
+use App\Models\Tenant\Exam\Grade;
 use App\Services\Exam\GradeListService;
 use App\Services\Exam\GradeService;
 use Illuminate\Http\Request;

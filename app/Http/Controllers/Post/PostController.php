@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Post;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Post\PostRequest;
 use App\Http\Resources\Post\PostResource;
-use App\Models\Post\Post;
+use App\Models\Tenant\Post\Post;
 use App\Services\Post\PostFetchService;
 use App\Services\Post\PostService;
 use Illuminate\Http\Request;

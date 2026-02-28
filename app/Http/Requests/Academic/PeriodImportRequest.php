@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Period;
+use App\Models\Tenant\Academic\Period;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PeriodImportRequest extends FormRequest

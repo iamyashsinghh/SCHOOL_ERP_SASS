@@ -4,7 +4,7 @@ namespace App\Services\Employee\Attendance;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\Attendance\TypeResource as AttendanceTypeResource;
-use App\Models\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

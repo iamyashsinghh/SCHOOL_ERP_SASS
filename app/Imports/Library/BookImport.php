@@ -4,9 +4,9 @@ namespace App\Imports\Library;
 
 use App\Concerns\ItemImport;
 use App\Enums\OptionType;
-use App\Models\Library\Book;
-use App\Models\Option;
-use App\Models\Team;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Team;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

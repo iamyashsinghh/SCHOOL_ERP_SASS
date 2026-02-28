@@ -2,10 +2,10 @@
 
 namespace App\Http\Requests\Transport\Vehicle;
 
-use App\Models\Document;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use App\Rules\SafeRegex;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Http\FormRequest;

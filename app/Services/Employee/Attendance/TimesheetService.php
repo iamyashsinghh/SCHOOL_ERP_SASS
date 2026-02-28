@@ -2,7 +2,7 @@
 
 namespace App\Services\Employee\Attendance;
 
-use App\Models\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

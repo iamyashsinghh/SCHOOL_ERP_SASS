@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\EnrollmentSeat;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class EnrollmentSeatRequest extends FormRequest

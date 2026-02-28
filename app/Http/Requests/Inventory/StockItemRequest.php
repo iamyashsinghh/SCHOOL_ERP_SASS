@@ -4,10 +4,10 @@ namespace App\Http\Requests\Inventory;
 
 use App\Enums\Inventory\ItemType;
 use App\Enums\OptionType;
-use App\Models\Asset\Building\Room;
-use App\Models\Inventory\StockCategory;
-use App\Models\Inventory\StockItem;
-use App\Models\Option;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Inventory\StockCategory;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

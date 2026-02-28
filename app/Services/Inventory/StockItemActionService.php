@@ -3,9 +3,9 @@
 namespace App\Services\Inventory;
 
 use App\Actions\CreateTag;
-use App\Models\Inventory\StockBalance;
-use App\Models\Inventory\StockItem;
-use App\Models\Inventory\StockItemRecord;
+use App\Models\Tenant\Inventory\StockBalance;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItemRecord;
 use Illuminate\Http\Request;
 
 class StockItemActionService

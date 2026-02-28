@@ -4,9 +4,9 @@ namespace App\Console\Commands\Finance;
 
 use App\Helpers\SysHelper;
 use App\Jobs\Notifications\Finance\SendBatchFeeInstallmentPaymentLinkNotification;
-use App\Models\Student\Fee;
-use App\Models\Team;
-use App\Models\TempStorage;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\TempStorage;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 

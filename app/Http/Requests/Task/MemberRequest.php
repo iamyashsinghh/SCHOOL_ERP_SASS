@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Task;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MemberRequest extends FormRequest

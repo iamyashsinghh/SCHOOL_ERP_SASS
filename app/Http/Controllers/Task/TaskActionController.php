@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Task;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\RepeatRequest;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use App\Services\Task\TaskActionService;
 use Illuminate\Http\Request;
 

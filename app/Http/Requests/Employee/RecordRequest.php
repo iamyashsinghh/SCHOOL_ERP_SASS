@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Employee;
 
-use App\Models\Employee\Department;
-use App\Models\Employee\Designation;
-use App\Models\Option;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RecordRequest extends FormRequest

@@ -2,7 +2,7 @@
 
 namespace App\Services\Team;
 
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use Illuminate\Http\Request;
 
 class TeamActionService

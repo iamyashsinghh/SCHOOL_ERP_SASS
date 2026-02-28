@@ -2,7 +2,7 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use Illuminate\Http\Request;
 
 class BatchInchargeService

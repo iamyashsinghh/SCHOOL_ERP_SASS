@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Attendance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Attendance\TimesheetRequest;
 use App\Http\Resources\Employee\Attendance\TimesheetResource;
-use App\Models\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
 use App\Services\Employee\Attendance\TimesheetListService;
 use App\Services\Employee\Attendance\TimesheetService;
 use Illuminate\Http\Request;

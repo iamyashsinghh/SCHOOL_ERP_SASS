@@ -2,8 +2,8 @@
 
 namespace App\Services\Employee;
 
-use App\Models\Employee\Designation;
-use App\Models\Employee\Record as EmployeeRecord;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Employee\Record as EmployeeRecord;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

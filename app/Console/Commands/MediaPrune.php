@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Media;
+use App\Models\Tenant\Media;
 use Illuminate\Console\Command;
 
 class MediaPrune extends Command

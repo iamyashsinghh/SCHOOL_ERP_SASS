@@ -9,7 +9,7 @@ use App\Http\Requests\Student\OnlineRegistrationRequest;
 use App\Http\Requests\Student\OnlineRegistrationReviewRequest;
 use App\Http\Requests\Student\OnlineRegistrationUploadRequest;
 use App\Http\Resources\Student\OnlineRegistrationResource;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\Contact\PhotoService;
 use App\Services\Student\OnlineRegistrationService;
 use Illuminate\Http\Request;

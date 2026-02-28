@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Employee\Attendance;
 
-use App\Models\Employee\Attendance\WorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 

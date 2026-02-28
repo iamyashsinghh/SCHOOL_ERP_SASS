@@ -4,7 +4,7 @@ namespace App\Services\Resource;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Resource\DownloadResource;
-use App\Models\Resource\Download;
+use App\Models\Tenant\Resource\Download;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

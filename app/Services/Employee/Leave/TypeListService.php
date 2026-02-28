@@ -4,7 +4,7 @@ namespace App\Services\Employee\Leave;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\Leave\TypeResource as LeaveTypeResource;
-use App\Models\Employee\Leave\Type as LeaveType;
+use App\Models\Tenant\Employee\Leave\Type as LeaveType;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

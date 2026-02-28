@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Hostel;
 
-use App\Models\Hostel\Block;
+use App\Models\Tenant\Hostel\Block;
 use Illuminate\Foundation\Http\FormRequest;
 
 class BlockRequest extends FormRequest

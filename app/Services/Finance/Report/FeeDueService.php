@@ -6,8 +6,8 @@ use App\Enums\OptionType;
 use App\Enums\Student\StudentStatus;
 use App\Http\Resources\Finance\FeeGroupResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Finance\FeeGroup;
-use App\Models\Option;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\Option;
 
 class FeeDueService
 {

@@ -2,7 +2,7 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\ProgramType;
+use App\Models\Tenant\Academic\ProgramType;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

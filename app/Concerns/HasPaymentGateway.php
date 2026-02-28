@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Finance\Transaction;
+use App\Models\Tenant\Finance\Transaction;
 use Illuminate\Validation\ValidationException;
 
 trait HasPaymentGateway

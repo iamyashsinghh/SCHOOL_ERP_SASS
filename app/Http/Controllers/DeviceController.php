@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\DeviceRequest;
 use App\Http\Resources\DeviceResource;
-use App\Models\Device;
+use App\Models\Tenant\Device;
 use App\Services\DeviceListService;
 use App\Services\DeviceService;
 use Illuminate\Http\Request;

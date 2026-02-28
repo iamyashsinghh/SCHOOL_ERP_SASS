@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Reception;
 
 use App\Http\Controllers\Controller;
-use App\Models\Reception\Query;
+use App\Models\Tenant\Reception\Query;
 use App\Services\Reception\QueryActionService;
 use Illuminate\Http\Request;
 

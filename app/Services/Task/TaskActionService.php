@@ -10,11 +10,11 @@ use App\Enums\OptionType;
 use App\Enums\RepeatFrequency;
 use App\Helpers\CalHelper;
 use App\Jobs\Notifications\Task\SendTaskCompletedNotification;
-use App\Models\Employee\Employee;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Task\Member;
-use App\Models\Task\Task;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Task\Member;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

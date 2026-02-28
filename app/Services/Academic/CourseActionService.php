@@ -3,14 +3,14 @@
 namespace App\Services\Academic;
 
 use App\Enums\OptionType;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\EnrollmentSeat;
-use App\Models\Academic\Period;
-use App\Models\Guardian;
-use App\Models\Option;
-use App\Models\Student\Student;
-use App\Models\User;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\EnrollmentSeat;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

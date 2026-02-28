@@ -6,9 +6,9 @@ use App\Enums\DocumentExpiryStatus;
 use App\Enums\OptionType;
 use App\Http\Resources\Transport\Vehicle\Config\DocumentTypeResource;
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Document;
-use App\Models\Option;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 

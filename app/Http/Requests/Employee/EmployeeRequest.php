@@ -4,12 +4,12 @@ namespace App\Http\Requests\Employee;
 
 use App\Enums\Employee\Type;
 use App\Enums\Gender;
-use App\Models\Contact;
-use App\Models\Employee\Department;
-use App\Models\Employee\Designation;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Team\Role;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Team\Role;
 use App\Rules\AlphaSpace;
 use App\Rules\StrongPassword;
 use App\Rules\Username;

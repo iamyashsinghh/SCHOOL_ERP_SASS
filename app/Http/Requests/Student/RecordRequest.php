@@ -4,8 +4,8 @@ namespace App\Http\Requests\Student;
 
 use App\Enums\OptionType;
 use App\Enums\Student\StudentType;
-use App\Models\Academic\Batch;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

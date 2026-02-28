@@ -4,8 +4,8 @@ namespace App\Services\Employee\Config;
 
 use App\Enums\OptionType;
 use App\Helpers\ListHelper;
-use App\Models\Document;
-use App\Models\Option;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

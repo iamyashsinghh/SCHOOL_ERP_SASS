@@ -3,7 +3,7 @@
 namespace App\Services\News;
 
 use App\Enums\News\Status;
-use App\Models\News\News;
+use App\Models\Tenant\News\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

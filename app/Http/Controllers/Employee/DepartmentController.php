@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\DepartmentRequest;
 use App\Http\Resources\Employee\DepartmentResource;
-use App\Models\Employee\Department;
+use App\Models\Tenant\Employee\Department;
 use App\Services\Employee\DepartmentListService;
 use App\Services\Employee\DepartmentService;
 use Illuminate\Http\Request;

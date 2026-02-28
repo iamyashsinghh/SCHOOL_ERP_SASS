@@ -4,10 +4,10 @@ namespace App\Http\Requests\Student;
 
 use App\Enums\OptionType;
 use App\Enums\QualificationResult;
-use App\Models\Contact;
-use App\Models\Option;
-use App\Models\Qualification;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Qualification;
+use App\Models\Tenant\Student\Registration;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

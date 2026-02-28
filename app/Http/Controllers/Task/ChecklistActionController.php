@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Task;
 
 use App\Http\Controllers\Controller;
-use App\Models\Task\Checklist;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Checklist;
+use App\Models\Tenant\Task\Task;
 use App\Services\Task\ChecklistActionService;
 use Illuminate\Http\Request;
 

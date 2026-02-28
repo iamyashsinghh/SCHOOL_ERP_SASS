@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Attendance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Attendance\WorkShiftRequest;
 use App\Http\Resources\Employee\Attendance\WorkShiftResource;
-use App\Models\Employee\Attendance\WorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
 use App\Services\Employee\Attendance\WorkShiftListService;
 use App\Services\Employee\Attendance\WorkShiftService;
 use Illuminate\Http\Request;

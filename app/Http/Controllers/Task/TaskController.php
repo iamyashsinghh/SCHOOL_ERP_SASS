@@ -7,7 +7,7 @@ use App\Actions\Task\UpdateTask;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\TaskRequest;
 use App\Http\Resources\Task\TaskResource;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use App\Services\Task\TaskListService;
 use App\Services\Task\TaskService;
 use Illuminate\Http\Request;

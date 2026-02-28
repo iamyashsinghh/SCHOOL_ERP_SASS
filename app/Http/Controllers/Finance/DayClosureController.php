@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\DayClosureRequest;
 use App\Http\Resources\Finance\DayClosureResource;
-use App\Models\Finance\DayClosure;
+use App\Models\Tenant\Finance\DayClosure;
 use App\Services\Finance\DayClosureListService;
 use App\Services\Finance\DayClosureService;
 use App\Services\Finance\MarkDayClosureService;

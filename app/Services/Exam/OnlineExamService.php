@@ -5,10 +5,10 @@ namespace App\Services\Exam;
 use App\Enums\Exam\OnlineExamType;
 use App\Helpers\CalHelper;
 use App\Http\Resources\Academic\SubjectResource;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
-use App\Models\Employee\Employee;
-use App\Models\Exam\OnlineExam;
+use App\Models\Tenant\Academic\BatchSubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Exam\OnlineExam;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

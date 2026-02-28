@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Hostel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Hostel\BlockInchargeRequest;
 use App\Http\Resources\Hostel\BlockInchargeResource;
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use App\Services\Hostel\BlockInchargeListService;
 use App\Services\Hostel\BlockInchargeService;
 use Illuminate\Http\Request;

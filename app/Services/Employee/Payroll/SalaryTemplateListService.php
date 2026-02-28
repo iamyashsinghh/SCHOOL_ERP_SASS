@@ -4,7 +4,7 @@ namespace App\Services\Employee\Payroll;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\Payroll\SalaryTemplateResource;
-use App\Models\Employee\Payroll\SalaryTemplate;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplate;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

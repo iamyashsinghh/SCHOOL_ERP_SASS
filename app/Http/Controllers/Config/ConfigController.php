@@ -15,7 +15,7 @@ use App\Actions\Config\UploadAsset;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Config\AssetRequest;
 use App\Jobs\Notifications\TestAppNotification;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use App\Services\Config\ConfigService;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

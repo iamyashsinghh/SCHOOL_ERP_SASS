@@ -7,9 +7,9 @@ use App\Enums\OptionType;
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\Finance\PaymentMethodResource;
 use App\Http\Resources\OptionResource;
-use App\Models\Academic\Period;
-use App\Models\Finance\PaymentMethod;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Finance\PaymentMethod;
+use App\Models\Tenant\Option;
 
 class FeePaymentService
 {

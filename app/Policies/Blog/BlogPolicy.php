@@ -2,8 +2,8 @@
 
 namespace App\Policies\Blog;
 
-use App\Models\Blog\Blog;
-use App\Models\User;
+use App\Models\Tenant\Blog\Blog;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class BlogPolicy

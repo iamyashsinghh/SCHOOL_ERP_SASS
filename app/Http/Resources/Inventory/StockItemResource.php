@@ -4,8 +4,8 @@ namespace App\Http\Resources\Inventory;
 
 use App\Enums\Inventory\ItemTrackingType;
 use App\Enums\Inventory\ItemType;
-use App\Models\Asset\Building\Room;
-use App\Models\Inventory\StockBalance;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Inventory\StockBalance;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class StockItemResource extends JsonResource

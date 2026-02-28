@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\CaseRecordRequest;
 use App\Http\Resources\Transport\Vehicle\CaseRecordResource;
-use App\Models\Transport\Vehicle\CaseRecord;
+use App\Models\Tenant\Transport\Vehicle\CaseRecord;
 use App\Services\Transport\Vehicle\CaseRecordListService;
 use App\Services\Transport\Vehicle\CaseRecordService;
 use Illuminate\Http\Request;

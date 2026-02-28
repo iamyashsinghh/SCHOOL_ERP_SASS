@@ -4,8 +4,8 @@ namespace App\Services\Exam;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Exam\ScheduleResource;
-use App\Models\Exam\Record;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Exam\Record;
+use App\Models\Tenant\Exam\Schedule;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

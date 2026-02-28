@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Mess;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Mess\MealRequest;
 use App\Http\Resources\Mess\MealResource;
-use App\Models\Mess\Meal;
+use App\Models\Tenant\Mess\Meal;
 use App\Services\Mess\MealListService;
 use App\Services\Mess\MealService;
 use Illuminate\Http\Request;

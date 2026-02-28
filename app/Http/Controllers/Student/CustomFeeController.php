@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\CustomFeeRequest;
 use App\Http\Resources\Student\FeeRecordResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\CustomFeeListService;
 use App\Services\Student\CustomFeeService;
 use Illuminate\Http\Request;

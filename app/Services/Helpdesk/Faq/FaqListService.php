@@ -4,7 +4,7 @@ namespace App\Services\Helpdesk\Faq;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Helpdesk\Faq\FaqResource;
-use App\Models\Helpdesk\Faq\Faq;
+use App\Models\Tenant\Helpdesk\Faq\Faq;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

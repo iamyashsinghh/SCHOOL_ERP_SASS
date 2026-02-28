@@ -3,8 +3,8 @@
 namespace App\Services\Activity;
 
 use App\Concerns\HasStorage;
-use App\Models\Activity\Trip;
-use App\Models\Media;
+use App\Models\Tenant\Activity\Trip;
+use App\Models\Tenant\Media;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -2,8 +2,8 @@
 
 namespace App\Support;
 
-use App\Models\Contact;
-use App\Models\Guardian;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Guardian;
 
 trait MergeGuardianContact
 {

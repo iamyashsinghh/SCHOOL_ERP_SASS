@@ -4,12 +4,12 @@ namespace App\Services\Exam;
 
 use App\Concerns\Exam\HasExamMarkLock;
 use App\Http\Resources\Exam\ExamResource;
-use App\Models\Academic\Batch;
-use App\Models\Exam\Competency;
-use App\Models\Exam\CompetencyRecord;
-use App\Models\Exam\Exam;
-use App\Models\Exam\Schedule;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Exam\Competency;
+use App\Models\Tenant\Exam\CompetencyRecord;
+use App\Models\Tenant\Exam\Exam;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

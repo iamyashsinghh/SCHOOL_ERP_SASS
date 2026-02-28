@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Resource;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\AssignmentEvaluationRequest;
-use App\Models\Resource\Assignment;
+use App\Models\Tenant\Resource\Assignment;
 use App\Services\Resource\AssignmentEvaluationService;
 
 class AssignmentEvaluationController extends Controller

@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Enums\Reception\QueryStatus;
-use App\Models\Reception\Query as ReceptionQuery;
+use App\Models\Tenant\Reception\Query as ReceptionQuery;
 use App\Support\FormatCodeNumber;
 use Illuminate\Support\Arr;
 use Livewire\Component;

@@ -4,10 +4,10 @@ namespace App\Imports\Academic;
 
 use App\Concerns\ItemImport;
 use App\Enums\Academic\BookListType;
-use App\Models\Academic\BookList;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Academic\Subject;
+use App\Models\Tenant\Academic\BookList;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Subject;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

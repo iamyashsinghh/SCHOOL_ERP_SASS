@@ -3,10 +3,10 @@
 namespace App\Actions\Finance;
 
 use App\Enums\Finance\TransactionType;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\Transaction;
-use App\Models\Finance\TransactionPayment;
-use App\Models\Finance\TransactionRecord;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Finance\TransactionPayment;
+use App\Models\Tenant\Finance\TransactionRecord;
 use App\Support\FormatCodeNumber;
 use Illuminate\Support\Arr;
 

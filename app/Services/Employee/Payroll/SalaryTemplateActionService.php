@@ -3,7 +3,7 @@
 namespace App\Services\Employee\Payroll;
 
 use App\Actions\Employee\Payroll\SalaryStructureRecalculate;
-use App\Models\Employee\Payroll\SalaryTemplate;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplate;
 
 class SalaryTemplateActionService
 {

@@ -4,8 +4,8 @@ namespace App\Services\Site;
 
 use App\Concerns\HasStorage;
 use App\Enums\Site\BlockType;
-use App\Models\Site\Block;
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Block;
+use App\Models\Tenant\Site\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

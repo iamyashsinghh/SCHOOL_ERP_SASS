@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Hostel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Hostel\FloorRequest;
 use App\Http\Resources\Hostel\FloorResource;
-use App\Models\Hostel\Floor;
+use App\Models\Tenant\Hostel\Floor;
 use App\Services\Hostel\FloorListService;
 use App\Services\Hostel\FloorService;
 use Illuminate\Http\Request;

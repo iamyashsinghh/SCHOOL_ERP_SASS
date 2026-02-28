@@ -6,7 +6,7 @@ use App\Concerns\LocalStorage;
 use App\Enums\Employee\Type as EmployeeType;
 use App\Enums\ServiceType;
 use App\Helpers\ListHelper;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

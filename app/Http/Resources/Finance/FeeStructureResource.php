@@ -3,7 +3,7 @@
 namespace App\Http\Resources\Finance;
 
 use App\Http\Resources\Academic\PeriodResource;
-use App\Models\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeGroup;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class FeeStructureResource extends JsonResource

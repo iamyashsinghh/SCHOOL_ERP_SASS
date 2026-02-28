@@ -3,9 +3,9 @@
 namespace App\Jobs\Notifications\Communication;
 
 use App\Concerns\SetConfigForJob;
-use App\Models\Communication\Communication;
-use App\Models\Config\Template;
-use App\Models\Notification;
+use App\Models\Tenant\Communication\Communication;
+use App\Models\Tenant\Config\Template;
+use App\Models\Tenant\Notification;
 use App\Support\HasAudience;
 use App\Support\MergeGuardianContact;
 use Illuminate\Bus\Batch;

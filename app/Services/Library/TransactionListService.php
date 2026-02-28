@@ -4,9 +4,9 @@ namespace App\Services\Library;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Library\TransactionListResource;
-use App\Models\Employee\Employee;
-use App\Models\Library\Transaction;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Library\Transaction;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -4,8 +4,8 @@ namespace App\Services\Site;
 
 use App\Enums\Site\MenuPlacement;
 use App\Http\Resources\Site\PageSummaryResource;
-use App\Models\Site\Menu;
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Menu;
+use App\Models\Tenant\Site\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

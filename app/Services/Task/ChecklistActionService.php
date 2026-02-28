@@ -2,8 +2,8 @@
 
 namespace App\Services\Task;
 
-use App\Models\Task\Checklist;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Checklist;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 
 class ChecklistActionService

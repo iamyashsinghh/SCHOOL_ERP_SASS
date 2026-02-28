@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Finance\Ledger;
-use App\Models\Finance\PaymentMethod;
-use App\Models\Finance\Transaction;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\Transaction;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

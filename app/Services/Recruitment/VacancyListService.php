@@ -4,7 +4,7 @@ namespace App\Services\Recruitment;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Recruitment\VacancyResource;
-use App\Models\Recruitment\Vacancy;
+use App\Models\Tenant\Recruitment\Vacancy;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

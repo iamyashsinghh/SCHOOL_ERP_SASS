@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Chat\Chat;
+use App\Models\Tenant\Chat\Chat;
 use App\Support\SetConfig;
 use Illuminate\Support\Facades\Broadcast;
 

@@ -2,9 +2,9 @@
 
 namespace App\Services\Employee\Leave;
 
-use App\Models\Employee\Leave\AllocationRecord as LeaveAllocationRecord;
-use App\Models\Employee\Leave\Request as LeaveRequest;
-use App\Models\Employee\Leave\Type as LeaveType;
+use App\Models\Tenant\Employee\Leave\AllocationRecord as LeaveAllocationRecord;
+use App\Models\Tenant\Employee\Leave\Request as LeaveRequest;
+use App\Models\Tenant\Employee\Leave\Type as LeaveType;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

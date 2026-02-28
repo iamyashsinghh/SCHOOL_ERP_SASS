@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Custom;
 
 use App\Exports\ListExport;
 use App\Http\Controllers\Controller;
-use App\Models\Finance\FeeHead;
-use App\Models\Student\FeeRecord;
-use App\Models\Student\Student;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Student\FeeRecord;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 

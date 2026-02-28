@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ReminderRequest;
 use App\Http\Resources\ReminderResource;
-use App\Models\Reminder;
+use App\Models\Tenant\Reminder;
 use App\Services\ReminderListService;
 use App\Services\ReminderService;
 use Illuminate\Http\Request;

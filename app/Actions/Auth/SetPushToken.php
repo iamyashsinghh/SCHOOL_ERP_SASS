@@ -2,8 +2,8 @@
 
 namespace App\Actions\Auth;
 
-use App\Models\User;
-use App\Models\UserToken;
+use App\Models\Tenant\User;
+use App\Models\Tenant\UserToken;
 
 class SetPushToken
 {

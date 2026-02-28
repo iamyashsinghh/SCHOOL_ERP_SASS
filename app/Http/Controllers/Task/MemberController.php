@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Task;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\MemberRequest;
 use App\Http\Resources\Task\MemberResource;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use App\Services\Task\MemberListService;
 use App\Services\Task\MemberService;
 use Illuminate\Http\Request;

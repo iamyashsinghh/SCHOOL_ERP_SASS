@@ -4,8 +4,8 @@ namespace App\Services\Employee;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\EditRequestResource;
-use App\Models\ContactEditRequest;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\ContactEditRequest;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

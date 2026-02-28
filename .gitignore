@@ -1,1 +1,9 @@
 /.env
+/.vendor
+/.node_modules
+/.storage
+/.composer
+/.DS_Store
+/.idea
+/.vscode
+/.agent

@@ -3,10 +3,10 @@
 namespace App\Services\Post;
 
 use App\Concerns\HasStorage;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Post\Post;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Post\Post;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

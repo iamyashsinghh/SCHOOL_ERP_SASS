@@ -4,8 +4,8 @@ namespace App\Services\Resource;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Resource\AssignmentResource;
-use App\Models\Resource\Assignment;
-use App\Models\Student\Student;
+use App\Models\Tenant\Resource\Assignment;
+use App\Models\Tenant\Student\Student;
 use App\Support\HasFilterByAssignedSubject;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

@@ -3,9 +3,9 @@
 namespace App\Services\Task;
 
 use App\Jobs\Notifications\Task\SendTaskAssignedNotification;
-use App\Models\Employee\Employee;
-use App\Models\Task\Member;
-use App\Models\Task\Task;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Task\Member;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

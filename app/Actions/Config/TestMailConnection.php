@@ -2,7 +2,7 @@
 
 namespace App\Actions\Config;
 
-use App\Models\User;
+use App\Models\Tenant\User;
 use App\Notifications\TestNotificationWithoutQueue;
 use Exception;
 use Illuminate\Http\Request;

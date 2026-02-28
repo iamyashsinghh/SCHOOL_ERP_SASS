@@ -3,8 +3,8 @@
 namespace App\Services\Hostel;
 
 use App\Http\Resources\Hostel\RoomResource;
-use App\Models\Hostel\Room;
-use App\Models\Hostel\RoomAllocation;
+use App\Models\Tenant\Hostel\Room;
+use App\Models\Tenant\Hostel\RoomAllocation;
 use Illuminate\Http\Request;
 
 class RoomAllocationService

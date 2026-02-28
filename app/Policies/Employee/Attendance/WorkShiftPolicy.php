@@ -2,8 +2,8 @@
 
 namespace App\Policies\Employee\Attendance;
 
-use App\Models\Employee\Attendance\WorkShift;
-use App\Models\User;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class WorkShiftPolicy

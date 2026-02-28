@@ -3,8 +3,8 @@
 namespace App\Policies\Config;
 
 use App\Lists\ConfigType;
-use App\Models\Config\Config;
-use App\Models\User;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ConfigPolicy

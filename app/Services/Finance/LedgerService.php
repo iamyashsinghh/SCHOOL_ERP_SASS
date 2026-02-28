@@ -3,8 +3,8 @@
 namespace App\Services\Finance;
 
 use App\Http\Resources\Finance\LedgerTypeResource;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\LedgerType;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\LedgerType;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

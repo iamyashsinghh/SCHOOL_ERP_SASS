@@ -9,7 +9,7 @@ use App\Http\Resources\GuardianResource;
 use App\Http\Resources\Reception\EnquiryResource;
 use App\Http\Resources\Student\DocumentResource;
 use App\Http\Resources\Student\QualificationResource;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Reception\Enquiry;
 use App\Services\Reception\EnquiryListService;
 use App\Services\Reception\EnquiryService;
 use Illuminate\Http\Request;

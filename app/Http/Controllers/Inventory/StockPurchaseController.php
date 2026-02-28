@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\StockPurchaseRequest;
 use App\Http\Resources\Inventory\StockPurchaseResource;
-use App\Models\Inventory\StockPurchase;
+use App\Models\Tenant\Inventory\StockPurchase;
 use App\Services\Inventory\StockPurchaseListService;
 use App\Services\Inventory\StockPurchaseService;
 use Illuminate\Http\Request;

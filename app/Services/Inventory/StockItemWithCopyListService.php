@@ -4,8 +4,8 @@ namespace App\Services\Inventory;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Inventory\StockItemWithCopyResource;
-use App\Models\Inventory\StockItem;
-use App\Models\Inventory\StockItemCopy;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItemCopy;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

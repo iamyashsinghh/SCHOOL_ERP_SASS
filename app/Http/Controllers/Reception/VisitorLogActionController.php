@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Reception;
 
 use App\Http\Controllers\Controller;
-use App\Models\Reception\VisitorLog;
+use App\Models\Tenant\Reception\VisitorLog;
 use App\Services\Reception\VisitorLogActionService;
 use Illuminate\Http\Request;
 

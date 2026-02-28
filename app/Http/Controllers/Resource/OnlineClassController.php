@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Resource;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\OnlineClassRequest;
 use App\Http\Resources\Resource\OnlineClassResource;
-use App\Models\Resource\OnlineClass;
+use App\Models\Tenant\Resource\OnlineClass;
 use App\Services\Resource\OnlineClassListService;
 use App\Services\Resource\OnlineClassService;
 use Illuminate\Http\Request;

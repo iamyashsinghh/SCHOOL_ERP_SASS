@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Academic;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\SubjectInchargeRequest;
 use App\Http\Resources\Academic\SubjectInchargeResource;
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use App\Services\Academic\SubjectInchargeListService;
 use App\Services\Academic\SubjectInchargeService;
 use Illuminate\Http\Request;

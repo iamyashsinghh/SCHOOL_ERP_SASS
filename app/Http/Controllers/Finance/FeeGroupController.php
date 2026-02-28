@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeGroupRequest;
 use App\Http\Resources\Finance\FeeGroupResource;
-use App\Models\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeGroup;
 use App\Services\Finance\FeeGroupListService;
 use App\Services\Finance\FeeGroupService;
 use Illuminate\Http\Request;

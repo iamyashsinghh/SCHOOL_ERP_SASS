@@ -5,10 +5,10 @@ namespace App\Services\Reception;
 use App\Enums\OptionType;
 use App\Http\Resources\Reception\EnquiryDocumentResource;
 use App\Http\Resources\Student\Config\DocumentTypeResource;
-use App\Models\Contact;
-use App\Models\Document;
-use App\Models\Option;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Enquiry;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 

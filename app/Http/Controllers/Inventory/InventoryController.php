@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\InventoryRequest;
 use App\Http\Resources\Inventory\InventoryResource;
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Inventory\Inventory;
 use App\Services\Inventory\InventoryListService;
 use App\Services\Inventory\InventoryService;
 use Illuminate\Http\Request;

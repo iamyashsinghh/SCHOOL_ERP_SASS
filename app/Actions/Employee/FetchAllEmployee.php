@@ -3,7 +3,7 @@
 namespace App\Actions\Employee;
 
 use App\Contracts\PaginationHelper;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

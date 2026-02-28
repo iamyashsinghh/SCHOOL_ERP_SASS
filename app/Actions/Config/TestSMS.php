@@ -3,7 +3,7 @@
 namespace App\Actions\Config;
 
 use App\Actions\SendSMS;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use Illuminate\Http\Request;
 
 class TestSMS

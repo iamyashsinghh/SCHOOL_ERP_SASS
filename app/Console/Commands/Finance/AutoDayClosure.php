@@ -3,11 +3,11 @@
 namespace App\Console\Commands\Finance;
 
 use App\Helpers\SysHelper;
-use App\Models\Finance\DayClosure;
-use App\Models\Finance\Transaction;
-use App\Models\Finance\TransactionPayment;
-use App\Models\Team;
-use App\Models\User;
+use App\Models\Tenant\Finance\DayClosure;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Finance\TransactionPayment;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\User;
 use Illuminate\Console\Command;
 
 class AutoDayClosure extends Command

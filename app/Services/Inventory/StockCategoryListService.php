@@ -4,7 +4,7 @@ namespace App\Services\Inventory;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Inventory\StockCategoryResource;
-use App\Models\Inventory\StockCategory;
+use App\Models\Tenant\Inventory\StockCategory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

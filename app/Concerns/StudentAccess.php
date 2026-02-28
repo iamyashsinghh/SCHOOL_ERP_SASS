@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 
 trait StudentAccess
 {

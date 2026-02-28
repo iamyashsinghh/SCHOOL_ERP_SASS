@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\TransferRequestActionRequest;
-use App\Models\Student\TransferRequest;
+use App\Models\Tenant\Student\TransferRequest;
 use App\Services\Student\TransferRequestActionService;
 use Illuminate\Http\Request;
 

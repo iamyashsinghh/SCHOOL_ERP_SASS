@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Communication;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Communication\SMSRequest;
 use App\Http\Resources\Communication\SMSResource;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Services\Communication\SMSListService;
 use App\Services\Communication\SMSService;
 use Illuminate\Http\Request;

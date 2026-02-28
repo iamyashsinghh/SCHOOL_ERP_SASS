@@ -4,7 +4,7 @@ namespace App\Actions\Auth;
 
 use App\Enums\UserStatus;
 use App\Jobs\Notifications\Auth\SendUserEmailVeritificationNotification;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

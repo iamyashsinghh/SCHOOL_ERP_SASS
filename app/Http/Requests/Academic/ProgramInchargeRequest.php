@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Academic;
 
 use App\Concerns\HasIncharge;
-use App\Models\Academic\Program;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProgramInchargeRequest extends FormRequest

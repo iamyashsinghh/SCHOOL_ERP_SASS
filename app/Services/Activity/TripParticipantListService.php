@@ -4,9 +4,9 @@ namespace App\Services\Activity;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Activity\TripParticipantResource;
-use App\Models\Activity\Trip;
-use App\Models\Activity\TripParticipant;
-use App\Models\Student\Student;
+use App\Models\Tenant\Activity\Trip;
+use App\Models\Tenant\Activity\TripParticipant;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

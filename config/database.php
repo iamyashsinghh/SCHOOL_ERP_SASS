@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'central'),
     'type' => env('DB_TYPE', 'mysql'),
 
     /*
@@ -44,14 +44,34 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-        'mysql' => [
+        'central' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_CENTRAL_HOST', '127.0.0.1'),
+            'port' => env('DB_CENTRAL_PORT', '3306'),
+            'database' => env('DB_CENTRAL_DATABASE', 'platform_db'),
+            'username' => env('DB_CENTRAL_USERNAME', 'root'),
+            'password' => env('DB_CENTRAL_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => env('DB_STRICT', true),
+            'engine' => env('DB_ENGINE', 'InnoDB'),
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'tenant' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => '', // Dynamically set by TenantConnectionSwitcher
+            'username' => '', // Dynamically set by TenantConnectionSwitcher
+            'password' => '', // Dynamically set by TenantConnectionSwitcher
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

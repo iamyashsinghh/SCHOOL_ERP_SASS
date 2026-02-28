@@ -7,7 +7,7 @@ use App\Contracts\Finance\PaymentGateway;
 use App\Http\Controllers\Controller;
 use App\Jobs\Notifications\Student\SendFeePaymentConfirmedNotification;
 use App\Jobs\Notifications\Student\SendFeePaymentFailedNotification;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\OnlinePaymentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

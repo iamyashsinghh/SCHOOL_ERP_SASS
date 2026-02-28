@@ -5,7 +5,7 @@ namespace App\Services\Employee\Payroll;
 use App\Actions\Employee\FetchAllEmployee;
 use App\Enums\Employee\Payroll\PayrollStatus;
 use App\Helpers\CalHelper;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use Illuminate\Http\Request;
 
 class BulkExportPayrollService

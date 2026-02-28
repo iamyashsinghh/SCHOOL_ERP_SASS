@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Reception;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Reception\QueryResource;
-use App\Models\Reception\Query;
+use App\Models\Tenant\Reception\Query;
 use App\Services\Reception\QueryListService;
 use App\Services\Reception\QueryService;
 use Illuminate\Http\Request;

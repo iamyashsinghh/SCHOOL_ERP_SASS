@@ -3,8 +3,8 @@
 namespace App\Events\Chat;
 
 use App\Http\Resources\Chat\MessageResource;
-use App\Models\Chat\Chat;
-use App\Models\Chat\Message;
+use App\Models\Tenant\Chat\Chat;
+use App\Models\Tenant\Chat\Message;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;

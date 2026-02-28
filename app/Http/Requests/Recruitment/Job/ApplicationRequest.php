@@ -4,10 +4,10 @@ namespace App\Http\Requests\Recruitment\Job;
 
 use App\Concerns\SimpleValidation;
 use App\Enums\Gender;
-use App\Models\Employee\Designation;
-use App\Models\Media;
-use App\Models\Recruitment\Application;
-use App\Models\Recruitment\Vacancy;
+use App\Models\Tenant\Employee\Designation;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Recruitment\Application;
+use App\Models\Tenant\Recruitment\Vacancy;
 use App\Rules\AlphaSpace;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Collection;

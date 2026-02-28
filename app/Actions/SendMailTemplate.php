@@ -3,7 +3,7 @@
 namespace App\Actions;
 
 use App\Mail\CustomMail;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Support\TemplateParser;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Mail;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\CorrespondenceRequest;
 use App\Http\Resources\Reception\CorrespondenceResource;
-use App\Models\Reception\Correspondence;
+use App\Models\Tenant\Reception\Correspondence;
 use App\Services\Reception\CorrespondenceListService;
 use App\Services\Reception\CorrespondenceService;
 use Illuminate\Http\Request;

@@ -3,7 +3,7 @@
 namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayHeadType;
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 
 class GetUserDefinedPayHeadRecord
 {

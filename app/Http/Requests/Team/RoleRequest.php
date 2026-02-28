@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Team;
 
-use App\Models\Team\Role;
+use App\Models\Tenant\Team\Role;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RoleRequest extends FormRequest

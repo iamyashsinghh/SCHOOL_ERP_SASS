@@ -3,7 +3,7 @@
 namespace App\View\Components\Site;
 
 use App\Enums\Site\MenuPlacement;
-use App\Models\Site\Menu;
+use App\Models\Tenant\Site\Menu;
 use Illuminate\View\Component;
 
 class Footer extends Component

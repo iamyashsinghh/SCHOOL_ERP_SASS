@@ -4,9 +4,9 @@ namespace App\Services\Employee;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\InchargeResource;
-use App\Models\Academic\Course;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

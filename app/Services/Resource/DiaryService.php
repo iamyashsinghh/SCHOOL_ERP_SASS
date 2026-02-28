@@ -5,11 +5,11 @@ namespace App\Services\Resource;
 use App\Enums\Resource\AudienceType;
 use App\Http\Resources\Academic\SubjectResource;
 use App\Jobs\Notifications\Resource\SendBatchDiaryNotification;
-use App\Models\Academic\BatchSubjectRecord;
-use App\Models\Academic\Subject;
-use App\Models\Audience;
-use App\Models\Employee\Employee;
-use App\Models\Resource\Diary;
+use App\Models\Tenant\Academic\BatchSubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Audience;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\Diary;
 use Illuminate\Http\Request;
 
 class DiaryService

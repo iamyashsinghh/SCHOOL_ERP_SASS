@@ -5,9 +5,9 @@ namespace App\Http\Requests\Discipline;
 use App\Enums\Discipline\IncidentNature;
 use App\Enums\Discipline\IncidentSeverity;
 use App\Enums\OptionType;
-use App\Models\Discipline\Incident;
-use App\Models\Option;
-use App\Models\Student\Student;
+use App\Models\Tenant\Discipline\Incident;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

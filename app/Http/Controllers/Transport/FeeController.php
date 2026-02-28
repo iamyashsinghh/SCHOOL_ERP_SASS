@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\FeeRequest;
 use App\Http\Resources\Transport\FeeResource;
-use App\Models\Transport\Fee;
+use App\Models\Tenant\Transport\Fee;
 use App\Services\Transport\FeeListService;
 use App\Services\Transport\FeeService;
 use Illuminate\Http\Request;

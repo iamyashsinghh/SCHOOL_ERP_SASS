@@ -2,9 +2,9 @@
 
 namespace App\Scopes;
 
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 
 trait AudienceScope

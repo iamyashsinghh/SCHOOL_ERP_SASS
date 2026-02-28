@@ -5,7 +5,7 @@ namespace App\Services\Transport\Vehicle\Config;
 use App\Contracts\ListGenerator;
 use App\Enums\OptionType;
 use App\Http\Resources\Transport\Vehicle\Config\DocumentTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

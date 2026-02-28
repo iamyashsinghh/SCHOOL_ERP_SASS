@@ -4,8 +4,8 @@ namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayrollStatus;
 use App\Enums\Finance\PaymentStatus;
-use App\Models\Employee\Payroll\Payroll;
-use App\Models\Employee\Payroll\Record;
+use App\Models\Tenant\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Record;
 use Illuminate\Support\Arr;
 
 class UpdatePayrollRecord

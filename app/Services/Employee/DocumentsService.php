@@ -7,9 +7,9 @@ use App\Enums\DocumentExpiryStatus;
 use App\Enums\OptionType;
 use App\Enums\VerificationStatus;
 use App\Http\Resources\Employee\Config\DocumentTypeResource;
-use App\Models\Document;
-use App\Models\Employee\Employee;
-use App\Models\Option;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

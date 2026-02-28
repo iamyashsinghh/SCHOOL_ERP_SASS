@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Config;
 
 use App\Http\Controllers\Controller;
-use App\Models\Config\Template;
+use App\Models\Tenant\Config\Template;
 use App\Services\Config\TemplateActionService;
 use Illuminate\Http\Request;
 

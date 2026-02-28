@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Division;
-use App\Models\Academic\Program;
+use App\Models\Tenant\Academic\Division;
+use App\Models\Tenant\Academic\Program;
 use Illuminate\Foundation\Http\FormRequest;
 
 class DivisionRequest extends FormRequest

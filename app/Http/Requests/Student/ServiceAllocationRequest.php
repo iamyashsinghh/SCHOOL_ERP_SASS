@@ -4,7 +4,7 @@ namespace App\Http\Requests\Student;
 
 use App\Enums\ServiceRequestType;
 use App\Enums\ServiceType;
-use App\Models\Transport\Stoppage;
+use App\Models\Tenant\Transport\Stoppage;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 

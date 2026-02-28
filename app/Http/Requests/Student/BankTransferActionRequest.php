@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Student;
 
-use App\Models\Finance\BankTransfer;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\BankTransfer;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\PaymentMethod;
 use Illuminate\Foundation\Http\FormRequest;
 
 class BankTransferActionRequest extends FormRequest

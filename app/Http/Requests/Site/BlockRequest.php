@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Site;
 
 use App\Enums\Site\BlockType;
-use App\Models\Site\Menu;
+use App\Models\Tenant\Site\Menu;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Enum;

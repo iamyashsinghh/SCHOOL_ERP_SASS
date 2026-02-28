@@ -4,8 +4,8 @@ namespace App\Services\Academic;
 
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Academic\Subject;
-use App\Models\Option;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

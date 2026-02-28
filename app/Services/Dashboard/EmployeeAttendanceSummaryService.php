@@ -3,9 +3,9 @@
 namespace App\Services\Dashboard;
 
 use App\Enums\Employee\Type as EmployeeType;
-use App\Models\Employee\Attendance\Attendance;
-use App\Models\Employee\Attendance\Type as AttendanceType;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Employee;
 
 class EmployeeAttendanceSummaryService
 {

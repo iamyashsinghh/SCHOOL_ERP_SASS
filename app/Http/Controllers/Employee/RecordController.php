@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\RecordRequest;
 use App\Http\Resources\Employee\RecordResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\RecordListService;
 use App\Services\Employee\RecordService;
 use Illuminate\Http\Request;

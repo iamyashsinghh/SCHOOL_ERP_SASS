@@ -4,10 +4,10 @@ namespace App\Providers;
 
 use App\Events\Auth\UserLogin;
 use App\Listeners\UserLoginListener;
-use App\Models\Academic\Period;
-use App\Models\Contact;
-use App\Models\Team;
-use App\Models\User;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Team;
+use App\Models\Tenant\User;
 use App\Observers\Academic\PeriodObserver;
 use App\Observers\ContactObserver;
 use App\Observers\TeamObserver;

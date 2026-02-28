@@ -2,7 +2,7 @@
 
 namespace App\Services\Misc;
 
-use App\Models\Qualification;
+use App\Models\Tenant\Qualification;
 
 class InstituteService
 {

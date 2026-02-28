@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Communication;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Communication\WhatsAppRequest;
 use App\Http\Resources\Communication\WhatsAppResource;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Services\Communication\WhatsAppListService;
 use App\Services\Communication\WhatsAppService;
 use Illuminate\Http\Request;

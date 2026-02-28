@@ -2,7 +2,7 @@
 
 namespace App\Services\Employee\Payroll;
 
-use App\Models\Employee\Payroll\PayHead;
+use App\Models\Tenant\Employee\Payroll\PayHead;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

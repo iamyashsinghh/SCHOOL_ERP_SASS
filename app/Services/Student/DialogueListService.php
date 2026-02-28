@@ -4,9 +4,9 @@ namespace App\Services\Student;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Student\DialogueResource;
-use App\Models\Contact;
-use App\Models\Dialogue;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Dialogue;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

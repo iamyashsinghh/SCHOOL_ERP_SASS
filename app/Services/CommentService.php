@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Comment;
+use App\Models\Tenant\Comment;
 use App\Support\ValidateComment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

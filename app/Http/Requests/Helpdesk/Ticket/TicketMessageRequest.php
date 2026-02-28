@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Helpdesk\Ticket;
 
 use App\Enums\Helpdesk\Ticket\Status as TicketStatus;
-use App\Models\Helpdesk\Ticket\Ticket;
+use App\Models\Tenant\Helpdesk\Ticket\Ticket;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

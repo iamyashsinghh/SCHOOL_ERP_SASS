@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\DocumentRequest;
 use App\Http\Resources\Employee\DocumentResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\DocumentListService;
 use App\Services\Employee\DocumentService;
 use Illuminate\Http\Request;

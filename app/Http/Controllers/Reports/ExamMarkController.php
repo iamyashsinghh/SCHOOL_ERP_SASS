@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Reports;
 
-use App\Models\Academic\Batch;
-use App\Models\Exam\Exam;
-use App\Models\Exam\Schedule;
-use App\Models\Incharge;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Exam\Exam;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Incharge;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 

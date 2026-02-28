@@ -3,7 +3,7 @@
 namespace App\Services\Contact;
 
 use App\Concerns\HasStorage;
-use App\Models\Contact;
+use App\Models\Tenant\Contact;
 use Illuminate\Http\Request;
 
 class PhotoService

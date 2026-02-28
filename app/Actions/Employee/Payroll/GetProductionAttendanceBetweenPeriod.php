@@ -2,7 +2,7 @@
 
 namespace App\Actions\Employee\Payroll;
 
-use App\Models\Employee\Attendance\Record as AttendanceRecord;
+use App\Models\Tenant\Employee\Attendance\Record as AttendanceRecord;
 use Illuminate\Support\Collection;
 
 class GetProductionAttendanceBetweenPeriod

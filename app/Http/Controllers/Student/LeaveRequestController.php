@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\LeaveRequestRequest;
 use App\Http\Resources\Student\LeaveRequestResource;
-use App\Models\Student\LeaveRequest;
+use App\Models\Tenant\Student\LeaveRequest;
 use App\Services\Student\LeaveRequestListService;
 use App\Services\Student\LeaveRequestService;
 use Illuminate\Http\Request;

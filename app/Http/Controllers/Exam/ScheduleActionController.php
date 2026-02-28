@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Exam\Schedule;
 use App\Services\Exam\ScheduleActionService;
 use Illuminate\Http\Request;
 

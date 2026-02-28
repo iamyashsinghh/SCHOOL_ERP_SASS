@@ -4,10 +4,10 @@ namespace App\Services\Inventory;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Inventory\VendorStatementResource;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\Transaction;
-use App\Models\Inventory\StockPurchase;
-use App\Models\Inventory\StockReturn;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Inventory\StockPurchase;
+use App\Models\Tenant\Inventory\StockReturn;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 

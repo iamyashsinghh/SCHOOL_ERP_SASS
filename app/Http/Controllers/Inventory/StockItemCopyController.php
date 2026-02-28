@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Inventory;
 
 use App\Http\Controllers\Controller;
-use App\Models\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItem;
 use App\Services\Inventory\StockItemCopyListService;
 use App\Services\Inventory\StockItemCopyService;
 use Illuminate\Http\Request;

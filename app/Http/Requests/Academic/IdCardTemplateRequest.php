@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Academic;
 
 use App\Enums\Academic\IdCardFor;
-use App\Models\Academic\IdCardTemplate;
+use App\Models\Tenant\Academic\IdCardTemplate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

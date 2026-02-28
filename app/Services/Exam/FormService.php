@@ -4,10 +4,10 @@ namespace App\Services\Exam;
 
 use App\Enums\Exam\AssessmentAttempt;
 use App\Http\Resources\Exam\ExamResource;
-use App\Models\Exam\Exam;
-use App\Models\Exam\Form;
-use App\Models\Exam\Schedule;
-use App\Models\Student\Student;
+use App\Models\Tenant\Exam\Exam;
+use App\Models\Tenant\Exam\Form;
+use App\Models\Tenant\Exam\Schedule;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 class FormService

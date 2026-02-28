@@ -2,12 +2,12 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Finance\Transaction;
-use App\Models\Finance\TransactionPayment;
-use App\Models\Finance\TransactionRecord;
-use App\Models\Student\Fee;
-use App\Models\Student\Registration;
-use App\Models\Student\Student;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Finance\TransactionPayment;
+use App\Models\Tenant\Finance\TransactionRecord;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Student\Student;
 use App\Support\FormatCodeNumber;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

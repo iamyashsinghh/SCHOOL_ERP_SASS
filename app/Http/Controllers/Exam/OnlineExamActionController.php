@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
-use App\Models\Exam\OnlineExam;
+use App\Models\Tenant\Exam\OnlineExam;
 use App\Services\Exam\OnlineExamActionService;
 use Illuminate\Http\Request;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Library;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Library\BookRequest;
 use App\Http\Resources\Library\BookResource;
-use App\Models\Library\Book;
+use App\Models\Tenant\Library\Book;
 use App\Services\Library\BookListService;
 use App\Services\Library\BookService;
 use Illuminate\Http\Request;

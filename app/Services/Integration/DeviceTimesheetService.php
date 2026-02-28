@@ -4,9 +4,9 @@ namespace App\Services\Integration;
 
 use App\Actions\Employee\Attendance\StoreTimesheet;
 use App\Helpers\CalHelper;
-use App\Models\Device;
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Device;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

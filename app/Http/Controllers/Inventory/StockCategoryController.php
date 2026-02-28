@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\StockCategoryRequest;
 use App\Http\Resources\Inventory\StockCategoryResource;
-use App\Models\Inventory\StockCategory;
+use App\Models\Tenant\Inventory\StockCategory;
 use App\Services\Inventory\StockCategoryListService;
 use App\Services\Inventory\StockCategoryService;
 use Illuminate\Http\Request;

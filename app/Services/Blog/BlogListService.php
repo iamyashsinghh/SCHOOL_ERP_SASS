@@ -4,7 +4,7 @@ namespace App\Services\Blog;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Blog\BlogSummaryResource;
-use App\Models\Blog\Blog;
+use App\Models\Tenant\Blog\Blog;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

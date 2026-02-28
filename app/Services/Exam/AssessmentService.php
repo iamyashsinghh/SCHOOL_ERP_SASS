@@ -2,8 +2,8 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Exam\Assessment;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Exam\Assessment;
+use App\Models\Tenant\Exam\Schedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Transport\Vehicle;
 
-use App\Models\Transport\Vehicle\Vehicle;
-use App\Models\User;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class VehiclePolicy

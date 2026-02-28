@@ -4,7 +4,7 @@ namespace App\Services\Auth;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Auth\FailedLoginAttemptResource;
-use App\Models\FailedLoginAttempt;
+use App\Models\Tenant\FailedLoginAttempt;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

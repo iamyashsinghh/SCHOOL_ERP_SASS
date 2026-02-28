@@ -3,8 +3,8 @@
 namespace App\Policies\Employee\Payroll;
 
 use App\Concerns\SubordinateAccess;
-use App\Models\Employee\Payroll\Payroll;
-use App\Models\User;
+use App\Models\Tenant\Employee\Payroll\Payroll;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PayrollPolicy

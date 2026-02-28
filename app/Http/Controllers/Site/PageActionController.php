@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Page;
 use App\Services\Site\PageActionService;
 use Illuminate\Http\Request;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\VehicleRequest;
 use App\Http\Resources\Transport\Vehicle\VehicleResource;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use App\Services\Transport\Vehicle\VehicleListService;
 use App\Services\Transport\Vehicle\VehicleService;
 use Illuminate\Http\Request;

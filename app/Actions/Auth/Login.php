@@ -4,8 +4,8 @@ namespace App\Actions\Auth;
 
 use App\Helpers\SysHelper;
 use App\Http\Resources\AuthUserResource;
-use App\Models\FailedLoginAttempt;
-use App\Models\User;
+use App\Models\Tenant\FailedLoginAttempt;
+use App\Models\Tenant\User;
 use App\Support\ValidateInput;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\Request;

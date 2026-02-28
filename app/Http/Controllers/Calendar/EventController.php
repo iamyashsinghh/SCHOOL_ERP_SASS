@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Calendar;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Calendar\EventRequest;
 use App\Http\Resources\Calendar\EventResource;
-use App\Models\Calendar\Event;
+use App\Models\Tenant\Calendar\Event;
 use App\Services\Calendar\EventListService;
 use App\Services\Calendar\EventService;
 use Illuminate\Http\Request;

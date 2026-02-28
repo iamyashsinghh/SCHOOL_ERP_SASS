@@ -2,8 +2,8 @@
 
 namespace App\Services\Form;
 
-use App\Models\Form\Form;
-use App\Models\Form\Submission;
+use App\Models\Tenant\Form\Form;
+use App\Models\Tenant\Form\Submission;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Form;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Form\FormSubmitRequest;
-use App\Models\Form\Form;
+use App\Models\Tenant\Form\Form;
 use App\Services\Form\FormSubmitService;
 
 class FormSubmitController extends Controller

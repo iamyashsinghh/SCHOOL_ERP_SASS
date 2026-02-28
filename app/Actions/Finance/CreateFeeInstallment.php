@@ -2,9 +2,9 @@
 
 namespace App\Actions\Finance;
 
-use App\Models\Finance\FeeInstallment;
-use App\Models\Finance\FeeInstallmentRecord;
-use App\Models\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Finance\FeeInstallmentRecord;
+use App\Models\Tenant\Finance\FeeStructure;
 use Illuminate\Support\Arr;
 
 class CreateFeeInstallment

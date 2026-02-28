@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
 

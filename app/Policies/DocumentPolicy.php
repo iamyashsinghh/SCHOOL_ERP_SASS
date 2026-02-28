@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Document;
-use App\Models\User;
+use App\Models\Tenant\Document;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class DocumentPolicy
@@ -23,7 +23,7 @@ class DocumentPolicy
     /**
      * Determine whether the user can view the model.
      *
-     * @param  \App\Models\Document  $member
+     * @param  App\Models\Tenant\Document  $member
      * @return \Illuminate\Auth\Access\Response|bool
      */
     public function view(User $user, string $permission)

@@ -2,7 +2,7 @@
 
 namespace App\Events;
 
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
@@ -18,7 +18,7 @@ class TestEvent implements ShouldBroadcast
     /**
      * The order instance.
      *
-     * @var \App\Models\User
+     * @var App\Models\Tenant\User
      */
     public $user;
 

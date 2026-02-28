@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\OptionRequest;
 use App\Http\Resources\OptionResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\OptionListService;
 use App\Services\OptionService;
 use Illuminate\Http\Request;

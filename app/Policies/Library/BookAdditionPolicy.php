@@ -2,8 +2,8 @@
 
 namespace App\Policies\Library;
 
-use App\Models\Library\BookAddition;
-use App\Models\User;
+use App\Models\Tenant\Library\BookAddition;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class BookAdditionPolicy

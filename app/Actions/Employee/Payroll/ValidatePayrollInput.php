@@ -4,10 +4,10 @@ namespace App\Actions\Employee\Payroll;
 
 use App\Enums\Employee\Payroll\PayrollStatus;
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\Type as AttendanceType;
-use App\Models\Employee\Leave\Request as LeaveRequest;
-use App\Models\Employee\Payroll\Payroll;
-use App\Models\Employee\Payroll\SalaryStructure;
+use App\Models\Tenant\Employee\Attendance\Type as AttendanceType;
+use App\Models\Tenant\Employee\Leave\Request as LeaveRequest;
+use App\Models\Tenant\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\SalaryStructure;
 use Illuminate\Support\Arr;
 
 class ValidatePayrollInput

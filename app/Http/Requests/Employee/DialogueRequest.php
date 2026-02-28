@@ -3,11 +3,11 @@
 namespace App\Http\Requests\Employee;
 
 use App\Enums\OptionType;
-use App\Models\Contact;
-use App\Models\Dialogue;
-use App\Models\Employee\Employee;
-use App\Models\Media;
-use App\Models\Option;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Dialogue;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 

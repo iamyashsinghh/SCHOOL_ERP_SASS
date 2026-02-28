@@ -3,8 +3,8 @@
 namespace App\Services\Task\Dashboard;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Employee;
-use App\Models\Task\Task;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

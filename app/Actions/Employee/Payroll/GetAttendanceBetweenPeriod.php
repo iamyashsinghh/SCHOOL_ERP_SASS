@@ -3,8 +3,8 @@
 namespace App\Actions\Employee\Payroll;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\Attendance;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

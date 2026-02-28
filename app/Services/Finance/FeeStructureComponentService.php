@@ -2,11 +2,11 @@
 
 namespace App\Services\Finance;
 
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\FeeInstallmentRecord;
-use App\Models\Finance\FeeStructure;
-use App\Models\Finance\FeeStructureComponent;
-use App\Models\Student\Student;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeInstallmentRecord;
+use App\Models\Tenant\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeStructureComponent;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

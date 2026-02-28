@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Config\DocumentTypeRequest;
 use App\Http\Resources\Employee\Config\DocumentTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\Employee\Config\DocumentTypeListService;
 use App\Services\Employee\Config\DocumentTypeService;
 use Illuminate\Http\Request;

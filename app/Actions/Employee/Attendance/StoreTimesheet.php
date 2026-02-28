@@ -3,10 +3,10 @@
 namespace App\Actions\Employee\Attendance;
 
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\Attendance;
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\Employee\Employee;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\Attendance\Attendance;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

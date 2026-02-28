@@ -2,8 +2,8 @@
 
 namespace App\Policies\Reception;
 
-use App\Models\Reception\VisitorLog;
-use App\Models\User;
+use App\Models\Tenant\Reception\VisitorLog;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class VisitorLogPolicy

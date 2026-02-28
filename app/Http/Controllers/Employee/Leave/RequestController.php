@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee\Leave;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Leave\RequestRequest as LeaveRequestRequest;
 use App\Http\Resources\Employee\Leave\RequestResource as LeaveRequestResource;
-use App\Models\Employee\Leave\Request as LeaveRequest;
+use App\Models\Tenant\Employee\Leave\Request as LeaveRequest;
 use App\Services\Employee\Leave\RequestListService as LeaveRequestListService;
 use App\Services\Employee\Leave\RequestService as LeaveRequestService;
 use Illuminate\Http\Request;

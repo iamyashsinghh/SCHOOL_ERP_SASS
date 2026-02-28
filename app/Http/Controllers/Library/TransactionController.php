@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Library;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Library\TransactionRequest;
 use App\Http\Resources\Library\TransactionResource;
-use App\Models\Library\Transaction;
+use App\Models\Tenant\Library\Transaction;
 use App\Services\Library\TransactionListService;
 use App\Services\Library\TransactionService;
 use Illuminate\Http\Request;

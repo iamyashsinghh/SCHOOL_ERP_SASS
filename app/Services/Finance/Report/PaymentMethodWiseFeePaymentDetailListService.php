@@ -4,11 +4,11 @@ namespace App\Services\Finance\Report;
 
 use App\Contracts\ListGenerator;
 use App\Helpers\CalHelper;
-use App\Models\Academic\Period;
-use App\Models\Finance\PaymentMethod;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Registration;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

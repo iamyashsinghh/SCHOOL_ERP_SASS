@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Transport\Vehicle;
 
 use App\Enums\OptionType;
-use App\Models\Option;
-use App\Models\Transport\Vehicle\TripRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Transport\Vehicle\TripRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TripRecordRequest extends FormRequest

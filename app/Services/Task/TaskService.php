@@ -6,9 +6,9 @@ use App\Enums\CustomFieldForm;
 use App\Enums\OptionType;
 use App\Http\Resources\CustomFieldResource;
 use App\Http\Resources\OptionResource;
-use App\Models\CustomField;
-use App\Models\Option;
-use App\Models\Task\Task;
+use App\Models\Tenant\CustomField;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 
 class TaskService

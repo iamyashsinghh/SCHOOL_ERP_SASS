@@ -2,7 +2,7 @@
 
 namespace App\Services\Asset\Building;
 
-use App\Models\Asset\Building\Block;
+use App\Models\Tenant\Asset\Building\Block;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

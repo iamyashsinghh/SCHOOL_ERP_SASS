@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Exam;
 
 use App\Enums\Exam\OnlineExamQuestionType;
-use App\Models\Exam\OnlineExamQuestion;
+use App\Models\Tenant\Exam\OnlineExamQuestion;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Rules\Enum;

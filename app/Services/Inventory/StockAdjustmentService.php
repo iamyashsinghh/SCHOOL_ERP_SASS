@@ -4,12 +4,12 @@ namespace App\Services\Inventory;
 
 use App\Http\Resources\Asset\Building\RoomResource;
 use App\Http\Resources\Inventory\InventoryResource;
-use App\Models\Asset\Building\Room;
-use App\Models\Inventory\Inventory;
-use App\Models\Inventory\StockAdjustment;
-use App\Models\Inventory\StockBalance;
-use App\Models\Inventory\StockItem;
-use App\Models\Inventory\StockItemRecord;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Inventory\Inventory;
+use App\Models\Tenant\Inventory\StockAdjustment;
+use App\Models\Tenant\Inventory\StockBalance;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItemRecord;
 use App\Support\FormatCodeNumber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

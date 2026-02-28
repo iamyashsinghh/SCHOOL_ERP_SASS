@@ -5,7 +5,7 @@ namespace App\Services\Finance\Report;
 use App\Enums\Finance\DefaultFeeHead;
 use App\Enums\Student\StudentStatus;
 use App\Http\Resources\Finance\FeeHeadResource;
-use App\Models\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeHead;
 
 class FeeHeadService
 {

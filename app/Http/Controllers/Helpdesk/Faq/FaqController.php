@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Helpdesk\Faq;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Helpdesk\Faq\FaqRequest;
 use App\Http\Resources\Helpdesk\Faq\FaqResource;
-use App\Models\Helpdesk\Faq\Faq;
+use App\Models\Tenant\Helpdesk\Faq\Faq;
 use App\Services\Helpdesk\Faq\FaqListService;
 use App\Services\Helpdesk\Faq\FaqService;
 use Illuminate\Http\Request;

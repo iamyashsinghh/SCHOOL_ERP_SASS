@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Hostel;
 
 use App\Concerns\HasIncharge;
-use App\Models\Hostel\Room;
-use App\Models\Student\Student;
+use App\Models\Tenant\Hostel\Room;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RoomAllocationRequest extends FormRequest

@@ -4,7 +4,7 @@ namespace App\Services\Library;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Library\BookAdditionResource;
-use App\Models\Library\BookAddition;
+use App\Models\Tenant\Library\BookAddition;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

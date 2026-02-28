@@ -4,7 +4,7 @@ namespace App\Http\Resources\Academic;
 
 use App\Enums\OptionType;
 use App\Http\Resources\OptionResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Arr;
 

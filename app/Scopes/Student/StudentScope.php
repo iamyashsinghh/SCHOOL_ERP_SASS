@@ -2,7 +2,7 @@
 
 namespace App\Scopes\Student;
 
-use App\Models\Academic\Batch;
+use App\Models\Tenant\Academic\Batch;
 use App\Support\AsStudentOrGuardian;
 use Illuminate\Database\Eloquent\Builder;
 

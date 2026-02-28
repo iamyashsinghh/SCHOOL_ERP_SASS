@@ -4,7 +4,7 @@ namespace App\Services\Resource;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Resource\LessonPlanResource;
-use App\Models\Resource\LessonPlan;
+use App\Models\Tenant\Resource\LessonPlan;
 use App\Support\HasFilterByAssignedSubject;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

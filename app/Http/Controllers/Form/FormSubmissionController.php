@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Form;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Form\FormSubmissionResource;
-use App\Models\Form\Form;
-use App\Models\Form\Submission;
+use App\Models\Tenant\Form\Form;
+use App\Models\Tenant\Form\Submission;
 use App\Services\Form\FormSubmissionListService;
 use App\Services\Form\FormSubmissionService;
 use Illuminate\Http\Request;

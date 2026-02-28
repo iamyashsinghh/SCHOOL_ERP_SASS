@@ -4,9 +4,9 @@ namespace App\Http\Requests\Employee\Attendance;
 
 use App\Concerns\SubordinateAccess;
 use App\Helpers\CalHelper;
-use App\Models\Employee\Attendance\Timesheet;
-use App\Models\Employee\Employee;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\Attendance\Timesheet;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

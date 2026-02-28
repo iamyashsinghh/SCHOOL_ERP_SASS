@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\ReceiptRequest;
 use App\Http\Resources\Finance\ReceiptResource;
-use App\Models\Finance\Receipt;
+use App\Models\Tenant\Finance\Receipt;
 use App\Services\Finance\ReceiptListService;
 use App\Services\Finance\ReceiptService;
 use Illuminate\Http\Request;

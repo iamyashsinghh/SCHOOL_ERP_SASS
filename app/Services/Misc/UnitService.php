@@ -3,7 +3,7 @@
 namespace App\Services\Misc;
 
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 
 class UnitService
 {

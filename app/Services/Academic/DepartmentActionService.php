@@ -2,7 +2,7 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\Department;
+use App\Models\Tenant\Academic\Department;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

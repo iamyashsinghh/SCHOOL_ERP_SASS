@@ -2,7 +2,7 @@
 
 namespace App\Actions\Finance;
 
-use App\Models\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeGroup;
 
 class CreateCustomFeeHead
 {

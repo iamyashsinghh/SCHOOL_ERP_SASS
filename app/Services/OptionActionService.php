@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

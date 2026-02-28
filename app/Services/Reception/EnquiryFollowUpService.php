@@ -6,10 +6,10 @@ use App\Enums\OptionType;
 use App\Enums\Reception\EnquiryStatus;
 use App\Http\Resources\OptionResource;
 use App\Jobs\Notifications\Reception\SendEnquiryFollowUpNotification;
-use App\Models\Option;
-use App\Models\Reception\Enquiry;
-use App\Models\Reception\EnquiryFollowUp;
-use App\Models\User;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Enquiry;
+use App\Models\Tenant\Reception\EnquiryFollowUp;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

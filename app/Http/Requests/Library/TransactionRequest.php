@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Library;
 
 use App\Enums\Library\IssueTo;
-use App\Models\Employee\Employee;
-use App\Models\Library\BookCopy;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Library\BookCopy;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

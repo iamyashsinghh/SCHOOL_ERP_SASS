@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\PaymentMethodRequest;
 use App\Http\Resources\Finance\PaymentMethodResource;
-use App\Models\Finance\PaymentMethod;
+use App\Models\Tenant\Finance\PaymentMethod;
 use App\Services\Finance\PaymentMethodListService;
 use App\Services\Finance\PaymentMethodService;
 use Illuminate\Http\Request;

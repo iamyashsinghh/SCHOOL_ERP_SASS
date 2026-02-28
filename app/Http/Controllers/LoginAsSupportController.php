@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\SysHelper;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 

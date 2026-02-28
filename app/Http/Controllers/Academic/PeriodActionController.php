@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Academic;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Academic\PeriodImportRequest;
-use App\Models\Academic\Period;
+use App\Models\Tenant\Academic\Period;
 use App\Services\Academic\PeriodActionService;
 use Illuminate\Http\Request;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\DialogueRequest;
 use App\Http\Resources\Employee\DialogueResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\DialogueListService;
 use App\Services\Employee\DialogueService;
 use Illuminate\Http\Request;

@@ -2,7 +2,7 @@
 
 namespace App\Actions\Task;
 
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use App\Support\FormatCodeNumber;
 
 class GenerateCodeNumber

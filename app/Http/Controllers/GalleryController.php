@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\GalleryRequest;
 use App\Http\Resources\GalleryResource;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use App\Services\GalleryListService;
 use App\Services\GalleryService;
 use Illuminate\Http\Request;

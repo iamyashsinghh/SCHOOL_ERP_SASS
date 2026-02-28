@@ -3,9 +3,9 @@
 namespace App\Imports\Academic;
 
 use App\Concerns\ItemImport;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

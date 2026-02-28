@@ -4,7 +4,7 @@ namespace App\Services\Post;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Post\PostResource;
-use App\Models\Post\Post;
+use App\Models\Tenant\Post\Post;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

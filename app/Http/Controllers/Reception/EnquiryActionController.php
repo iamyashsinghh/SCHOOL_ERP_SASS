@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Reception;
 
 use App\Http\Controllers\Controller;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Reception\Enquiry;
 use App\Services\Contact\PhotoService;
 use App\Services\Reception\EnquiryActionService;
 use Illuminate\Http\Request;

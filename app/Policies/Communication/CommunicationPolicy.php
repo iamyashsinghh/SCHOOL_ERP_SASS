@@ -2,8 +2,8 @@
 
 namespace App\Policies\Communication;
 
-use App\Models\Communication\Communication;
-use App\Models\User;
+use App\Models\Tenant\Communication\Communication;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CommunicationPolicy

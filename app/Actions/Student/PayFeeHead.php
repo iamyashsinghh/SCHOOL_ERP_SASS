@@ -2,9 +2,9 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Finance\Transaction;
-use App\Models\Student\FeePayment;
-use App\Models\Student\FeeRecord;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\FeePayment;
+use App\Models\Tenant\Student\FeeRecord;
 
 class PayFeeHead
 {

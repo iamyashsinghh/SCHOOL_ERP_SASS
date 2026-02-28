@@ -4,9 +4,9 @@ namespace App\Services\Task\Dashboard;
 
 use App\Enums\OptionType;
 use App\Helpers\ListHelper;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Task\Task;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 
 class ChartService

@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeInstallmentRequest;
 use App\Http\Resources\Finance\FeeInstallmentResource;
-use App\Models\Finance\FeeInstallment;
-use App\Models\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeInstallment;
+use App\Models\Tenant\Finance\FeeStructure;
 use App\Services\Finance\FeeInstallmentService;
 
 class FeeInstallmentController extends Controller

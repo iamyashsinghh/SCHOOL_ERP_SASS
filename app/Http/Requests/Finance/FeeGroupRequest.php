@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Finance;
 
-use App\Models\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeGroup;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FeeGroupRequest extends FormRequest

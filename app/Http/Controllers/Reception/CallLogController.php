@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Reception;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\CallLogRequest;
 use App\Http\Resources\Reception\CallLogResource;
-use App\Models\Reception\CallLog;
+use App\Models\Tenant\Reception\CallLog;
 use App\Services\Reception\CallLogListService;
 use App\Services\Reception\CallLogService;
 use Illuminate\Http\Request;

@@ -2,8 +2,8 @@
 
 namespace App\Concerns;
 
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

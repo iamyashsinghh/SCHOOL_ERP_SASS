@@ -4,10 +4,10 @@ namespace App\Http\Requests\Employee;
 
 use App\Enums\OptionType;
 use App\Enums\QualificationResult;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Option;
-use App\Models\Qualification;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Qualification;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Academic\Period;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Team;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TeamImportRequest extends FormRequest

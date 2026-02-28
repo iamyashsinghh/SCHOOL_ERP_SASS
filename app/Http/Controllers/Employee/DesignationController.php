@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\DesignationRequest;
 use App\Http\Resources\Employee\DesignationResource;
-use App\Models\Employee\Designation;
+use App\Models\Tenant\Employee\Designation;
 use App\Services\Employee\DesignationListService;
 use App\Services\Employee\DesignationService;
 use Illuminate\Http\Request;

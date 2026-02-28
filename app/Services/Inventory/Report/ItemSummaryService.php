@@ -3,7 +3,7 @@
 namespace App\Services\Inventory\Report;
 
 use App\Http\Resources\Inventory\InventoryResource;
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Inventory\Inventory;
 
 class ItemSummaryService
 {

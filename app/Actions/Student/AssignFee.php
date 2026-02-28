@@ -2,11 +2,11 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Finance\FeeAllocation;
-use App\Models\Finance\FeeConcession;
-use App\Models\Finance\FeeStructure;
-use App\Models\Student\Student;
-use App\Models\Transport\Circle as TransportCircle;
+use App\Models\Tenant\Finance\FeeAllocation;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeStructure;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\Transport\Circle as TransportCircle;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

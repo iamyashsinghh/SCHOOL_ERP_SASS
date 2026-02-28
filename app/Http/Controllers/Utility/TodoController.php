@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Utility;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Utility\TodoRequest;
 use App\Http\Resources\Utility\TodoResource;
-use App\Models\Utility\Todo;
+use App\Models\Tenant\Utility\Todo;
 use App\Services\Utility\TodoListService;
 use App\Services\Utility\TodoService;
 use Illuminate\Http\Request;

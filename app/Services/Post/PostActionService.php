@@ -2,7 +2,7 @@
 
 namespace App\Services\Post;
 
-use App\Models\Post\Post;
+use App\Models\Tenant\Post\Post;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

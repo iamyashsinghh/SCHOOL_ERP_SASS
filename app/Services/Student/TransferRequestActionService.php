@@ -4,7 +4,7 @@ namespace App\Services\Student;
 
 use App\Actions\Student\TransferStudent;
 use App\Enums\Student\TransferRequestStatus;
-use App\Models\Student\TransferRequest;
+use App\Models\Tenant\Student\TransferRequest;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

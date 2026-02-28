@@ -2,8 +2,8 @@
 
 namespace App\Policies\News;
 
-use App\Models\News\News;
-use App\Models\User;
+use App\Models\Tenant\News\News;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class NewsPolicy

@@ -2,7 +2,7 @@
 
 namespace App\Actions\Finance;
 
-use App\Models\Finance\DayClosure;
+use App\Models\Tenant\Finance\DayClosure;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

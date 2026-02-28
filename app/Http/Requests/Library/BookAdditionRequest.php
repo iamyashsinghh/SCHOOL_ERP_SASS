@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Library;
 
 use App\Enums\OptionType;
-use App\Models\Library\Book;
-use App\Models\Library\BookCopy;
-use App\Models\Option;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Library\BookCopy;
+use App\Models\Tenant\Option;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

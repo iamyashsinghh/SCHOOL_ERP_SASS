@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Academic;
 
-use App\Models\Academic\Course;
-use App\Models\Academic\Division;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Division;
 use Illuminate\Foundation\Http\FormRequest;
 
 class CourseRequest extends FormRequest

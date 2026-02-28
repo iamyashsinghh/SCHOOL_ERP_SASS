@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

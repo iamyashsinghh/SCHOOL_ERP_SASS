@@ -4,8 +4,8 @@ namespace App\Http\Requests\Reception;
 
 use App\Enums\Reception\CorrespondenceMode;
 use App\Enums\Reception\CorrespondenceType;
-use App\Models\Media;
-use App\Models\Reception\Correspondence;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Reception\Correspondence;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 use Illuminate\Validation\ValidationException;

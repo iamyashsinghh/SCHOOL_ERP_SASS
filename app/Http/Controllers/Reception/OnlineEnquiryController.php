@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Reception;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Reception\OnlineEnquiryRequest;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\Reception\OnlineEnquiryService;
 use Illuminate\Http\Request;
 

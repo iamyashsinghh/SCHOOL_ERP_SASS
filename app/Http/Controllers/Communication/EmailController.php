@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Communication;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Communication\EmailRequest;
 use App\Http\Resources\Communication\EmailResource;
-use App\Models\Communication\Communication;
+use App\Models\Tenant\Communication\Communication;
 use App\Services\Communication\EmailListService;
 use App\Services\Communication\EmailService;
 use Illuminate\Http\Request;

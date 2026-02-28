@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\TaxRequest;
 use App\Http\Resources\Finance\TaxResource;
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\Tax;
 use App\Services\Finance\TaxListService;
 use App\Services\Finance\TaxService;
 use Illuminate\Http\Request;

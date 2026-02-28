@@ -4,7 +4,7 @@ namespace App\Services\Mess;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Mess\MenuItemResource;
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\MenuItem;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Contracts\Finance\PaymentGateway;
 use App\Http\Controllers\Controller;
-use App\Models\Student\Registration;
+use App\Models\Tenant\Student\Registration;
 use App\Services\Student\GuestRegistrationPaymentService;
 use App\Services\Student\OnlineRegistrationPaymentService;
 use Illuminate\Http\Request;

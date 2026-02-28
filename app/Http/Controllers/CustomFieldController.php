@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CustomFieldRequest;
 use App\Http\Resources\CustomFieldResource;
-use App\Models\CustomField;
+use App\Models\Tenant\CustomField;
 use App\Services\CustomFieldListService;
 use App\Services\CustomFieldService;
 use Illuminate\Http\Request;

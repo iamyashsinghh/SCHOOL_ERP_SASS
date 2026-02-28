@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\RouteRequest;
 use App\Http\Resources\Transport\RouteResource;
-use App\Models\Transport\Route;
+use App\Models\Tenant\Transport\Route;
 use App\Services\Transport\RouteListService;
 use App\Services\Transport\RouteService;
 use Illuminate\Http\Request;

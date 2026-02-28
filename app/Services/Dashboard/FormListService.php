@@ -3,7 +3,7 @@
 namespace App\Services\Dashboard;
 
 use App\Http\Resources\Form\FormSummaryResource;
-use App\Models\Form\Form;
+use App\Models\Tenant\Form\Form;
 use Illuminate\Http\Request;
 
 class FormListService

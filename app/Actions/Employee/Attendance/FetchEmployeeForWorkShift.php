@@ -3,8 +3,8 @@
 namespace App\Actions\Employee\Attendance;
 
 use App\Contracts\PaginationHelper;
-use App\Models\Employee\Employee;
-use App\Models\Employee\WorkShift as EmployeeWorkShift;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\WorkShift as EmployeeWorkShift;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 

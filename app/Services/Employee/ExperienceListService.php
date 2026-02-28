@@ -4,9 +4,9 @@ namespace App\Services\Employee;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\ExperienceResource;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Experience;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Experience;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

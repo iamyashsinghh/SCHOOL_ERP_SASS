@@ -4,7 +4,7 @@ namespace App\Actions\Config;
 
 use App\Helpers\SysHelper;
 use App\Lists\ConfigType;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

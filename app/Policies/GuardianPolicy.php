@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Guardian;
-use App\Models\User;
+use App\Models\Tenant\Guardian;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class GuardianPolicy

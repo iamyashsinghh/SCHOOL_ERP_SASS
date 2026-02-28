@@ -4,9 +4,9 @@ namespace App\Services\Finance;
 
 use App\Http\Resources\Finance\FeeHeadResource;
 use App\Http\Resources\Finance\TaxResource;
-use App\Models\Finance\FeeComponent;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\FeeComponent;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\Tax;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

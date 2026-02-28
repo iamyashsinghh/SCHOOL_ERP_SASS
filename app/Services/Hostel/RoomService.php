@@ -4,9 +4,9 @@ namespace App\Services\Hostel;
 
 use App\Http\Resources\Hostel\BlockResource;
 use App\Http\Resources\Hostel\FloorResource;
-use App\Models\Hostel\Block;
-use App\Models\Hostel\Floor;
-use App\Models\Hostel\Room;
+use App\Models\Tenant\Hostel\Block;
+use App\Models\Tenant\Hostel\Floor;
+use App\Models\Tenant\Hostel\Room;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

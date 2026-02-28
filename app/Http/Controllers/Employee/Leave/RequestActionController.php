@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Employee\Leave;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Leave\RequestStatusRequest as LeaveRequestStatusRequest;
-use App\Models\Employee\Leave\Request as LeaveRequest;
+use App\Models\Tenant\Employee\Leave\Request as LeaveRequest;
 use App\Services\Employee\Leave\RequestActionService as LeaveRequestActionService;
 use Illuminate\Http\Request;
 

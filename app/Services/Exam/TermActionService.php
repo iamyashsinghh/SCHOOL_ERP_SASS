@@ -2,7 +2,7 @@
 
 namespace App\Services\Exam;
 
-use App\Models\Exam\Term;
+use App\Models\Tenant\Exam\Term;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

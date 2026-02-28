@@ -2,8 +2,8 @@
 
 namespace App\Services\Inventory;
 
-use App\Models\Inventory\StockItem;
-use App\Models\Inventory\StockItemCopy;
+use App\Models\Tenant\Inventory\StockItem;
+use App\Models\Tenant\Inventory\StockItemCopy;
 use chillerlan\QRCode\QRCode;
 use Illuminate\Http\Request;
 

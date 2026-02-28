@@ -2,8 +2,8 @@
 
 namespace App\Policies\Calendar;
 
-use App\Models\Calendar\Event;
-use App\Models\User;
+use App\Models\Tenant\Calendar\Event;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class EventPolicy

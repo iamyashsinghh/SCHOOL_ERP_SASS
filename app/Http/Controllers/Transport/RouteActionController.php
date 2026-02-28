@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\RouteEmployeeRequest;
 use App\Http\Requests\Transport\RouteStudentRequest;
-use App\Models\Transport\Route;
+use App\Models\Tenant\Transport\Route;
 use App\Services\Transport\RouteActionService;
 use Illuminate\Http\Request;
 

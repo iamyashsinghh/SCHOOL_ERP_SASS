@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Transport\Vehicle;
 
-use App\Models\Finance\Ledger;
-use App\Models\Transport\Vehicle\FuelRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Transport\Vehicle\FuelRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FuelRecordRequest extends FormRequest

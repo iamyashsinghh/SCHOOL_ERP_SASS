@@ -3,10 +3,10 @@
 namespace App\Actions\Student;
 
 use App\Enums\Finance\DefaultFeeHead;
-use App\Models\Finance\FeeConcession;
-use App\Models\Student\Fee as StudentFee;
-use App\Models\Student\FeeRecord;
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Student\Fee as StudentFee;
+use App\Models\Tenant\Student\FeeRecord;
+use App\Models\Tenant\Transport\Circle;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;
 

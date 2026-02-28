@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Exam;
 
-use App\Models\Exam\Grade;
-use App\Models\Exam\Observation;
+use App\Models\Tenant\Exam\Grade;
+use App\Models\Tenant\Exam\Observation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ObservationRequest extends FormRequest

@@ -4,8 +4,8 @@ namespace App\Http\Requests\Transport\Vehicle;
 
 use App\Concerns\HasIncharge;
 use App\Enums\Transport\Vehicle\InchargeType;
-use App\Models\Employee\Employee;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

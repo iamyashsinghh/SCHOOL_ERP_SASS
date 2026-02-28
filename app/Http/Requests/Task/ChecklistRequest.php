@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Task;
 
-use App\Models\Task\Checklist;
+use App\Models\Tenant\Task\Checklist;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ChecklistRequest extends FormRequest

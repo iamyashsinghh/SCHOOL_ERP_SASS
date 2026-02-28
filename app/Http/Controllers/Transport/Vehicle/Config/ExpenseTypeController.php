@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\Config\ExpenseTypeRequest;
 use App\Http\Resources\Transport\Vehicle\Config\ExpenseTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\Transport\Vehicle\Config\ExpenseTypeListService;
 use App\Services\Transport\Vehicle\Config\ExpenseTypeService;
 use Illuminate\Http\Request;

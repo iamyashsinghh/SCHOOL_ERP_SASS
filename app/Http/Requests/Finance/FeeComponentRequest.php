@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Finance;
 
 use App\Enums\Finance\TaxType;
-use App\Models\Finance\FeeComponent;
-use App\Models\Finance\FeeHead;
-use App\Models\Finance\Tax;
+use App\Models\Tenant\Finance\FeeComponent;
+use App\Models\Tenant\Finance\FeeHead;
+use App\Models\Tenant\Finance\Tax;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

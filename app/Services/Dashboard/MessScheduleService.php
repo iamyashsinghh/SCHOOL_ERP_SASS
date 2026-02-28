@@ -2,7 +2,7 @@
 
 namespace App\Services\Dashboard;
 
-use App\Models\Mess\MealLog;
+use App\Models\Tenant\Mess\MealLog;
 use Illuminate\Http\Request;
 
 class MessScheduleService

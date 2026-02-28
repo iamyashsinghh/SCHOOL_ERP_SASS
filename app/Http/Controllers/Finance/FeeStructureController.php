@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeStructureRequest;
 use App\Http\Resources\Finance\FeeStructureResource;
-use App\Models\Finance\FeeStructure;
+use App\Models\Tenant\Finance\FeeStructure;
 use App\Services\Finance\FeeStructureListService;
 use App\Services\Finance\FeeStructureService;
 use Illuminate\Http\Request;

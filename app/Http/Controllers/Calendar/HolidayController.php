@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Calendar;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Calendar\HolidayRequest;
 use App\Http\Resources\Calendar\HolidayResource;
-use App\Models\Calendar\Holiday;
+use App\Models\Tenant\Calendar\Holiday;
 use App\Services\Calendar\HolidayListService;
 use App\Services\Calendar\HolidayService;
 use Illuminate\Http\Request;

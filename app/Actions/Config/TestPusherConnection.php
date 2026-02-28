@@ -3,7 +3,7 @@
 namespace App\Actions\Config;
 
 use App\Events\TestEvent;
-use App\Models\User;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 
 class TestPusherConnection

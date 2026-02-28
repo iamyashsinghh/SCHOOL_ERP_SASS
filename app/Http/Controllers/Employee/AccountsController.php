@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\AccountsRequest;
 use App\Http\Resources\Employee\AccountsResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\AccountsListService;
 use App\Services\Employee\AccountsService;
 use Illuminate\Http\Request;

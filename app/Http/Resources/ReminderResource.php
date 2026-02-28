@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ReminderResource extends JsonResource

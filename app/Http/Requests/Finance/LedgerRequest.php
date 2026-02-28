@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Finance;
 
 use App\Concerns\SimpleValidation;
-use App\Models\Finance\Ledger;
-use App\Models\Finance\LedgerType;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Finance\LedgerType;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 

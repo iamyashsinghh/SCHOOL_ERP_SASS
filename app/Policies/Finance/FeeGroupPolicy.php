@@ -2,8 +2,8 @@
 
 namespace App\Policies\Finance;
 
-use App\Models\Finance\FeeGroup;
-use App\Models\User;
+use App\Models\Tenant\Finance\FeeGroup;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class FeeGroupPolicy

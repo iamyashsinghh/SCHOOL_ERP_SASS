@@ -2,8 +2,8 @@
 
 namespace App\Policies\Exam;
 
-use App\Models\Exam\OnlineExam;
-use App\Models\User;
+use App\Models\Tenant\Exam\OnlineExam;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OnlineExamPolicy

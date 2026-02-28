@@ -2,8 +2,8 @@
 
 namespace App\Actions\Task;
 
-use App\Models\Task\Member;
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Member;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Support\Collection;
 
 class ReplicateMember

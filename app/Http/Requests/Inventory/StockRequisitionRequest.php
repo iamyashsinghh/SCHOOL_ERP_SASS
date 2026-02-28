@@ -2,11 +2,11 @@
 
 namespace App\Http\Requests\Inventory;
 
-use App\Models\Asset\Building\Room;
-use App\Models\Employee\Employee;
-use App\Models\Finance\Ledger;
-use App\Models\Inventory\Inventory;
-use App\Models\Inventory\StockItem;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Finance\Ledger;
+use App\Models\Tenant\Inventory\Inventory;
+use App\Models\Tenant\Inventory\StockItem;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

@@ -11,8 +11,8 @@
 |
 */
 
-use App\Models\Config\Config;
-use App\Models\User;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\User;
 use Illuminate\Support\Arr;
 
 uses(Tests\TestCase::class)->in('Feature');

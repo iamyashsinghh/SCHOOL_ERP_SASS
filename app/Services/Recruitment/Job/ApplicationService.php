@@ -5,9 +5,9 @@ namespace App\Services\Recruitment\Job;
 use App\Actions\CreateContact;
 use App\Jobs\Notifications\Recruitment\SendJobApplicationReceivedCandidateNotification;
 use App\Jobs\Notifications\Recruitment\SendJobApplicationReceivedNotification;
-use App\Models\Contact;
-use App\Models\Employee\Employee;
-use App\Models\Recruitment\Application;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Recruitment\Application;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Exam;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Exam\CompetencyRequest;
 use App\Http\Resources\Exam\CompetencyResource;
-use App\Models\Exam\Competency;
+use App\Models\Tenant\Exam\Competency;
 use App\Services\Exam\CompetencyListService;
 use App\Services\Exam\CompetencyService;
 use Illuminate\Http\Request;

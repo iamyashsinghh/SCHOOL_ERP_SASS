@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Mess;
 
-use App\Models\Mess\MenuItem;
+use App\Models\Tenant\Mess\MenuItem;
 use Illuminate\Foundation\Http\FormRequest;
 
 class MenuItemRequest extends FormRequest

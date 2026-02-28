@@ -2,7 +2,7 @@
 
 namespace App\Support;
 
-use App\Models\Exam\Grade;
+use App\Models\Tenant\Exam\Grade;
 use Illuminate\Support\Arr;
 
 trait HasGrade

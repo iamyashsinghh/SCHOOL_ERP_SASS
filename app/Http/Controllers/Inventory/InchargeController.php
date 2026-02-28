@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Inventory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Inventory\InchargeRequest;
 use App\Http\Resources\Inventory\InchargeResource;
-use App\Models\Incharge;
+use App\Models\Tenant\Incharge;
 use App\Services\Inventory\InchargeListService;
 use App\Services\Inventory\InchargeService;
 use Illuminate\Http\Request;

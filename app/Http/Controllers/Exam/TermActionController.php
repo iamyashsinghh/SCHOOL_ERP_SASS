@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Exam;
 
 use App\Http\Controllers\Controller;
-use App\Models\Exam\Term;
+use App\Models\Tenant\Exam\Term;
 use App\Services\Exam\TermActionService;
 use Illuminate\Http\Request;
 

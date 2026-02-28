@@ -2,10 +2,10 @@
 
 namespace App\Services\Student;
 
-use App\Models\Academic\Period;
-use App\Models\Student\Registration;
-use App\Models\Student\Student;
-use App\Models\User;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Student\Student;
+use App\Models\Tenant\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

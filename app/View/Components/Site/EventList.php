@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Site;
 
-use App\Models\Calendar\Event;
+use App\Models\Tenant\Calendar\Event;
 use Illuminate\View\Component;
 
 class EventList extends Component

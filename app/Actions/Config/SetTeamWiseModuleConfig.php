@@ -2,7 +2,7 @@
 
 namespace App\Actions\Config;
 
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 
 class SetTeamWiseModuleConfig
 {

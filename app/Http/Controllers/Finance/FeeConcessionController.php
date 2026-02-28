@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeConcessionRequest;
 use App\Http\Resources\Finance\FeeConcessionResource;
-use App\Models\Finance\FeeConcession;
+use App\Models\Tenant\Finance\FeeConcession;
 use App\Services\Finance\FeeConcessionListService;
 use App\Services\Finance\FeeConcessionService;
 use Illuminate\Http\Request;

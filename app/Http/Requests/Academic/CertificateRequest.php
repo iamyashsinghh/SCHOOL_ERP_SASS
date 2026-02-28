@@ -3,10 +3,10 @@
 namespace App\Http\Requests\Academic;
 
 use App\Concerns\CustomFieldValidation;
-use App\Models\Academic\Certificate;
-use App\Models\Academic\CertificateTemplate;
-use App\Models\Employee\Employee;
-use App\Models\Student\Student;
+use App\Models\Tenant\Academic\Certificate;
+use App\Models\Tenant\Academic\CertificateTemplate;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Foundation\Http\FormRequest;
 
 class CertificateRequest extends FormRequest

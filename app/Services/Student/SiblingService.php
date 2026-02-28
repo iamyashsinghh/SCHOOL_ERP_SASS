@@ -2,10 +2,10 @@
 
 namespace App\Services\Student;
 
-use App\Models\Contact;
-use App\Models\Finance\FeeConcession;
-use App\Models\Student\Fee;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Finance\FeeConcession;
+use App\Models\Tenant\Student\Fee;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 class SiblingService

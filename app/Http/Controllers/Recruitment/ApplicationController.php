@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Recruitment;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Recruitment\ApplicationRequest;
 use App\Http\Resources\Recruitment\ApplicationResource;
-use App\Models\Recruitment\Application;
+use App\Models\Tenant\Recruitment\Application;
 use App\Services\Recruitment\ApplicationListService;
 use App\Services\Recruitment\ApplicationService;
 use Illuminate\Http\Request;

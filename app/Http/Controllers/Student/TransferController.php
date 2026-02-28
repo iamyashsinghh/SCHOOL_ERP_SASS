@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\TransferRequest;
 use App\Http\Resources\Student\TransferResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\TransferListService;
 use App\Services\Student\TransferService;
 use Illuminate\Http\Request;

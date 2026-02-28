@@ -2,7 +2,7 @@
 
 namespace App\Actions;
 
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;

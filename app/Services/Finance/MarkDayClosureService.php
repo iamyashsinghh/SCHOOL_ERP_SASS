@@ -3,8 +3,8 @@
 namespace App\Services\Finance;
 
 use App\Enums\Finance\DayClosureStatus;
-use App\Models\Finance\DayClosure;
-use App\Models\Finance\TransactionPayment;
+use App\Models\Tenant\Finance\DayClosure;
+use App\Models\Tenant\Finance\TransactionPayment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

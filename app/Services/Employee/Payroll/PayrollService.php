@@ -5,7 +5,7 @@ namespace App\Services\Employee\Payroll;
 use App\Actions\Employee\Payroll\FetchPayrollRecord;
 use App\Actions\Employee\Payroll\UpdatePayrollRecord;
 use App\Enums\Employee\Payroll\PayrollStatus;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use App\Support\Evaluator;
 use App\Support\FormatCodeNumber;
 use Illuminate\Http\Request;

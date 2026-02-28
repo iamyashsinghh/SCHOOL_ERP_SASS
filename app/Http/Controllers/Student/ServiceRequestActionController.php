@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\ServiceRequestActionRequest;
-use App\Models\Student\ServiceRequest;
+use App\Models\Tenant\Student\ServiceRequest;
 use App\Services\Student\ServiceRequestActionService;
 
 class ServiceRequestActionController extends Controller

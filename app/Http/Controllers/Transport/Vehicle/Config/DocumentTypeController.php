@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport\Vehicle\Config;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\Vehicle\Config\DocumentTypeRequest;
 use App\Http\Resources\Transport\Vehicle\Config\DocumentTypeResource;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Services\Transport\Vehicle\Config\DocumentTypeListService;
 use App\Services\Transport\Vehicle\Config\DocumentTypeService;
 use Illuminate\Http\Request;

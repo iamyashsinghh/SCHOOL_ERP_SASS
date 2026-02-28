@@ -7,7 +7,7 @@ use App\Concerns\TeamAccessible;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Team\UserWisePermissionRequest;
 use App\Http\Resources\UserResource;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\Team\PermissionSearchService;
 use App\Services\Team\PermissionService;
 use Illuminate\Http\Request;

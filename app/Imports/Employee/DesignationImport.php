@@ -3,7 +3,7 @@
 namespace App\Imports\Employee;
 
 use App\Concerns\ItemImport;
-use App\Models\Employee\Designation;
+use App\Models\Tenant\Employee\Designation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

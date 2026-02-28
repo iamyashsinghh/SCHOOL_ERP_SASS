@@ -4,12 +4,12 @@ namespace App\Http\Requests\Reception;
 
 use App\Enums\OptionType;
 use App\Enums\Reception\EnquiryStatus;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
-use App\Models\Option;
-use App\Models\Reception\Enquiry;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\Enquiry;
+use App\Models\Tenant\Team;
 use App\Rules\AlphaSpace;
 use Illuminate\Foundation\Http\FormRequest;
 

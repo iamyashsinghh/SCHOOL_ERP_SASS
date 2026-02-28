@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Asset\Building;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Asset\Building\FloorRequest;
 use App\Http\Resources\Asset\Building\FloorResource;
-use App\Models\Asset\Building\Floor;
+use App\Models\Tenant\Asset\Building\Floor;
 use App\Services\Asset\Building\FloorListService;
 use App\Services\Asset\Building\FloorService;
 use Illuminate\Http\Request;

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Transport\Vehicle;
 
-use App\Models\Transport\Vehicle\TripRecord;
-use App\Models\User;
+use App\Models\Tenant\Transport\Vehicle\TripRecord;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TripRecordPolicy

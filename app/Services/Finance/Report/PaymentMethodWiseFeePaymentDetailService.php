@@ -4,8 +4,8 @@ namespace App\Services\Finance\Report;
 
 use App\Http\Resources\Academic\PeriodResource;
 use App\Http\Resources\Finance\LedgerResource;
-use App\Models\Academic\Period;
-use App\Models\Finance\Ledger;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Finance\Ledger;
 
 class PaymentMethodWiseFeePaymentDetailService
 {

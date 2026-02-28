@@ -2,8 +2,8 @@
 
 namespace App\Policies\Resource;
 
-use App\Models\Resource\OnlineClass;
-use App\Models\User;
+use App\Models\Tenant\Resource\OnlineClass;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OnlineClassPolicy

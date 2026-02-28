@@ -2,8 +2,8 @@
 
 namespace App\Services\Academic;
 
-use App\Models\Academic\Subject;
-use App\Models\Academic\SubjectRecord;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Academic\SubjectRecord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

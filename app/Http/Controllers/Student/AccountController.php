@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\AccountRequest;
 use App\Http\Resources\Student\AccountResource;
-use App\Models\Student\Student;
+use App\Models\Tenant\Student\Student;
 use App\Services\Student\AccountListService;
 use App\Services\Student\AccountService;
 use Illuminate\Http\Request;

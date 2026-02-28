@@ -4,7 +4,7 @@ namespace App\Jobs\Employee\Payroll;
 
 use App\Actions\Employee\Payroll\GeneratePayrollNumber;
 use App\Enums\Employee\Payroll\PayrollStatus;
-use App\Models\Employee\Payroll\Payroll;
+use App\Models\Tenant\Employee\Payroll\Payroll;
 use Illuminate\Bus\Batch;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

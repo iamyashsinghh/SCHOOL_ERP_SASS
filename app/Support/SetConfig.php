@@ -10,7 +10,7 @@ use App\Actions\Config\SetPusherConfig;
 use App\Actions\Config\SetSocialLoginConfig;
 use App\Actions\Config\SetSystemConfig;
 use App\Helpers\SysHelper;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Pipeline\Pipeline;
 
 class SetConfig

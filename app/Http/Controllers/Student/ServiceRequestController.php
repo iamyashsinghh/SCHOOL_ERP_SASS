@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Student\ServiceRequestRequest;
 use App\Http\Resources\Student\ServiceRequestResource;
-use App\Models\Student\ServiceRequest;
+use App\Models\Tenant\Student\ServiceRequest;
 use App\Services\Student\ServiceRequestListService;
 use App\Services\Student\ServiceRequestService;
 use Illuminate\Http\Request;

@@ -2,8 +2,8 @@
 
 namespace App\Policies\Employee\Payroll;
 
-use App\Models\Employee\Payroll\SalaryTemplate;
-use App\Models\User;
+use App\Models\Tenant\Employee\Payroll\SalaryTemplate;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class SalaryTemplatePolicy

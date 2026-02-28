@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Site\View;
 
 use App\Enums\News\Status;
 use App\Http\Controllers\Controller;
-use App\Models\News\News;
-use App\Models\Site\Menu;
+use App\Models\Tenant\News\News;
+use App\Models\Tenant\Site\Menu;
 use App\Support\MarkdownParser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Hostel;
 
-use App\Models\Hostel\Floor;
-use App\Models\Hostel\Room;
+use App\Models\Tenant\Hostel\Floor;
+use App\Models\Tenant\Hostel\Room;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RoomRequest extends FormRequest

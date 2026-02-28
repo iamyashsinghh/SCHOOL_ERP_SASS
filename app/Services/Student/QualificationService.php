@@ -5,10 +5,10 @@ namespace App\Services\Student;
 use App\Enums\OptionType;
 use App\Enums\QualificationResult;
 use App\Http\Resources\OptionResource;
-use App\Models\Contact;
-use App\Models\Option;
-use App\Models\Qualification;
-use App\Models\Student\Student;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Qualification;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 
 class QualificationService

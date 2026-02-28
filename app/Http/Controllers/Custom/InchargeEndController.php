@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Custom;
 
 use App\Http\Controllers\Controller;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
 use Illuminate\Http\Request;
 
 class InchargeEndController extends Controller

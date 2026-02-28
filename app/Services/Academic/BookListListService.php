@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\BookListResource;
-use App\Models\Academic\BookList;
+use App\Models\Tenant\Academic\BookList;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

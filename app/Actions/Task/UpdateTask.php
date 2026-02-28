@@ -2,7 +2,7 @@
 
 namespace App\Actions\Task;
 
-use App\Models\Task\Task;
+use App\Models\Tenant\Task\Task;
 use Illuminate\Http\Request;
 
 class UpdateTask

@@ -4,8 +4,8 @@ namespace App\Services\Transport\Report;
 
 use App\Http\Resources\Transport\RouteResource;
 use App\Http\Resources\Transport\StoppageResource;
-use App\Models\Transport\Route;
-use App\Models\Transport\Stoppage;
+use App\Models\Tenant\Transport\Route;
+use App\Models\Tenant\Transport\Stoppage;
 
 class RouteWiseStudentService
 {

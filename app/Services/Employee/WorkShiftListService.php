@@ -4,8 +4,8 @@ namespace App\Services\Employee;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Employee\WorkShiftResource;
-use App\Models\Employee\Employee;
-use App\Models\Employee\WorkShift;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Employee\WorkShift;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

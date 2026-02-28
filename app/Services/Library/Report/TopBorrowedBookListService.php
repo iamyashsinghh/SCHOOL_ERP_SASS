@@ -4,7 +4,7 @@ namespace App\Services\Library\Report;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Library\Report\TopBorrowedBookListResource;
-use App\Models\Library\TransactionRecord;
+use App\Models\Tenant\Library\TransactionRecord;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

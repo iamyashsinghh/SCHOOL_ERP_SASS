@@ -6,10 +6,10 @@ use App\Enums\OptionType;
 use App\Enums\QualificationResult;
 use App\Http\Resources\OptionResource;
 use App\Http\Resources\Reception\EnquiryQualificationResource;
-use App\Models\Contact;
-use App\Models\Option;
-use App\Models\Qualification;
-use App\Models\Reception\Enquiry;
+use App\Models\Tenant\Contact;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Qualification;
+use App\Models\Tenant\Reception\Enquiry;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
 use App\Http\Resources\UserResource;
-use App\Models\User;
+use App\Models\Tenant\User;
 use App\Services\UserListService;
 use App\Services\UserService;
 use Illuminate\Http\Request;

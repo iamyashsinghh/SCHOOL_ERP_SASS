@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Site;
 
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use Illuminate\View\Component;
 
 class AnnouncementList extends Component

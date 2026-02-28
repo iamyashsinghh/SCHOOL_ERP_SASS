@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Notification;
+use App\Models\Tenant\Notification;
 use Illuminate\Console\Command;
 
 class CleanNotification extends Command

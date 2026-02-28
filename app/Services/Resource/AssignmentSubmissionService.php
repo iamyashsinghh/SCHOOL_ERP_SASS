@@ -3,10 +3,10 @@
 namespace App\Services\Resource;
 
 use App\Http\Resources\Resource\AssignmentSubmissionResource;
-use App\Models\Employee\Employee;
-use App\Models\Resource\Assignment;
-use App\Models\Resource\AssignmentSubmission;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Resource\Assignment;
+use App\Models\Tenant\Resource\AssignmentSubmission;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

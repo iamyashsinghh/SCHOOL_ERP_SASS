@@ -3,7 +3,7 @@
 namespace App\Services\Student;
 
 use App\Actions\Student\CalculateTimesheetDuration;
-use App\Models\Student\Timesheet;
+use App\Models\Tenant\Student\Timesheet;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

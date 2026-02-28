@@ -2,7 +2,7 @@
 
 namespace App\Services\Reception;
 
-use App\Models\Reception\VisitorLog;
+use App\Models\Tenant\Reception\VisitorLog;
 use Illuminate\Http\Request;
 
 class VisitorLogActionService

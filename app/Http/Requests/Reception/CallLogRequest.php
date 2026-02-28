@@ -4,8 +4,8 @@ namespace App\Http\Requests\Reception;
 
 use App\Enums\OptionType;
 use App\Enums\Reception\CallType;
-use App\Models\Option;
-use App\Models\Reception\CallLog;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Reception\CallLog;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

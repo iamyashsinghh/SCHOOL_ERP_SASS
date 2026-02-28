@@ -3,11 +3,11 @@
 namespace App\Http\Requests\Student;
 
 use App\Enums\Student\RegistrationStatus;
-use App\Models\Academic\Course;
-use App\Models\Academic\Period;
-use App\Models\Academic\Program;
-use App\Models\Student\Registration;
-use App\Models\Team;
+use App\Models\Tenant\Academic\Course;
+use App\Models\Tenant\Academic\Period;
+use App\Models\Tenant\Academic\Program;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Team;
 use App\Rules\AlphaSpace;
 use Illuminate\Foundation\Http\FormRequest;
 

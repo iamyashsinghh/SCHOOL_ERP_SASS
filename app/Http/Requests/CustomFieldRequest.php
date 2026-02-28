@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Enums\CustomFieldForm;
 use App\Enums\CustomFieldType;
-use App\Models\CustomField;
+use App\Models\Tenant\CustomField;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 

@@ -2,7 +2,7 @@
 
 namespace App\Actions\Student;
 
-use App\Models\Student\Attendance;
+use App\Models\Tenant\Student\Attendance;
 use Illuminate\Support\Arr;
 
 class MigrateAttendance

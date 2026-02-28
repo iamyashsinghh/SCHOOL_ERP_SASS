@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Inventory;
 
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Inventory\Inventory;
 use Illuminate\Foundation\Http\FormRequest;
 
 class InventoryRequest extends FormRequest

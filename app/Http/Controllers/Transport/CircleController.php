@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Transport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transport\CircleRequest;
 use App\Http\Resources\Transport\CircleResource;
-use App\Models\Transport\Circle;
+use App\Models\Tenant\Transport\Circle;
 use App\Services\Transport\CircleListService;
 use App\Services\Transport\CircleService;
 use Illuminate\Http\Request;

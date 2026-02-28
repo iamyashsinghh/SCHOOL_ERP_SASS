@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Enums\OptionType;
-use App\Models\Option;
+use App\Models\Tenant\Option;
 use App\Support\OptionAdditionalRequest;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;

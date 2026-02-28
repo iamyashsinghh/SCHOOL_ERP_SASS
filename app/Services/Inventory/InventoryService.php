@@ -2,7 +2,7 @@
 
 namespace App\Services\Inventory;
 
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Inventory\Inventory;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

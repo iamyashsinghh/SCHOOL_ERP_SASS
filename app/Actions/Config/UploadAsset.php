@@ -3,7 +3,7 @@
 namespace App\Actions\Config;
 
 use App\Concerns\HasStorage;
-use App\Models\Config\Config;
+use App\Models\Tenant\Config\Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

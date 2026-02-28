@@ -3,14 +3,14 @@
 namespace App\Http\Requests\Exam;
 
 use App\Enums\Exam\AssessmentAttempt;
-use App\Models\Academic\Batch;
-use App\Models\Academic\Subject;
-use App\Models\Exam\Assessment;
-use App\Models\Exam\Competency;
-use App\Models\Exam\Exam;
-use App\Models\Exam\Grade;
-use App\Models\Exam\Observation;
-use App\Models\Exam\Schedule;
+use App\Models\Tenant\Academic\Batch;
+use App\Models\Tenant\Academic\Subject;
+use App\Models\Tenant\Exam\Assessment;
+use App\Models\Tenant\Exam\Competency;
+use App\Models\Tenant\Exam\Exam;
+use App\Models\Tenant\Exam\Grade;
+use App\Models\Tenant\Exam\Observation;
+use App\Models\Tenant\Exam\Schedule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

@@ -2,7 +2,7 @@
 
 namespace App\Concerns;
 
-use App\Models\Activity;
+use App\Models\Tenant\Activity;
 
 trait RecordActivity
 {

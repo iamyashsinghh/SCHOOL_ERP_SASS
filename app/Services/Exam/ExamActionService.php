@@ -3,7 +3,7 @@
 namespace App\Services\Exam;
 
 use App\Concerns\HasStorage;
-use App\Models\Exam\Exam;
+use App\Models\Tenant\Exam\Exam;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationException;

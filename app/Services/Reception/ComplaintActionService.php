@@ -5,10 +5,10 @@ namespace App\Services\Reception;
 use App\Enums\Reception\ComplaintStatus;
 use App\Jobs\Notifications\Reception\SendComplaintAssignedNotification;
 use App\Jobs\Notifications\Reception\SendComplaintStatusChangedNotification;
-use App\Models\Employee\Employee;
-use App\Models\Incharge;
-use App\Models\Reception\Complaint;
-use App\Models\Reception\ComplaintLog;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Incharge;
+use App\Models\Tenant\Reception\Complaint;
+use App\Models\Tenant\Reception\ComplaintLog;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

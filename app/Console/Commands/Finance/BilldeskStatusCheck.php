@@ -4,10 +4,10 @@ namespace App\Console\Commands\Finance;
 
 use App\Actions\Student\PayOnlineFee;
 use App\Enums\Finance\PaymentStatus;
-use App\Models\Config\Config;
-use App\Models\Finance\Transaction;
-use App\Models\Student\Registration;
-use App\Models\Student\Student;
+use App\Models\Tenant\Config\Config;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Student\Registration;
+use App\Models\Tenant\Student\Student;
 use App\Support\PaymentGatewayMultiAccountSeparator;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

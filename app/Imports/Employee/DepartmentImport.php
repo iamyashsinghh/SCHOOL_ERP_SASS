@@ -3,8 +3,8 @@
 namespace App\Imports\Employee;
 
 use App\Concerns\ItemImport;
-use App\Models\Employee\Department;
-use App\Models\Team;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\Team;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

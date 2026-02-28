@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Inventory;
 
 use App\Concerns\HasIncharge;
-use App\Models\Employee\Employee;
-use App\Models\Inventory\Inventory;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Inventory\Inventory;
 use Illuminate\Foundation\Http\FormRequest;
 
 class InchargeRequest extends FormRequest

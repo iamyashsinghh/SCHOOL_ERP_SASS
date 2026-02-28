@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Site\Page;
+use App\Models\Tenant\Site\Page;
 use Illuminate\Database\Seeder;
 
 class DefaultMenuSeeder extends Seeder

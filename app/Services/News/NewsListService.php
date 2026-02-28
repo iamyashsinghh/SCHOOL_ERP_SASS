@@ -4,7 +4,7 @@ namespace App\Services\News;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\News\NewsSummaryResource;
-use App\Models\News\News;
+use App\Models\Tenant\News\News;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

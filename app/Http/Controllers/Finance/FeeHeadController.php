@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Finance;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Finance\FeeHeadRequest;
 use App\Http\Resources\Finance\FeeHeadResource;
-use App\Models\Finance\FeeHead;
+use App\Models\Tenant\Finance\FeeHead;
 use App\Services\Finance\FeeHeadListService;
 use App\Services\Finance\FeeHeadService;
 use Illuminate\Http\Request;

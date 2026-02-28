@@ -4,7 +4,7 @@ namespace App\View\Components\Site;
 
 use App\Enums\Blog\Status;
 use App\Enums\Blog\Visibility;
-use App\Models\Blog\Blog;
+use App\Models\Tenant\Blog\Blog;
 use Illuminate\View\Component;
 
 class BlogList extends Component

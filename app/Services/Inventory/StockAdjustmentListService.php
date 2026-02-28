@@ -4,8 +4,8 @@ namespace App\Services\Inventory;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Inventory\StockAdjustmentResource;
-use App\Models\Asset\Building\Room;
-use App\Models\Inventory\StockAdjustment;
+use App\Models\Tenant\Asset\Building\Room;
+use App\Models\Tenant\Inventory\StockAdjustment;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

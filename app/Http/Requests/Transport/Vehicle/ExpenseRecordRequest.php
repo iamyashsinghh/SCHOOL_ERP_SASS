@@ -3,10 +3,10 @@
 namespace App\Http\Requests\Transport\Vehicle;
 
 use App\Enums\OptionType;
-use App\Models\Media;
-use App\Models\Option;
-use App\Models\Transport\Vehicle\ExpenseRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Media;
+use App\Models\Tenant\Option;
+use App\Models\Tenant\Transport\Vehicle\ExpenseRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ExpenseRecordRequest extends FormRequest

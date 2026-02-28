@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Team;
 use App\Concerns\TeamAccessible;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Team\ConfigRequest;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\Team\TeamActionService;
 
 class TeamActionController extends Controller

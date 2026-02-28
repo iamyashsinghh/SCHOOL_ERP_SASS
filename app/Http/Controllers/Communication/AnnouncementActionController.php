@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Communication;
 
 use App\Http\Controllers\Controller;
-use App\Models\Communication\Announcement;
+use App\Models\Tenant\Communication\Announcement;
 use App\Services\Communication\AnnouncementActionService;
 use Illuminate\Http\Request;
 

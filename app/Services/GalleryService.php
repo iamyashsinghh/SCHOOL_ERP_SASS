@@ -6,7 +6,7 @@ use App\Concerns\HasStorage;
 use App\Enums\Employee\AudienceType as EmployeeAudienceType;
 use App\Enums\GalleryType;
 use App\Enums\Student\AudienceType as StudentAudienceType;
-use App\Models\Gallery;
+use App\Models\Tenant\Gallery;
 use App\Support\HasAudience;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

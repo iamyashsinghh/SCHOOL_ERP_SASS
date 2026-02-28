@@ -2,8 +2,8 @@
 
 namespace App\Policies\Helpdesk\Faq;
 
-use App\Models\Helpdesk\Faq\Faq;
-use App\Models\User;
+use App\Models\Tenant\Helpdesk\Faq\Faq;
+use App\Models\Tenant\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class FaqPolicy

@@ -4,7 +4,7 @@ namespace App\Services\Academic;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Academic\SessionResource;
-use App\Models\Academic\Session;
+use App\Models\Tenant\Academic\Session;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Employee;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\QualificationRequest;
 use App\Http\Resources\Employee\QualificationResource;
-use App\Models\Employee\Employee;
+use App\Models\Tenant\Employee\Employee;
 use App\Services\Employee\QualificationListService;
 use App\Services\Employee\QualificationService;
 use Illuminate\Http\Request;

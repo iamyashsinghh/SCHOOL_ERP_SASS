@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Exam;
 
-use App\Models\Exam\Assessment;
+use App\Models\Tenant\Exam\Assessment;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AssessmentRequest extends FormRequest

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\TeamResource;
-use App\Models\Team;
+use App\Models\Tenant\Team;
 use App\Services\TeamListService;
 use App\Concerns\TeamAccessible;
 use Illuminate\Http\Request;

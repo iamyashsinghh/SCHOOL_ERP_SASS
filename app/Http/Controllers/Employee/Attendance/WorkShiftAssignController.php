@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Employee\Attendance;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Employee\Attendance\WorkShiftAssignRequest;
-use App\Models\Employee\Attendance\WorkShift;
+use App\Models\Tenant\Employee\Attendance\WorkShift;
 use App\Services\Employee\Attendance\WorkShiftAssignService;
 use Illuminate\Http\Request;
 

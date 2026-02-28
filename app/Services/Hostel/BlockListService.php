@@ -4,7 +4,7 @@ namespace App\Services\Hostel;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Hostel\BlockResource;
-use App\Models\Hostel\Block;
+use App\Models\Tenant\Hostel\Block;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

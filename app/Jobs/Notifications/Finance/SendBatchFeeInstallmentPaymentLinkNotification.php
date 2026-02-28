@@ -3,7 +3,7 @@
 namespace App\Jobs\Notifications\Finance;
 
 use App\Concerns\SetConfigForJob;
-use App\Models\TempStorage;
+use App\Models\Tenant\TempStorage;
 use Illuminate\Bus\Batch;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

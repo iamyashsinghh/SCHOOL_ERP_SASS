@@ -3,9 +3,9 @@
 namespace App\Imports\Inventory;
 
 use App\Concerns\ItemImport;
-use App\Models\Inventory\Inventory;
-use App\Models\Inventory\StockCategory;
-use App\Models\Team;
+use App\Models\Tenant\Inventory\Inventory;
+use App\Models\Tenant\Inventory\StockCategory;
+use App\Models\Tenant\Team;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;

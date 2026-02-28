@@ -4,10 +4,10 @@ namespace App\Services\Library;
 
 use App\Contracts\ListGenerator;
 use App\Http\Resources\Library\BookCopyListResource;
-use App\Models\Employee\Employee;
-use App\Models\Library\Book;
-use App\Models\Library\BookCopy;
-use App\Models\Student\Student;
+use App\Models\Tenant\Employee\Employee;
+use App\Models\Tenant\Library\Book;
+use App\Models\Tenant\Library\BookCopy;
+use App\Models\Tenant\Student\Student;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

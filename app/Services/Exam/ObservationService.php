@@ -3,8 +3,8 @@
 namespace App\Services\Exam;
 
 use App\Http\Resources\Exam\GradeResource;
-use App\Models\Exam\Grade;
-use App\Models\Exam\Observation;
+use App\Models\Tenant\Exam\Grade;
+use App\Models\Tenant\Exam\Observation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

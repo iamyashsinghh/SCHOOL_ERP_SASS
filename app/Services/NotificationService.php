@@ -3,8 +3,8 @@
 namespace App\Services;
 
 use App\Http\Resources\NotificationResource;
-use App\Models\Config\Template;
-use App\Models\Notification;
+use App\Models\Tenant\Config\Template;
+use App\Models\Tenant\Notification;
 use App\Support\TemplateParser;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

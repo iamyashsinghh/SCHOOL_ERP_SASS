@@ -2,7 +2,7 @@
 
 namespace App\Services\Finance;
 
-use App\Models\Finance\FeeGroup;
+use App\Models\Tenant\Finance\FeeGroup;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

@@ -2,9 +2,9 @@
 
 namespace App\Services\Employee;
 
-use App\Models\Employee\Attendance\Record;
-use App\Models\Employee\Department;
-use App\Models\Employee\Record as EmployeeRecord;
+use App\Models\Tenant\Employee\Attendance\Record;
+use App\Models\Tenant\Employee\Department;
+use App\Models\Tenant\Employee\Record as EmployeeRecord;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

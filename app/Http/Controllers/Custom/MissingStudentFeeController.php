@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Custom;
 
 use App\Http\Controllers\Controller;
-use App\Models\Finance\Transaction;
-use App\Models\Finance\TransactionRecord;
+use App\Models\Tenant\Finance\Transaction;
+use App\Models\Tenant\Finance\TransactionRecord;
 use Illuminate\Http\Request;
 
 class MissingStudentFeeController extends Controller

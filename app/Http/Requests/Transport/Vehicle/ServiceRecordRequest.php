@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Transport\Vehicle;
 
-use App\Models\Transport\Vehicle\ServiceRecord;
-use App\Models\Transport\Vehicle\Vehicle;
+use App\Models\Tenant\Transport\Vehicle\ServiceRecord;
+use App\Models\Tenant\Transport\Vehicle\Vehicle;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ServiceRecordRequest extends FormRequest

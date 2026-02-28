@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Resource;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\DownloadRequest;
 use App\Http\Resources\Resource\DownloadResource;
-use App\Models\Resource\Download;
+use App\Models\Tenant\Resource\Download;
 use App\Services\Resource\DownloadListService;
 use App\Services\Resource\DownloadService;
 use Illuminate\Http\Request;
