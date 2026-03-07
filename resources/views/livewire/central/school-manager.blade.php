@@ -55,27 +55,6 @@
                     </div>
                 </div>
 
-                <div class="space-y-4">
-                    <h4 class="font-semibold text-indigo-700 border-b">Database & Storage</h4>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">DB Name</label>
-                            <input type="text" wire:model="db_name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">DB User</label>
-                            <input type="text" wire:model="db_username" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">DB Password</label>
-                        <input type="password" wire:model="db_password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Storage Prefix</label>
-                        <input type="text" wire:model="storage_prefix" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border" placeholder="school_1">
-                    </div>
-                </div>
 
                 <div class="md:col-span-2 space-y-4 bg-gray-50 p-4 rounded border-l-4 border-indigo-500">
                     <h4 class="font-semibold text-indigo-700 border-b">Tenant Admin Account</h4>

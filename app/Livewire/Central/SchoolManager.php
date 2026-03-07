@@ -15,9 +15,15 @@ class SchoolManager extends Component
 {
     public $name, $sub_division_id, $db_name, $db_username, $db_password, $storage_prefix, $domain;
     public $admin_name, $admin_username, $admin_email, $admin_password;
-    public $timezone = 'Asia/Kolkata';
+    public $timezone;
     public $isCreating = false;
     public $message;
+
+    public function mount()
+    {
+        $this->db_username = env('DB_USERNAME', 'root');
+        $this->db_password = env('DB_PASSWORD', '');
+    }
 
     // Edit User functionality
     public $isEditingUsers = false;
@@ -27,7 +33,7 @@ class SchoolManager extends Component
     public $editUserName, $editUserEmail, $editUserUsername, $editUserPassword;
 
     protected $rules = [
-        'name' => 'required|min:3',
+        'name' => 'required|min:3|unique:central.schools,name',
         'sub_division_id' => 'required|exists:central.sub_divisions,id',
         'db_name' => 'required|unique:central.schools,db_name',
         'db_username' => 'required',
@@ -70,6 +76,25 @@ class SchoolManager extends Component
             'schools' => $query->latest()->get(),
             'subDivisions' => $sdQuery->get()
         ])->layout('layouts.central', ['title' => 'School Management', 'header' => 'Schools']);
+    }
+
+    public function updatedName($value)
+    {
+        if (empty($value)) {
+            $this->db_name = '';
+            $this->storage_prefix = '';
+            return;
+        }
+        $slug = Str::lower(Str::slug($value, '_'));
+        $this->db_name = 'school_' . $slug;
+        $this->storage_prefix = $slug;
+    }
+
+    public function updatedDomain($value)
+    {
+        if (empty($this->admin_email) && !empty($value)) {
+            $this->admin_email = 'admin@' . $value;
+        }
     }
 
     public function provision()
