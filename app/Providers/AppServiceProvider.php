@@ -83,7 +83,7 @@ class AppServiceProvider extends ServiceProvider
         }
 
         // if (app()->environment('local')) {
-        //     Mail::alwaysTo('hello@Anohim.com');
+        //     Mail::alwaysTo('hello@anohim.com');
         // }
 
         JsonResource::withoutWrapping();

@@ -51,7 +51,7 @@
         },
         {
             "name": "footer_credit",
-            "value": "Designed with ❤️ by Anohim",
+            "value": "Designed with ❤️ by Iklas",
             "is_public": true
         },
         {
@@ -257,22 +257,22 @@
     "general": [
         {
             "name": "app_name",
-            "value": "Anohim",
+            "value": "Iklas",
             "is_public": true
         },
         {
             "name": "meta_author",
-            "value": "Anohim",
+            "value": "Iklas",
             "is_public": true
         },
         {
             "name": "meta_description",
-            "value": "Application by Anohim",
+            "value": "Application by Iklas",
             "is_public": true
         },
         {
             "name": "meta_keywords",
-            "value": "Anohim",
+            "value": "Iklas",
             "is_public": true
         }
     ],
@@ -438,11 +438,11 @@
         },
         {
             "name": "from_name",
-            "value": "Anohim"
+            "value": "Iklas"
         },
         {
             "name": "from_address",
-            "value": "hello@Anohim.com"
+            "value": "hello@Iklas.com"
         },
         {
             "name": "smtp_username",

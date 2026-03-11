@@ -95,4 +95,90 @@ php artisan storage:link
 ```
 
 ---
+
+## 🏗️ cPanel / Shared Hosting Deployment Guide
+
+Deploying a multi-tenant SaaS application on cPanel requires specific configurations, primarily around **Wildcard Subdomains** and **Database Permissions**, allowing the core application to dynamically generate routing and databases for new schools.
+
+### Step 1: File Structure
+1. Zip your entire Laravel project.
+2. Open **cPanel > File Manager**.
+3. It is completely recommended to **NOT** place the Laravel project directly inside `public_html`.
+   - Create a folder at the root of your cPanel account (e.g., `/home/username/school_erp_sass/`).
+   - Extract your project here.
+4. Go to `/home/username/school_erp_sass/public/`. Select all files inside this `public` folder and Move them to `/home/username/public_html/`.
+5. Open `/home/username/public_html/index.php` and update the paths to point to the core Laravel files:
+    ```php
+    // Change these from:
+    require __DIR__.'/../vendor/autoload.php';
+    $app = require_once __DIR__.'/../bootstrap/app.php';
+
+    // To:
+    require __DIR__.'/../school_erp_sass/vendor/autoload.php';
+    $app = require_once __DIR__.'/../school_erp_sass/bootstrap/app.php';
+    ```
+
+### Step 2: Wildcard Subdomains (Crucial for SaaS)
+For tenants like `school1.kalkix.site`, `school2.kalkix.site` to work, the server must dynamically route any subdomain to the main application.
+
+1. Go to **cPanel > Domains** (or *Subdomains* in older cPanels).
+2. Create a new subdomain.
+3. In the **Subdomain** field, type an asterisk: `*`
+4. Select your main domain (`kalkix.site`).
+5. **Document Root**: Point this to `public_html` (the exact same folder as your main domain).
+6. Click **Create**.
+*Note: You also need an A-Record in your DNS provider (Cloudflare/Namecheap) pointing `*` to your cPanel IP address.*
+
+### Step 3: Database & Privileges
+This app automates school database creation. To do this, your core database user needs high privileges.
+
+1. Go to **cPanel > MySQL Databases**.
+2. Create the Central Database (e.g., `kalkix_central`).
+3. Create a Database User (e.g., `kalkix_admin`) and generate a strong password.
+4. **Important**: When adding the user to the database, you must grant **ALL PRIVILEGES** (this includes `CREATE`, `DROP`, `ALTER`). The application uses these rights to dynamically create `school_abc` databases during the provisioning step.
+
+### Step 4: `.env` Configuration
+Open your `.env` file (located in `/home/username/school_erp_sass/.env`) and set the Live credentials:
+
+```env
+APP_NAME="Anohim - School ERP Solution"
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://kalkix.site
+
+# Central Database (Created in Step 3)
+DB_CONNECTION=central
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=kalkix_central
+# This User MUST have CREATE DATABASE privileges globally on the server
+DB_USERNAME=kalkix_admin
+DB_PASSWORD=your_secure_password
+
+# Wildcard Setup
+CENTRAL_DOMAIN=governance.kalkix.site
+SANCTUM_STATEFUL_DOMAINS="kalkix.site,governance.kalkix.site"
+SESSION_DOMAIN=.kalkix.site
+```
+
+### Step 5: Finalization via SSH (Terminal)
+Most modern cPanels provide SSH access. Open **cPanel > Terminal**:
+```bash
+cd school_erp_sass
+
+# Clear all caches
+php artisan optimize:clear
+
+# Run initial migrations & seeders (Make sure to seed!)
+php artisan migrate --force
+php artisan db:seed --force
+
+# Link storage (So tenant logos & media work)
+# If storage:link fails, you may need to manually create a symlink from public_html/storage to school_erp_sass/storage/app/public
+php artisan storage:link
+```
+
+Your School ERP SaaS is now live on cPanel! You can access the governance panel at `governance.yourdomain.com/app`.
+
+---
 *Documentation maintained by Antigravity AI.*

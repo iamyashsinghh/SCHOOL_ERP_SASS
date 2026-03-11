@@ -28,7 +28,7 @@
 
             var config = {
                 responseHandler: responseHandler,
-                merchantLogo: 'https://anohim.com/images/logo-light.png',
+                merchantLogo: 'https://Iklas.com/images/logo-light.png',
                 flowConfig: flowConfig,
                 flowType: "payments",
             };

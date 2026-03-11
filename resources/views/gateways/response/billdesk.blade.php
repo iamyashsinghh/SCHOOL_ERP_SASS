@@ -8,7 +8,7 @@
     <meta name="description" content="{{ config('config.general.meta_description') }}">
     <meta name="keywords" content="{{ config('config.general.meta_keywords') }}">
     <meta name="author" content="{{ config('config.general.meta_author') }}">
-    <title>{{ config('config.general.app_name', config('app.name', 'Anohim')) }}</title>
+    <title>{{ config('config.general.app_name', config('app.name', 'Iklas')) }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" href="{{ config('config.assets.favicon') }}" type="image/png">
 </head>

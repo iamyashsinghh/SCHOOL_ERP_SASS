@@ -66,6 +66,9 @@ Route::get('/my-ip', function () {
 
 Route::get('/app/sso', [\App\Http\Controllers\Central\SsoController::class, 'login'])->name('sso.login');
 
+Route::get('/app/central/roles-permissions', \App\Livewire\Central\RolePermissionManager::class)
+    ->middleware(['web', 'auth:central'])
+    ->name('central.roles.index');
 // app route
 Route::redirect('/app', '/app/login');
 

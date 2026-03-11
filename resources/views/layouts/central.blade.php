@@ -27,6 +27,10 @@
                             <a href="{{ route('central.schools') }}" class="px-3 py-2 rounded-md text-sm font-medium {{ request()->routeIs('central.schools') ? 'bg-indigo-900' : 'hover:bg-indigo-600' }}">Schools</a>
                             
                             <a href="{{ route('central.users') }}" class="px-3 py-2 rounded-md text-sm font-medium {{ request()->routeIs('central.users') ? 'bg-indigo-900' : 'hover:bg-indigo-600' }}">Users</a>
+                            
+                            @if(auth('central')->user()?->isPlatformOwner())
+                                <a href="{{ route('central.roles.index') }}" class="px-3 py-2 rounded-md text-sm font-medium {{ request()->routeIs('central.roles.index') ? 'bg-indigo-900' : 'hover:bg-indigo-600' }}">Roles & Permissions</a>
+                            @endif
                         </div>
                     </div>
                     <div class="flex items-center">

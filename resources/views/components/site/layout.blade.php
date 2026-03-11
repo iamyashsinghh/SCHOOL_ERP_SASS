@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Application by Anohim">
-    <meta name="author" content="Anohim">
-    <title>{{ config('config.general.app_name', config('app.name', 'Anohim')) }}</title>
+    <meta name="description" content="Application by Iklas">
+    <meta name="author" content="Iklas">
+    <title>{{ config('config.general.app_name', config('app.name', 'Iklas')) }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" href="{{ config('config.assets.favicon') }}" type="image/png">
 
