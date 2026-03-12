@@ -86,7 +86,7 @@ class SchoolManager extends Component
             return;
         }
         $slug = Str::lower(Str::slug($value, '_'));
-        $this->db_name = 'school_' . $slug;
+        $this->db_name = 'innomedi_' . $slug;
         $this->storage_prefix = $slug;
     }
 
