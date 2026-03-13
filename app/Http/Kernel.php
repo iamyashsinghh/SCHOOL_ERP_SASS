@@ -84,5 +84,6 @@ class Kernel extends HttpKernel
         'site' => \App\Http\Middleware\Site::class,
         'site.enabled' => \App\Http\Middleware\SiteEnabled::class,
         'chat.enabled' => \App\Http\Middleware\ChatEnabled::class,
+        'mobile.context' => \App\Http\Middleware\MobileSchoolContext::class,
     ];
 }

@@ -70,6 +70,11 @@ class RouteServiceProvider extends ServiceProvider
                     // ->namespace($this->namespace)
                     ->group(base_path('routes/auth.php'));
 
+                Route::prefix('mobile')
+                    ->middleware(['api'])
+                    // ->namespace($this->namespace)
+                    ->group(base_path('routes/mobile.php'));
+
                 Route::prefix('app')
                     ->middleware(['api', 'auth:sanctum', 'two.factor.security', 'screen.lock', 'under.maintenance', 'user.config'])
                     // ->namespace($this->namespace)
