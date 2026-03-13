@@ -67,20 +67,32 @@ class Config extends Model
         if (empty(config('database.connections.tenant.database'))) {
             return [];
         }
+
+        // Guard: During migrations or when the table doesn't exist yet
+        try {
+            if (!\Illuminate\Support\Facades\Schema::connection('tenant')->hasTable('configs')) {
+                return [];
+            }
+        } catch (\Exception $e) {
+            return [];
+        }
+
         $teamId ??= auth()->user()?->current_team_id;
 
         if (empty(auth()->user())) {
             $teamId = 1;
         }
 
-        // return cache()->remember('query_config_list_all', now()->addDay(1), function () use ($teamId) {
-        return Config::query()
-            ->whereNull('team_id')
-            ->when($teamId, function ($q, $teamId) {
-                $q->orWhere('team_id', $teamId);
-            })
-            ->pluck('value', 'name')->all();
-        // });
+        try {
+            return Config::query()
+                ->whereNull('team_id')
+                ->when($teamId, function ($q, $teamId) {
+                    $q->orWhere('team_id', $teamId);
+                })
+                ->pluck('value', 'name')->all();
+        } catch (\Exception $e) {
+            return [];
+        }
     }
 
     public function getActivitylogOptions(): LogOptions

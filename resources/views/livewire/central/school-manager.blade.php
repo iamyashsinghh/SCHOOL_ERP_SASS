@@ -1,208 +1,186 @@
-<div class="space-y-6">
-    @if (session()->has('success'))
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
-            {{ session('success') }}
-        </div>
-    @endif
-
+<div>
     @if($message)
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
-            {{ $message }}
-        </div>
+    <div class="mb-4 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl">{{ $message }}</div>
     @endif
 
-    <div class="flex justify-between items-center">
-        <h2 class="text-xl font-bold">Manage Schools</h2>
-        <button wire:click="$toggle('isCreating')" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
-            {{ $isCreating ? 'Cancel' : 'Provision New School' }}
+    <!-- Actions -->
+    <div class="flex justify-between items-center mb-6">
+        <div></div>
+        <button wire:click="$set('isCreating', true)" class="px-5 py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition text-sm font-medium flex items-center space-x-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            <span>Provision New School</span>
         </button>
     </div>
 
+    <!-- Provisioning Form -->
     @if($isCreating)
-        <div class="bg-white shadow rounded-lg p-6 animate-pulse" wire:loading.class="opacity-50">
-            <h3 class="text-lg font-bold mb-4">New School Provisioning</h3>
-            <form wire:submit.prevent="provision" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="space-y-4">
-                    <h4 class="font-semibold text-indigo-700 border-b">Basic Info</h4>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">School Name</label>
-                        <input type="text" wire:model="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                        @error('name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Sub-Division</label>
-                        <select wire:model="sub_division_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            <option value="">Select Sub-Division</option>
-                            @foreach($subDivisions as $sd)
-                                <option value="{{ $sd->id }}">{{ $sd->name }}</option>
-                            @endforeach
-                        </select>
-                        @error('sub_division_id') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Primary Domain</label>
-                        <input type="text" wire:model="domain" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border" placeholder="school1.localhost">
-                        @error('domain') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Timezone</label>
-                        <select wire:model="timezone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @foreach(timezone_identifiers_list() as $tz)
-                                <option value="{{ $tz }}">{{ $tz }}</option>
-                            @endforeach
-                        </select>
-                        @error('timezone') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                    </div>
-                </div>
-
-
-                <div class="md:col-span-2 space-y-4 bg-gray-50 p-4 rounded border-l-4 border-indigo-500">
-                    <h4 class="font-semibold text-indigo-700 border-b">Tenant Admin Account</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Admin Name</label>
-                            <input type="text" wire:model="admin_name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('admin_name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Admin Username</label>
-                            <input type="text" wire:model="admin_username" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('admin_username') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Admin Email</label>
-                            <input type="email" wire:model="admin_email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('admin_email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Admin Password</label>
-                            <input type="password" wire:model="admin_password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('admin_password') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-2 flex justify-end">
-                    <button type="submit" wire:loading.attr="disabled" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 flex items-center">
-                        <span wire:loading class="mr-2">Provisioning...</span>
-                        Start Automated Provisioning
-                    </button>
-                </div>
-            </form>
-        </div>
-    @endif
-
-    @if($isEditingUsers)
-        <div class="bg-white shadow rounded-lg p-6" wire:loading.class="opacity-50">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-lg font-bold text-amber-700">Edit Tenant Users</h3>
-                <button wire:click="closeEditUsers" class="text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
-            </div>
-            <form wire:submit.prevent="updateUser" class="space-y-6">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
+        <h3 class="text-lg font-semibold mb-4">Provision New School</h3>
+        <form wire:submit.prevent="provision">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Select User</label>
-                    <select wire:model.live="selectedUserId" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                        <option value="">-- Choose User --</option>
-                        @foreach($tenantUsers as $user)
-                            <option value="{{ (array)$user !== $user ? $user->id : $user['id'] }}">{{ (array)$user !== $user ? $user->name : $user['name'] }} ({{ (array)$user !== $user ? $user->username : $user['username'] }} - {{ (array)$user !== $user ? $user->email : $user['email'] }})</option>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">School Name *</label>
+                    <input type="text" wire:model="name" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g. Delhi Public School">
+                    @error('name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Sub-Division *</label>
+                    <select wire:model="sub_division_id" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select Sub-Division</option>
+                        @foreach($subDivisions as $sd)
+                        <option value="{{ $sd->id }}">{{ $sd->name }}</option>
                         @endforeach
                     </select>
-                    @error('selectedUserId') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                    @error('sub_division_id') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Domain *</label>
+                    <input type="text" wire:model.live="domain" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g. dps.kalkix.site">
+                    @error('domain') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Timezone *</label>
+                    <select wire:model="timezone" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select Timezone</option>
+                        <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+                        <option value="UTC">UTC</option>
+                        <option value="America/New_York">America/New_York (EST)</option>
+                        <option value="Europe/London">Europe/London (GMT)</option>
+                        <option value="Asia/Dubai">Asia/Dubai (GST)</option>
+                    </select>
+                    @error('timezone') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+            </div>
 
-                @if($selectedUserId)
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 p-4 rounded border-l-4 border-amber-500">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Name</label>
-                            <input type="text" wire:model.defer="editUserName" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('editUserName') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Username</label>
-                            <input type="text" wire:model.defer="editUserUsername" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('editUserUsername') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" wire:model.defer="editUserEmail" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('editUserEmail') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">New Password (leave empty to keep current)</label>
-                            <input type="password" wire:model.defer="editUserPassword" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 border">
-                            @error('editUserPassword') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
-                        </div>
-                    </div>
+            <h4 class="text-md font-semibold mt-6 mb-3 text-gray-700">Admin Account</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Admin Name *</label>
+                    <input type="text" wire:model="admin_name" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Administrator">
+                    @error('admin_name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Admin Username *</label>
+                    <input type="text" wire:model="admin_username" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="admin">
+                    @error('admin_username') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Admin Email *</label>
+                    <input type="email" wire:model="admin_email" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="admin@domain.com">
+                    @error('admin_email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Admin Password *</label>
+                    <input type="password" wire:model="admin_password" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="••••••••">
+                    @error('admin_password') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                </div>
+            </div>
 
-                    <div class="flex justify-end space-x-3 mt-4">
-                        <button type="button" wire:click="closeEditUsers" class="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300">
-                            Cancel
-                        </button>
-                        <button type="submit" wire:loading.attr="disabled" class="bg-amber-600 text-white px-6 py-2 rounded-md hover:bg-amber-700 flex items-center">
-                            <span wire:loading class="mr-2">Saving...</span>
-                            Save Changes
-                        </button>
-                    </div>
-                @endif
-            </form>
-        </div>
+            <h4 class="text-md font-semibold mt-6 mb-3 text-gray-700">Contact (Optional)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                    <input type="text" wire:model="contact_phone" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                    <input type="text" wire:model="address" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+            </div>
+
+            <div class="mt-6 flex space-x-3">
+                <button type="submit" class="px-6 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition text-sm font-medium" wire:loading.attr="disabled">
+                    <span wire:loading.remove wire:target="provision">🚀 Start Provisioning</span>
+                    <span wire:loading wire:target="provision">⏳ Provisioning...</span>
+                </button>
+                <button type="button" wire:click="$set('isCreating', false)" class="px-6 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition text-sm font-medium">Cancel</button>
+            </div>
+        </form>
+    </div>
     @endif
 
-    <div class="bg-white shadow rounded-lg overflow-hidden">
-        <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
+    <!-- Edit Users Panel -->
+    @if($isEditingUsers)
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
+        <h3 class="text-lg font-semibold mb-4">Edit School Users</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Select User</label>
+                <select wire:model.live="selectedUserId" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    <option value="">Select a user</option>
+                    @foreach($tenantUsers as $user)
+                    <option value="{{ $user->id }}">{{ $user->name }} ({{ $user->username }})</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+
+        @if($selectedUserId)
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <input type="text" wire:model="editUserName" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" wire:model="editUserEmail" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                <input type="text" wire:model="editUserUsername" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">New Password (leave empty to keep)</label>
+                <input type="password" wire:model="editUserPassword" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="••••••••">
+            </div>
+        </div>
+        <div class="mt-4 flex space-x-2">
+            <button wire:click="updateUser" class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition text-sm font-medium">Update User</button>
+            <button wire:click="closeEditUsers" class="px-5 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition text-sm font-medium">Cancel</button>
+        </div>
+        @endif
+    </div>
+    @endif
+
+    <!-- Schools Table -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <table class="w-full text-sm">
+            <thead class="bg-gray-50/80">
                 <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">School</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Hierarchy</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Domain</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">DB Name</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Admin Credentials</th>
-                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                    <th class="text-left px-6 py-3 font-medium text-gray-500">ID</th>
+                    <th class="text-left px-6 py-3 font-medium text-gray-500">School</th>
+                    <th class="text-left px-6 py-3 font-medium text-gray-500">Domain</th>
+                    <th class="text-left px-6 py-3 font-medium text-gray-500">Sub-Division</th>
+                    <th class="text-left px-6 py-3 font-medium text-gray-500">Status</th>
+                    <th class="text-right px-6 py-3 font-medium text-gray-500">Actions</th>
                 </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                @foreach($schools as $school)
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $school->name }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {{ $school->subDivision?->name }}
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {{ $school->domains->first()?->domain }}
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $school->db_name }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $school->status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
-                                {{ ucfirst($school->status) }}
-                            </span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            @if($school->admin_username)
-                                <div><strong>User:</strong> {{ $school->admin_username }}</div>
-                                <div><strong>Pass:</strong> {{ $school->admin_password_reference }}</div>
-                            @else
-                                <span class="text-gray-400 italic">N/A</span>
-                            @endif
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2">
-                            <button wire:click="openEditUsers({{ $school->id }})" class="text-blue-600 hover:text-blue-900 font-bold border border-blue-600 px-2 py-1 rounded">
-                                Edit Users
+            <tbody class="divide-y divide-gray-100">
+                @forelse($schools as $school)
+                <tr class="hover:bg-gray-50/50">
+                    <td class="px-6 py-4 text-gray-500">#{{ $school->id }}</td>
+                    <td class="px-6 py-4 font-medium text-gray-900">{{ $school->name }}</td>
+                    <td class="px-6 py-4"><span class="text-indigo-600">{{ $school->domains->first()?->domain ?? '-' }}</span></td>
+                    <td class="px-6 py-4 text-gray-600">{{ $school->subDivision?->name ?? '-' }}</td>
+                    <td class="px-6 py-4">
+                        <span class="inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium {{ $school->status === 'active' ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700' }}">
+                            {{ ucfirst($school->status) }}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                        <div class="flex justify-end space-x-2">
+                            <button wire:click="impersonate({{ $school->id }})" class="text-indigo-600 hover:text-indigo-800 text-xs font-medium" title="Login as Admin">🔑 SSO</button>
+                            <button wire:click="openEditUsers({{ $school->id }})" class="text-blue-600 hover:text-blue-800 text-xs font-medium" title="Edit Users">👤 Users</button>
+                            <button wire:click="toggleStatus({{ $school->id }})" class="text-amber-600 hover:text-amber-800 text-xs font-medium">
+                                {{ $school->status === 'active' ? '⏸ Suspend' : '▶ Activate' }}
                             </button>
-                            <button wire:click="impersonate({{ $school->id }})" class="text-indigo-600 hover:text-indigo-900 font-bold border border-indigo-600 px-2 py-1 rounded">
-                                Login as Admin
-                            </button>
-                            <button wire:click="toggleStatus({{ $school->id }})" class="{{ $school->status === 'active' ? 'text-amber-600 hover:text-amber-900' : 'text-green-600 hover:text-green-900' }}">
-                                {{ $school->status === 'active' ? 'Suspend' : 'Activate' }}
-                            </button>
-                            <button wire:click="deleteSchool({{ $school->id }})" 
-                                    wire:confirm="Are you sure you want to PERMANENTLY delete this school? All data, databases, and files will be lost forever."
-                                    class="text-red-600 hover:text-red-900 font-bold">
-                                Delete
-                            </button>
-                        </td>
-                    </tr>
-                @endforeach
+                            <button wire:click="deleteSchool({{ $school->id }})" wire:confirm="Are you sure? This will DELETE all data for this school!" class="text-red-600 hover:text-red-800 text-xs font-medium">🗑 Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                @empty
+                <tr><td colspan="6" class="px-6 py-8 text-center text-gray-400">No schools found. Click "Provision New School" to create one.</td></tr>
+                @endforelse
             </tbody>
         </table>
     </div>

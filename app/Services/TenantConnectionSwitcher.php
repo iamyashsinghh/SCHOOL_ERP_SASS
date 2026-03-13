@@ -4,31 +4,25 @@ namespace App\Services;
 
 use App\Models\Central\School;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 
 class TenantConnectionSwitcher
 {
     /**
-     * Switch the active database connection to the given school's tenant database.
+     * Set up the tenant context for the given school.
+     * 
+     * In shared DB mode, we don't switch databases anymore.
+     * We just set the sass_school_id and isolate storage/cache.
      *
      * @param School $school
      * @return void
      */
     public function switch(School $school): void
     {
-        // Purge the existing tenant connection to prevent leakages
-        DB::purge('tenant');
+        // Set the sass_school_id for auto-scoping
+        app()->instance('sass_school_id', $school->id);
 
-        // Dynamically override the tenant connection config
-        Config::set('database.connections.tenant.database', $school->db_name);
-        Config::set('database.connections.tenant.username', $school->db_username);
-        
-        // Ensure to decrypt the securely stored password
-        Config::set('database.connections.tenant.password', Crypt::decryptString($school->db_password));
-
-        // Reconnect using the new config and make it the default connection
-        DB::reconnect('tenant');
+        // Ensure tenant connection is the default
         DB::setDefaultConnection('tenant');
 
         // Isolation: Storage Filesystem configuration
@@ -36,7 +30,7 @@ class TenantConnectionSwitcher
         Config::set('filesystems.disks.public.root', storage_path('app/public/tenants/' . $school->id));
         Config::set('filesystems.disks.public.url', env('APP_URL') . '/storage/tenants/' . $school->id);
 
-        // Isolation: Cache and Redis prefixing to avoid cross-tenant cache bleeding
+        // Isolation: Cache and Redis prefixing
         Config::set('cache.prefix', 'tenant_' . $school->id . '_cache_');
         
         if (config('database.redis.default')) {

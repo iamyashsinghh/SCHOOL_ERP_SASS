@@ -29,6 +29,8 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+    protected $connection = 'tenant';
+
     use HasApiTokens, HasFactory, HasFilter, HasMeta, HasRoles, HasStorage, HasUuid, LogsActivity, Notifiable, TwoFactorSecurity;
 
     /**

@@ -6,25 +6,17 @@ use Closure;
 use Illuminate\Http\Request;
 use App\Models\Central\Domain;
 use App\Models\Central\School;
-use App\Services\TenantConnectionSwitcher;
 use Illuminate\Support\Facades\Cache;
 
 class IdentifyTenant
 {
-    protected $switcher;
-
-    public function __construct(TenantConnectionSwitcher $switcher)
-    {
-        $this->switcher = $switcher;
-    }
-
     public function handle(Request $request, Closure $next)
     {
         // 1. Identification Variables
-        $host = $request->getHost(); // e.g., school1.localhost or www.school.com
+        $host = $request->getHost();
         $port = $request->getPort();
         $fullHost = $port && !in_array($port, [80, 443]) ? "{$host}:{$port}" : $host;
-        $pathSegment = $request->segment(1); // e.g., 'school1'
+        $pathSegment = $request->segment(1);
 
         // Dynamically add current host to Sanctum stateful domains
         $stateful = config('sanctum.stateful', []);
@@ -47,7 +39,6 @@ class IdentifyTenant
             $tenantIdentifier = $domain->school_id;
         } elseif ($pathSegment) {
             // 3. Fallback: Check if the first path segment matches a domain record 
-            // Useful for localhost/school1 pattern during local development
             $domainByPath = $this->resolveDomain($pathSegment);
             if ($domainByPath) {
                 $tenantIdentifier = $domainByPath->school_id;
@@ -55,7 +46,7 @@ class IdentifyTenant
             }
         }
 
-        // 4. Handle Unidentified Tenants
+        // 4. Handle Unidentified Tenants — Central Domain
         if (! $tenantIdentifier) {
             $centralDomain = env('CENTRAL_DOMAIN', 'governance.localhost');
             
@@ -70,11 +61,10 @@ class IdentifyTenant
                 return $next($request);
             }
             
-            // If it's not the central domain and we have no tenant, it's definitely a 404
             abort(404, 'Tenant not found. The domain or school code is invalid.');
         }
 
-        // 5. Load the School Data (Cached to avoid central DB bottleneck)
+        // 5. Load the School Data (Cached)
         $school = Cache::remember("tenant_school_{$tenantIdentifier}", 3600, function () use ($tenantIdentifier) {
             return School::on('central')
                 ->where('status', 'active')
@@ -85,22 +75,39 @@ class IdentifyTenant
             abort(403, 'Tenant is suspended or does not exist.');
         }
 
-        // 6. Switch Database Connection and Isolate Environment
-        $this->switcher->switch($school);
+        // ─── 6. SET SASS SCHOOL ID ──────────────────────────────────
+        // This is the KEY line: it tells the SassSchoolScope which 
+        // school's data to show. All queries auto-filter by this.
+        app()->instance('sass_school_id', $school->id);
+        // ─────────────────────────────────────────────────────────────
 
-        // 6a. Session Isolation
+        // 7. Set default connection to tenant (shared DB, no switching needed)
+        \Illuminate\Support\Facades\DB::setDefaultConnection('tenant');
+
+        // 8. Session Isolation per school
         $sessionPath = storage_path('framework/sessions/tenants/' . $school->id);
         if (!is_dir($sessionPath)) {
             mkdir($sessionPath, 0755, true);
         }
         config(['session.files' => $sessionPath]);
 
-        // 7. Bind to Container for easy retrieval
+        // 9. Storage Isolation per school
+        config(['filesystems.disks.local.root' => storage_path('app/tenants/' . $school->id)]);
+        config(['filesystems.disks.public.root' => storage_path('app/public/tenants/' . $school->id)]);
+        config(['filesystems.disks.public.url' => env('APP_URL') . '/storage/tenants/' . $school->id]);
+
+        // 10. Cache Isolation per school
+        config(['cache.prefix' => 'tenant_' . $school->id . '_cache_']);
+        if (config('database.redis.default')) {
+            config(['database.redis.options.prefix' => 'tenant_' . $school->id . '_redis_']);
+        }
+
+        // 11. Bind school to Container
         app()->instance('tenant.active', $school);
         config(['tenant.is_path_based' => $isPathBased]);
         config(['tenant.path_segment' => $isPathBased ? $pathSegment : null]);
 
-        // 8. Transparent Path Shifting (for local development)
+        // 12. Transparent Path Shifting (for localhost/school1 development pattern)
         if ($isPathBased) {
             $newUri = preg_replace('/^\/' . preg_quote($pathSegment, '/') . '/', '', $request->getRequestUri());
             if (empty($newUri)) {
@@ -108,7 +115,6 @@ class IdentifyTenant
             }
             $request->server->set('REQUEST_URI', $newUri);
             
-            // Re-initialize the request instance to update its internal path info
             $request->initialize(
                 $request->query->all(),
                 $request->request->all(),

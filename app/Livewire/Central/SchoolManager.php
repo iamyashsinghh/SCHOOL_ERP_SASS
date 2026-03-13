@@ -7,22 +7,20 @@ use App\Models\Central\School;
 use App\Models\Central\SubDivision;
 use App\Models\Central\Domain;
 use App\Services\TenantCreatorService;
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 
 class SchoolManager extends Component
 {
-    public $name, $sub_division_id, $db_name, $db_username, $db_password, $storage_prefix, $domain;
+    public $name, $sub_division_id, $domain;
     public $admin_name, $admin_username, $admin_email, $admin_password;
-    public $timezone;
+    public $contact_phone, $address, $timezone;
     public $isCreating = false;
     public $message;
 
     public function mount()
     {
-        $this->db_username = env('DB_USERNAME', 'root');
-        $this->db_password = env('DB_PASSWORD', '');
+        //
     }
 
     // Edit User functionality
@@ -35,10 +33,6 @@ class SchoolManager extends Component
     protected $rules = [
         'name' => 'required|min:3|unique:central.schools,name',
         'sub_division_id' => 'required|exists:central.sub_divisions,id',
-        'db_name' => 'required|unique:central.schools,db_name',
-        'db_username' => 'required',
-        'db_password' => 'nullable',
-        'storage_prefix' => 'required|unique:central.schools,storage_prefix',
         'domain' => 'required|unique:central.domains,domain',
         'admin_name' => 'required|min:3',
         'admin_username' => 'required|min:3|alpha_dash',
@@ -78,18 +72,6 @@ class SchoolManager extends Component
         ])->layout('layouts.central', ['title' => 'School Management', 'header' => 'Schools']);
     }
 
-    public function updatedName($value)
-    {
-        if (empty($value)) {
-            $this->db_name = '';
-            $this->storage_prefix = '';
-            return;
-        }
-        $slug = Str::lower(Str::slug($value, '_'));
-        $this->db_name = 'innomedi_' . $slug;
-        $this->storage_prefix = $slug;
-    }
-
     public function updatedDomain($value)
     {
         if (empty($this->admin_email) && !empty($value)) {
@@ -108,15 +90,13 @@ class SchoolManager extends Component
         try {
             $school = $service->create([
                 'name' => $this->name,
-                'code' => strtoupper(\Illuminate\Support\Str::substr(preg_replace('/[^a-zA-Z0-9]/', '', $this->name), 0, 8)) . \Illuminate\Support\Str::random(4),
+                'code' => strtoupper(Str::substr(preg_replace('/[^a-zA-Z0-9]/', '', $this->name), 0, 8)) . Str::random(4),
                 'ministry_id' => $subDivision->province->ministry_id,
                 'province_id' => $subDivision->province_id,
                 'sub_division_id' => $this->sub_division_id,
-                'db_name' => $this->db_name,
-                'db_username' => $this->db_username,
-                'db_password' => Crypt::encryptString($this->db_password ?? ''),
-                'storage_prefix' => $this->storage_prefix,
                 'domain' => $this->domain,
+                'contact_phone' => $this->contact_phone,
+                'address' => $this->address,
                 'admin_name' => $this->admin_name,
                 'admin_username' => $this->admin_username,
                 'admin_email' => $this->admin_email,
@@ -145,6 +125,9 @@ class SchoolManager extends Component
         $school->status = $school->status === 'active' ? 'suspended' : 'active';
         $school->save();
 
+        // Clear tenant cache so IdentifyTenant picks up new status
+        Cache::forget("tenant_school_{$id}");
+
         app(\App\Services\CentralAuditService::class)->log(
             'school_status_toggled',
             'School',
@@ -168,7 +151,7 @@ class SchoolManager extends Component
                 ['name' => $schoolName]
             );
 
-            session()->flash('success', "School {$schoolName} and its resources have been deleted successfully.");
+            session()->flash('success', "School {$schoolName} and its data have been deleted successfully.");
         } catch (\Exception $e) {
             $this->message = "Deletion failed: " . $e->getMessage();
         }
@@ -186,7 +169,6 @@ class SchoolManager extends Component
         $domain = $school->domains->first()->domain;
         $token = Str::random(64);
         
-        // Store the token in cache for 1 minute
         Cache::put("sso_token_{$token}", [
             'school_id' => $school->id,
             'admin_username' => $school->admin_username
@@ -205,10 +187,15 @@ class SchoolManager extends Component
         $this->isEditingUsers = true;
         $this->isCreating = false;
         
-        $school = School::on('central')->findOrFail($schoolId);
-        app(\App\Services\TenantConnectionSwitcher::class)->switch($school);
+        // Set sass_school_id context to query this school's users
+        app()->instance('sass_school_id', $schoolId);
         
-        $this->tenantUsers = \Illuminate\Support\Facades\DB::connection('tenant')->table('users')->select('id', 'name', 'email', 'username')->get()->toArray();
+        $this->tenantUsers = \Illuminate\Support\Facades\DB::connection('tenant')
+            ->table('users')
+            ->where('sass_school_id', $schoolId)
+            ->select('id', 'name', 'email', 'username')
+            ->get()
+            ->toArray();
         $this->resetEditForm();
     }
 
@@ -219,7 +206,6 @@ class SchoolManager extends Component
         $this->tenantUsers = [];
         $this->selectedUserId = null;
         $this->resetEditForm();
-        \Illuminate\Support\Facades\DB::purge('tenant');
     }
 
     public function updatedSelectedUserId()
@@ -229,10 +215,12 @@ class SchoolManager extends Component
             return;
         }
         
-        $school = School::on('central')->findOrFail($this->editingSchoolId);
-        app(\App\Services\TenantConnectionSwitcher::class)->switch($school);
-        
-        $user = \Illuminate\Support\Facades\DB::connection('tenant')->table('users')->where('id', $this->selectedUserId)->first();
+        $user = \Illuminate\Support\Facades\DB::connection('tenant')
+            ->table('users')
+            ->where('id', $this->selectedUserId)
+            ->where('sass_school_id', $this->editingSchoolId)
+            ->first();
+
         if ($user) {
             $this->editUserName = $user->name;
             $this->editUserEmail = $user->email;
@@ -250,9 +238,6 @@ class SchoolManager extends Component
             'editUserUsername' => 'required|min:3|alpha_dash',
         ]);
 
-        $school = School::on('central')->findOrFail($this->editingSchoolId);
-        app(\App\Services\TenantConnectionSwitcher::class)->switch($school);
-
         $updateData = [
             'name' => $this->editUserName,
             'email' => $this->editUserEmail,
@@ -263,11 +248,15 @@ class SchoolManager extends Component
             $updateData['password'] = \Illuminate\Support\Facades\Hash::make($this->editUserPassword);
         }
 
-        \Illuminate\Support\Facades\DB::connection('tenant')->table('users')->where('id', $this->selectedUserId)->update($updateData);
+        \Illuminate\Support\Facades\DB::connection('tenant')
+            ->table('users')
+            ->where('id', $this->selectedUserId)
+            ->where('sass_school_id', $this->editingSchoolId)
+            ->update($updateData);
 
-        // Check if we are updating the primary admin user's credentials
-        $dbUsername = \Illuminate\Support\Facades\DB::connection('tenant')->table('users')->where('id', $this->selectedUserId)->value('username');
-        if ($school->admin_username === $this->editUserUsername || $school->admin_username === $dbUsername) {
+        // Update admin reference in central if needed
+        $school = School::on('central')->findOrFail($this->editingSchoolId);
+        if ($school->admin_username === $this->editUserUsername || $school->admin_username === $this->editUserUsername) {
             $school->admin_username = $this->editUserUsername;
             if (!empty($this->editUserPassword)) {
                 $school->admin_password_reference = $this->editUserPassword;

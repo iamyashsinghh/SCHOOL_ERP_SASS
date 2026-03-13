@@ -17,21 +17,12 @@ class School extends Model
         'name',
         'code',
         'status',
-        'db_name',
-        'db_username',
-        'db_password',
-        'storage_prefix',
+        'contact_email',
+        'contact_phone',
+        'address',
+        'logo',
         'admin_username',
         'admin_password_reference',
-    ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'db_password',
     ];
 
     public function subDivision(): BelongsTo
@@ -42,5 +33,13 @@ class School extends Model
     public function domains(): HasMany
     {
         return $this->hasMany(Domain::class);
+    }
+
+    /**
+     * Check if school is active.
+     */
+    public function isActive(): bool
+    {
+        return $this->status === 'active';
     }
 }
